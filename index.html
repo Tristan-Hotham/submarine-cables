@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The Internet's Seabed</title>
+<meta name="description" content="A map of the world's 608 submarine internet cables in service and 105 planned: when each was laid, who owns them, and the straits and landing hubs where they crowd together. Data: TeleGeography.">
+<meta property="og:title" content="The internet's seabed: every submarine cable, when it was laid, and the choke points">
+<meta property="og:description" content="608 cables and 1.6 million km in service. 38 cables meet within 35 km of Singapore, 12 squeeze through Bab el-Mandeb, and Google, Meta, Amazon and Microsoft part-own 55% of the planned kilometres.">
+<meta property="og:image" content="https://maps.tristanhotham.com/submarine-cables/header.png">
+<meta property="og:url" content="https://maps.tristanhotham.com/submarine-cables/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+/* Chart room: pale paper, deep sea ink, cable colours by decade, coral for what is planned. */
+:root{
+  --bg:#F5F4EF; --panel:#E9EDEB; --fg:#13222E; --muted:#5A6670; --rule:#DCE0DC; --card:#FCFCFA; --border:#C3CCCB;
+  --hot:#D9482B; --cool:#1F5F8B; --gold:#E39B12; --teal:#139C8C; --land:#ECE9E1; --sea:#E7EEF0;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F171D; --panel:#18232B; --fg:#E8EEF0; --muted:#9AA8B1; --rule:#26343E; --card:#141E25; --border:#33444F;
+  --hot:#F0745A; --cool:#7FB3DA; --gold:#F2B43C; --teal:#3CC2B0; --land:#1E2930; --sea:#121C22; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F171D; --panel:#18232B; --fg:#E8EEF0; --muted:#9AA8B1; --rule:#26343E; --card:#141E25; --border:#33444F;
+  --hot:#F0745A; --cool:#7FB3DA; --gold:#F2B43C; --teal:#3CC2B0; --land:#1E2930; --sea:#121C22; color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 18px/1.62 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));overflow-x:hidden}
+.wrap{max-width:700px;margin:0 auto;padding-block:28px 64px}
+.wrap .bleed{width:min(1180px,calc(100vw - 32px));margin-left:calc((100% - min(1180px,100vw - 32px))/2);margin-right:0}
+a{color:inherit;text-decoration-color:var(--hot);text-underline-offset:3px}
+.kicker{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.kicker b{background:var(--cool);color:#fff;padding:5px 8px;font-weight:500}
+header.hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px 24px;align-items:end;border-bottom:6px double var(--fg);padding-bottom:22px;margin-top:18px}
+h1{font:900 clamp(44px,11vw,96px)/.9 var(--display);letter-spacing:-.02em;margin:0;text-wrap:balance}
+h1 .a{color:var(--cool)} h1 .b{color:var(--hot)}
+.mark{width:clamp(78px,16vw,128px);height:auto;display:block}
+.dek{grid-column:1/-1;font-size:21px;line-height:1.42;margin:8px 0 0;max-width:56ch}
+.byline{font:400 13px/1.4 var(--mono);color:var(--muted);margin-top:14px}
+h2{font:800 34px/1.04 var(--display);letter-spacing:-.01em;margin:54px 0 10px;text-wrap:balance}
+h2 .n{font:500 13px/1 var(--mono);color:var(--hot);display:block;letter-spacing:.1em;margin-bottom:10px}
+h3{font:600 20px/1.25 var(--display);margin:28px 0 6px}
+p{margin:0 0 16px}
+.lede::first-letter{font:900 72px/.8 var(--display);float:left;margin:6px 10px 0 0;color:var(--cool)}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin:26px 0 8px}
+.stats div{background:var(--card);padding:14px 12px}
+.stats b{display:block;font:900 clamp(22px,4.4vw,32px)/1 var(--display);letter-spacing:-.01em}
+.stats b.h{color:var(--hot)} .stats b.c{color:var(--cool)} .stats b.g{color:var(--gold)} .stats b.t{color:var(--teal)}
+.stats span{font:400 12px/1.35 var(--mono);color:var(--muted);display:block;margin-top:6px}
+@media (max-width:600px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.figure{margin:26px 0 30px}
+.fig-h{font:600 19px/1.25 var(--display);margin:0 0 4px}
+.fig-sub{font:400 13px/1.45 var(--mono);color:var(--muted);margin:0 0 12px}
+.src{font:400 12px/1.45 var(--mono);color:var(--muted);margin-top:10px}
+.chart{width:100%;position:relative}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{font-family:var(--mono);fill:var(--fg)}
+.lab{font-size:12px}.lab.m{fill:var(--muted)}.lab.b{font-weight:500}.lab.s{font-size:11px}
+.tip{position:absolute;pointer-events:none;background:var(--fg);color:var(--bg);font:400 12px/1.45 var(--mono);padding:8px 10px;border-radius:3px;max-width:290px;z-index:1000;transform:translate(-50%,calc(-100% - 12px));display:none}
+.tip b{font-weight:500}
+.controls{display:flex;gap:8px;align-items:center;margin:0 0 10px;flex-wrap:wrap}
+.scrollrow{display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin;padding-bottom:2px;max-width:100%}
+.scrollrow .btn{flex:0 0 auto;white-space:nowrap}
+.ctl-l{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:2px;flex:0 0 auto;align-self:center}
+.btn{font:500 12px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:8px 10px;cursor:pointer;min-height:36px}
+.btn[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.btn .dot{display:inline-block;width:14px;height:4px;border-radius:2px;margin-right:6px;vertical-align:2px}
+.btn[aria-pressed="false"] .dot{opacity:.35}
+.btn:focus-visible,input:focus-visible,summary:focus-visible,select:focus-visible{outline:2px solid var(--hot);outline-offset:2px}
+.searchbox{position:relative;flex:1 1 260px;min-width:0}
+input[type=search]{font:400 15px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:10px 11px;min-height:40px;width:100%}
+.suggest{position:absolute;left:0;right:0;top:100%;margin:2px 0 0;padding:0;list-style:none;background:var(--card);border:1px solid var(--border);z-index:1001;font:400 13px/1.3 var(--mono);display:none;max-height:340px;overflow:auto}
+.suggest li{padding:8px 10px;cursor:pointer;border-bottom:1px solid var(--rule)}
+.suggest li span{color:var(--muted)}
+.suggest li[aria-selected="true"],.suggest li:hover{background:var(--panel)}
+.timebar{display:flex;gap:10px;align-items:center;margin:0 0 10px;flex-wrap:wrap}
+.timebar input[type=range]{flex:1 1 260px;accent-color:var(--hot);min-width:0}
+.timebar .yr{font:900 30px/1 var(--display);min-width:3.4ch;color:var(--fg)}
+.timebar .yrs{font:400 12px/1.35 var(--mono);color:var(--muted);flex:1 1 100%}
+.mapgrid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:14px;align-items:start}
+@media (max-width:900px){.mapgrid{grid-template-columns:1fr}}
+.side{background:var(--card);border:1px solid var(--border);padding:12px 12px 10px;font:400 13px/1.45 var(--mono);max-height:660px;overflow:auto}
+@media (max-width:900px){.side{max-height:none}}
+.side h4{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:14px 0 8px}
+.side h4:first-child{margin-top:2px}
+.side .big{font:800 24px/1.1 var(--display);margin:2px 0 4px}
+.side .sub{color:var(--muted);font-size:12px;margin:0 0 8px}
+.side ol,.side ul{margin:4px 0 8px;padding-left:20px}
+.side li{margin:3px 0}
+.side li small,.side td small{color:var(--muted)}
+.side table{width:100%;border-collapse:collapse;margin:4px 0 6px}
+.side td{padding:4px 4px 4px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+.side td.num{text-align:right;white-space:nowrap}
+.chip{display:inline-block;font:500 11px/1 var(--mono);padding:4px 7px;border-radius:999px;color:#fff;margin:0 4px 4px 0}
+.go{cursor:pointer;text-decoration:underline;text-decoration-color:var(--border);text-underline-offset:3px}
+.back{font:400 12px var(--mono);background:none;border:0;color:var(--muted);padding:0;cursor:pointer;text-decoration:underline;margin-bottom:6px}
+.lmap{height:620px;border:1px solid var(--border);background:var(--sea);border-radius:2px}
+@media (max-width:600px){.lmap{height:min(62vh,460px)}}
+.leaflet-container{font:400 12px/1.4 var(--mono);background:var(--sea)}
+.gridImg{image-rendering:pixelated}
+.lyrBtn{background:var(--card,var(--bg));color:var(--fg);border:1px solid var(--border);border-radius:3px;font:600 12px/1 var(--mono);padding:8px 10px;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.lyrBtn[aria-expanded="true"]{background:var(--fg);color:var(--bg)}
+.lyrPanel{background:var(--card,var(--bg));color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:10px 12px 8px;margin-top:6px;width:250px;box-shadow:0 2px 10px rgba(0,0,0,.15);font:400 12px/1.3 var(--mono);max-height:min(70vh,520px);overflow:auto}
+.lyrPanel[hidden]{display:none}
+.lyrPanel .row{margin:0 0 9px}
+.lyrPanel label{display:flex;gap:6px;align-items:center;cursor:pointer;font-weight:600}
+.lyrPanel input[type=range]{width:100%;accent-color:var(--fg)}
+.lyrPanel select{font:400 12px var(--mono);background:var(--bg);color:var(--fg);border:1px solid var(--border);border-radius:2px;padding:2px 4px;width:100%;min-height:0}
+.lyrPanel .sub{display:flex;gap:6px;align-items:center;color:var(--muted);font-size:11px;margin-top:3px}
+.lyrPanel .sub span{flex:0 0 58px}
+.lyrPanel .hd{font:500 10.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:10px 0 7px;border-top:1px solid var(--rule);padding-top:9px}
+.lyrPanel .reset{font:400 11px var(--mono);color:var(--muted);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}
+.mapnote{background:color-mix(in srgb,var(--card) 92%,transparent);border:1px solid var(--border);border-radius:3px;padding:6px 9px;font:400 12px/1.35 var(--mono);max-width:min(300px,62vw);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.mapnote b{font:900 20px/1 var(--display);display:block;margin-bottom:2px}
+@media (max-width:600px){.mapnote{display:none}}
+.zoneL{font:600 10.5px/1.15 var(--mono);color:var(--fg);white-space:nowrap;text-shadow:0 0 3px var(--bg),0 0 3px var(--bg),0 0 2px var(--bg);pointer-events:none;text-align:center}
+.zoneL small{display:block;font-weight:400;color:var(--muted)}
+.leaflet-bar a,.leaflet-bar a:hover{background:var(--card);color:var(--fg);border-bottom-color:var(--border)}
+.leaflet-control-attribution{background:color-mix(in srgb,var(--card) 85%,transparent)!important;color:var(--muted)}
+.leaflet-control-attribution a{color:var(--fg)}
+.legend{display:flex;gap:6px 14px;flex-wrap:wrap;font:400 12px/1.3 var(--mono);color:var(--muted);margin-top:8px;align-items:center}
+.legend span{display:inline-flex;align-items:center}
+.legend i{display:inline-block;width:18px;height:4px;margin-right:6px;border-radius:2px}
+.legend i.dash{background:repeating-linear-gradient(90deg,var(--hot) 0 5px,transparent 5px 8px)!important}
+.legend i.pt{width:9px;height:9px;border-radius:50%;background:var(--card);border:2px solid var(--fg)}
+.legend i.zn{width:13px;height:13px;border-radius:2px;border:2px solid var(--hot);background:transparent}
+.legend i.gr{width:13px;height:13px;border-radius:2px;background:linear-gradient(90deg,#F0AA28,#820C28)}
+.pull{font:600 26px/1.25 var(--display);border-left:6px solid var(--hot);padding:4px 0 4px 18px;margin:30px 0}
+.note{background:var(--panel);border:1px solid var(--rule);padding:14px 16px;font-size:16px;margin:22px 0}
+.note h3{margin-top:0}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:20px 0}
+@media (max-width:760px){.cards{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.cards{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--border);border-left:8px solid var(--c,var(--hot));padding:10px 12px;font:400 12.5px/1.45 var(--mono);cursor:pointer}
+.card b{font:600 17px/1.2 var(--display);display:block;margin-bottom:2px}
+.card .pl{color:var(--teal)}
+table.rank{width:100%;border-collapse:collapse;font:400 13px/1.4 var(--mono);margin:8px 0 18px}
+table.rank th{font:500 11px/1.2 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:left;border-bottom:2px solid var(--fg);padding:6px 6px 6px 0}
+table.rank td{border-bottom:1px solid var(--rule);padding:6px 6px 6px 0;vertical-align:top}
+table.rank td.num,table.rank th.num{text-align:right;white-space:nowrap}
+table.rank tr.cl{cursor:pointer}
+table.rank tr.cl:hover td{background:var(--panel)}
+table.rank .bar{display:inline-block;height:9px;background:var(--cool);border-radius:1px;vertical-align:0}
+table.rank .bar.p{background:var(--hot);opacity:.55}
+details{margin:14px 0}
+summary{font:500 13px/1.4 var(--mono);cursor:pointer;color:var(--fg);padding:8px 0}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+.cta a{font:500 13px/1 var(--mono);text-decoration:none;border:1px solid var(--fg);padding:11px 14px;border-radius:3px}
+.cta a.p{background:var(--cool);border-color:var(--cool);color:#fff}
+footer{border-top:6px double var(--fg);margin-top:56px;padding-top:16px;font:400 13px/1.55 var(--mono);color:var(--muted)}
+footer p{margin:0 0 10px}
+.theme{position:fixed;right:12px;bottom:12px;z-index:1002}
+@media print{.theme,.controls{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="kicker"><b>Data study</b><span>Infrastructure</span><span>World, 2026</span></div>
+<header class="hero">
+  <h1>The <span class="a">internet's</span> <span class="b">seabed</span></h1>
+  <svg class="mark" viewBox="0 0 120 140" aria-hidden="true"><g id="heroMark"></g></svg>
+  <p class="dek">Almost everything you do online crosses the sea floor on a cable about as thick as a garden hose. Here is every one of them in TeleGeography's open map: when each was laid, who owns it, and the narrow straits and busy beaches where dozens of them crowd together.</p>
+</header>
+<div class="byline">Dr Tristan Hotham · Independent researcher · 2026 · Data: TeleGeography Submarine Cable Map (CC BY-NC-SA 3.0); Natural Earth</div>
+
+<div class="stats">
+  <div><b class="c">608</b><span>submarine cables in service, plus 105 planned</span></div>
+  <div><b class="t">1.6m km</b><span>of cable in service, 39.7 times round the Earth</span></div>
+  <div><b class="g">38</b><span>cables reach the sea within 35 km of Singapore, the busiest hub</span></div>
+  <div><b class="h">55%</b><span>of planned cable length is part-owned by Google, Meta, Amazon or Microsoft</span></div>
+</div>
+
+<p class="lede">When you send a message to someone in another continent, it almost certainly does not go through space. Satellites carry a small share of the world's international traffic; the rest travels as light through glass fibres in cables laid along the sea floor, from one beach to another. There are 608 of them in service in TeleGeography's Submarine Cable Map, the best open record of this network, with a combined length of 1,592,824 km: enough to wrap round the Earth 39.7 times, or reach 414% of the way to the Moon.</p>
+<p>The record also lists 105 cables that are planned or being laid, with 502,770 km more. For each cable it gives the year it was ready for service, its length, its owners, its suppliers and where it comes ashore: 1,928 landing points in 186 countries and territories. I used it to ask three questions. When was each cable laid? Who is laying them now? And where does the network squeeze through a few narrow places, so that one anchor or one earthquake could cut many cables at once?</p>
+
+<h2><span class="n">01 · The map</span>Every cable, coloured by when it was laid</h2>
+<div class="bleed" id="atlas">
+<div class="timebar">
+  <button class="btn" id="play" aria-label="Play the network growing">▶ Play</button>
+  <span class="yr" id="yr">All</span>
+  <input type="range" id="slider" min="1989" max="2031" step="1" value="2031" aria-label="Show cables ready for service by this year">
+  <span class="yrs" id="yrs"></span>
+</div>
+<div class="controls">
+  <div class="scrollrow" id="eraRow"><span class="ctl-l">Laid</span></div>
+</div>
+<div class="controls">
+  <div class="searchbox"><input type="search" id="q" placeholder="Search a cable, country or landing point" aria-label="Search a cable, country or landing point" autocomplete="off"><ul class="suggest" id="sug" role="listbox"></ul></div>
+</div>
+<div class="controls">
+  <div class="scrollrow" id="focusRow"><span class="ctl-l">Zoom to</span></div>
+</div>
+<div class="mapgrid">
+  <div><div id="map" class="lmap" role="application" aria-label="Map of submarine cables"></div>
+    <div class="legend" id="legend"></div></div>
+  <div class="side" id="side" aria-live="polite"></div>
+</div>
+<p class="src">Routes, years, owners and landing points: TeleGeography Submarine Cable Map (submarinecablemap.com), CC BY-NC-SA 3.0. Routes are drawn schematically by TeleGeography and are not exact positions on the sea floor. Click a cable, a landing point or a choke point.</p>
+</div>
+
+<h2><span class="n">02 · When each cable was laid</span>A boom, a bust and a second boom</h2>
+<p>Every cable in the record has a ready-for-service year, the year it started carrying traffic. The oldest still in service date from 1989, and 113 cables from the 1990s are still working. Two booms stand out. The first is the dot-com bubble: 74 of today's cables were ready in just three years, 1999 to 2001, with 271,123 km between them, and 2001 is still the year with the most kilometres laid (121,657 km). Then the bubble burst, and only 31 cables came into service from 2002 to 2004.</p>
+<div class="figure"><p class="fig-h">Cables by the year they were ready for service</p><p class="fig-sub">608 cables in service by year, coloured by decade, and 105 planned cables by their expected year (coral; 6 have no year yet). Switch to see kilometres. Hover a bar.</p>
+<div class="controls"><div class="scrollrow" id="tlMode"><span class="ctl-l">Count</span><button class="btn" data-m="n" aria-pressed="true">Cables</button><button class="btn" data-m="km" aria-pressed="false">Kilometres</button></div></div>
+<div class="chart" id="tlChart"></div></div>
+<p>The second boom is now. 2023 had the most new cables of any year (32), and the record lists 49 cables for 2027, all of them still planned. Cables have also grown longer: the median cable from the 1990s still in service is 230 km, many of them short hops between neighbours, while the median planned cable is 2,569 km. Cables ready since 2016 make up 46% of all the cable length in service.</p>
+<p>One caution about the early years. TeleGeography maps cables that are in service or planned, not the ones that have been retired, so the bars for the 1990s count survivors, not everything that was laid. The first transatlantic fibre-optic cable, TAT-8, came into service in 1988 and has long since been switched off, so it is not here.</p>
+
+<h2><span class="n">03 · Who lays them now</span>From telephone clubs to cloud companies</h2>
+<p>For most of their history submarine cables were built by clubs of telephone companies, each taking a share. The record shows this in the owners field: SAT-3/WASC has 33 owners. From 2010 a new kind of owner appears. I matched the four big cloud and content companies, Google, Meta, Amazon (as Amazon Web Services) and Microsoft, by their exact names in each cable's list of owners. None of the cables ready before 2010 lists them. Of cable length ready from 2010 to 2014 they part-own 9%, from 2015 to 2019 24%, from 2020 to 2026 50%, and of the planned length 55%.</p>
+<div class="figure"><p class="fig-h">Share of cable length part-owned by Google, Meta, Amazon or Microsoft</p><p class="fig-sub">Kilometres of cable ready in each period with at least one of the four among its owners. Hover for each company's kilometres (a cable can have more than one).</p><div class="chart" id="hyChart"></div></div>
+<p>Increasingly they go it alone. Of the 62 cables in the record with one of the four as an owner, 31 have no other owner, 22 of them planned. Google is in 37 cables (23 on its own), Meta in 21, Microsoft in 8 and Amazon in 6. The longest planned cable of all, Project Waterworth at 50,000 km, is Meta's alone. These numbers are a floor: the owners field lists who owns a cable, not who buys capacity on it, and these companies also lease fibre pairs on many cables they do not own.</p>
+<div class="cards" id="hyCards"></div>
+
+<h2><span class="n">04 · Choke points</span>Where the network squeezes through</h2>
+<p>A network of 608 cables sounds robust, but geography funnels them. Ships, anchors and earthquakes cut cables every year, and when many cables share one strait, one stretch of coast or one landing beach, a single accident can cut several at once. I counted the cables whose routes pass through a band drawn across each well-known strait, and those that reach a few famous landing hubs. The combined length is the total length of the cables that pass, a rough guide to how much of the network is exposed.</p>
+<div class="figure"><p class="fig-h">Straits and corridors</p><p class="fig-sub">Cables in service (blue) and planned (coral) whose routes cross a band drawn from shore to shore. Click a row to see it on the map.</p><div id="straitTable"></div></div>
+<p>The Red Sea is the great funnel between Europe and Asia. 13 cables in service cross the Red Sea at 20° N and 12 pass the Bab el-Mandeb, with a combined length of 217,777 km, 14% of all the cable length in service; 4 more are planned. To reach the Mediterranean, 9 of them cross Egypt overland between the Red Sea and the Mediterranean coasts. In 2024 several Red Sea cables were damaged, reportedly by the dragging anchor of a ship that had been attacked and abandoned, and traffic between Europe, Asia and East Africa had to be rerouted. The Strait of Sicily (18 cables) is the Mediterranean's waist, and in East Asia the Luzon Strait between Taiwan and the Philippines carries 10: in 2006 an earthquake off southern Taiwan broke several cables there at once.</p>
+<div class="figure"><p class="fig-h">Landing hubs</p><p class="fig-sub">Cables in service and planned whose routes reach each area. Click a row to see it on the map.</p><div id="hubTable"></div></div>
+<p>Then there are the hubs, where cables crowd onto a few beaches. Singapore is in a class of its own: 38 cables in service reach the sea within 35 km of it, with 14 more planned. The Boso peninsula south of Tokyo has 20, Guam 15, the Fujairah coast of the United Arab Emirates 15, Cornwall 14, Marseille 12 and Hawaii 10, with 6 planned. Guam and Hawaii are the stepping stones of the Pacific; Marseille is where cables from Asia come ashore in Europe.</p>
+<p>The data can also find its own choke points. On a grid of half-degree cells (about 55 km), the busiest cell in the world lies off Sakra Island, Singapore, crossed by 38 cables, followed by the waters off Chikura, Japan (18) and Fujairah, United Arab Emirates (15). Turn on the cable density layer on the map to see them all.</p>
+
+<h2><span class="n">05 · Most and least connected</span>Dozens for Singapore, one for Niue</h2>
+<p>Counting only cables that link a country to another country, the United States has the most (59), then the United Kingdom (51) and Singapore (34). 30 countries and territories have ten or more.</p>
+<div class="figure"><p class="fig-h">The most connected countries</p><p class="fig-sub">International cables in service that land in each country or territory, with planned ones in coral. Click a row to see the country's cables.</p><div id="ctyTable"></div></div>
+<p>At the other end, 29 countries and territories have just one international cable. For places with land borders, such as Poland or Romania, that matters less: they reach the world through land cables too. But 17 of them are islands with no land border, where one cut can leave a whole territory with little more than satellite links. They are mostly small Pacific, Atlantic and Caribbean islands, plus Greenland. Tuvalu appears only on a planned cable.</p>
+<div class="cards" id="singleCards"></div>
+<p>Tonga showed what that means. In January 2022 the eruption of the Hunga Tonga volcano cut the Tonga Cable to Fiji, which was then the country's only international cable, and the islands were largely cut off for weeks. In TeleGeography's record today Tonga also lands on a second system, Hawaiki. The record dates each cable by its first ready-for-service year (2018 for Hawaiki), so branches added later carry the older date.</p>
+<p>Landing stations tell the same story at a smaller scale. 1,312 of the 1,792 landing points in service (73%) have just one cable. The busiest single stations are Batam, Indonesia and Tuas, Singapore (14 cables each), then Jeddah, Saudi Arabia (13).</p>
+<p class="pull">12 cables squeeze through the Bab el-Mandeb. 17 islands hang on a single cable.</p>
+
+<h2><span class="n">06 · How I did this</span>Methods and caveats</h2>
+<p><b>Data.</b> TeleGeography's Submarine Cable Map publishes its data through an open API: a route file, a landing point file and a page for each cable. I used all 713 cables in the 2026 version. A cable is in service unless TeleGeography marks it as planned; the year is its ready-for-service year, which for planned cables is the expected year. Length is TeleGeography's stated length; for the 73 cables without one I measured the drawn route along the Earth's surface (for cables with both, the drawn route is about 94% of the stated length).</p>
+<p><b>Hyperscalers.</b> A cable counts if Google, Meta, Amazon Web Services or Microsoft appears as a whole name in its comma-separated list of owners. I checked for other spellings (Facebook, Alphabet, AWS, Amazon) and found none; Metacore Subcom, a different company, is not counted. Shares are of kilometres ready in each period.</p>
+<p><b>Choke points.</b> For each strait I drew a band from shore to shore and counted the cables whose drawn routes cross it; for Egypt, cables that run over Egyptian land or land on both its Mediterranean and Red Sea coasts. For hubs I counted the cables whose routes reach an area (a circle round a city, or an island group). The grid counts the distinct cables crossing each half-degree cell. Routes are schematic, so counts near a boundary can be off by one or two.</p>
+<p><b>Countries.</b> A cable is international if its landing points are in more than one of TeleGeography's countries and territories. Islands are places whose Natural Earth outline touches no other country (French overseas departments set by hand). Hong Kong is listed under China in the source.</p>
+<p><b>What this cannot say.</b> The record has no capacities, so a 1990s cable and a new one count the same, although the new one may carry thousands of times more. It omits retired cables, and it does not show the land cables that also join countries. Ownership is as TeleGeography lists it. Nothing here is a statement about the security of any particular cable.</p>
+<details><summary>Sources and licences</summary>
+<ul>
+<li>TeleGeography, Submarine Cable Map, API version 3 (https://www.submarinecablemap.com/), 2026. Licensed under Creative Commons Attribution-NonCommercial-ShareAlike 3.0. The derived data, figures and text of this study are shared under CC BY-NC-SA 4.0, a later version of the same licence, which the 3.0 licence permits for adaptations.</li>
+<li>Natural Earth countries (public domain), for land, borders and islands.</li>
+<li>Base map tiles © Esri.</li>
+</ul></details>
+
+<div class="cta"><a class="p" href="https://doi.org/10.5281/zenodo.23856607">Read the paper</a><a href="https://github.com/Tristan-Hotham/submarine-cables">Data and code</a><a href="https://blog.tristanhotham.com/2026/10/31/submarine-cables/">Blog post</a><a href="https://maps.tristanhotham.com/ocean-depth/">How deep is the sea?</a></div>
+
+<footer>
+<p>Dr Tristan Hotham, Independent researcher. ORCID <a href="https://orcid.org/0000-0003-4931-9349">0000-0003-4931-9349</a>.</p>
+<p>Cite as: Hotham, T. (2026) The internet's seabed: submarine cables, when they were laid, who owns them and where they crowd together. Zenodo. <a href="https://doi.org/10.5281/zenodo.23856607">https://doi.org/10.5281/zenodo.23856607</a></p>
+<p>Data: TeleGeography Submarine Cable Map, CC BY-NC-SA 3.0. Licence: derived data, text and figures CC BY-NC-SA 4.0; code MIT. Blog post: <a href="https://blog.tristanhotham.com/2026/10/31/submarine-cables/">blog.tristanhotham.com</a>.</p>
+<p>I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.</p>
+</footer>
+</div>
+<div class="tip" id="tip"></div>
+<button class="btn theme" id="theme" aria-label="Toggle dark mode">◐</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const R = {"n":713,"n_active":608,"n_planned":105,"km_active":1592824,"km_planned":502770,"km_all":2095594,"n_landing_points":1928,"n_countries":186,"n_lp_active":1792,"n_no_length":73,"km_route_share":0.0506,"route_vs_stated_median":0.941,"earth_circ":40075,"times_round_earth":39.7,"moon_km":384400,"moon_share":4.14,"first_year":1989,"oldest":[{"name":"Rønne-Rødvig","year":1989,"countries":["Denmark"]},{"name":"Almería-Melilla (ALME)","year":1990,"countries":["Spain"]},{"name":"BT-MT-1","year":1990,"countries":["Isle of Man","United Kingdom"]},{"name":"TRANSCAN-2","year":1990,"countries":["Spain"]},{"name":"APOCS 1","year":1991,"countries":["Canada"]},{"name":"Penbal-4","year":1991,"countries":["Spain"]}],"n_1990s_active":113,"longest":[{"name":"Project Waterworth","km":50000,"year":null,"planned":true,"n_landings":9,"n_countries":6},{"name":"2Africa","km":45000,"year":2024,"planned":false,"n_landings":50,"n_countries":34},{"name":"EAC-C2C","km":36500,"year":2002,"planned":false,"n_landings":16,"n_countries":6},{"name":"Southern Cross Cable Network (SCCN)","km":30500,"year":2000,"planned":false,"n_landings":9,"n_countries":4},{"name":"Asia Africa Europe-1 (AAE-1)","km":25000,"year":2017,"planned":false,"n_landings":20,"n_countries":18},{"name":"PEACE Cable","km":25000,"year":2022,"planned":false,"n_landings":14,"n_countries":13},{"name":"South America-1 (SAm-1)","km":25000,"year":2001,"planned":false,"n_landings":16,"n_countries":9},{"name":"GlobeNet","km":23500,"year":2000,"planned":false,"n_landings":7,"n_countries":5},{"name":"Tata TGN-Pacific","km":22300,"year":2002,"planned":false,"n_landings":5,"n_countries":3},{"name":"SeaMeWe-6","km":21700,"year":2027,"planned":true,"n_landings":17,"n_countries":15}],"longest_active":[{"name":"2Africa","km":45000,"year":2024,"n_landings":50,"n_countries":34},{"name":"EAC-C2C","km":36500,"year":2002,"n_landings":16,"n_countries":6},{"name":"Southern Cross Cable Network (SCCN)","km":30500,"year":2000,"n_landings":9,"n_countries":4},{"name":"Asia Africa Europe-1 (AAE-1)","km":25000,"year":2017,"n_landings":20,"n_countries":18},{"name":"PEACE Cable","km":25000,"year":2022,"n_landings":14,"n_countries":13},{"name":"South America-1 (SAm-1)","km":25000,"year":2001,"n_landings":16,"n_countries":9}],"median_km_active":478,"n_short_active":307,"n_intl_active":330,"n_dom_active":278,"n_planned_noyear":6,"planned_noyear":["ANDROMEDA","Asia Connect Cable-1 (ACC-1)","Barat Timur Indonesia-2 (BTI-2)","Canoa","OlaLuz","Project Waterworth"],"n_planned_by_2027":54,"n_2027":49,"n_2026_active":15,"n_2026_planned":5,"last_planned_year":2030,"timeline":[{"year":1989,"n_active":1,"km_active":153,"n_planned":0,"km_planned":0,"cum_n":1,"cum_km":153,"n_hyper":0,"km_hyper":0},{"year":1990,"n_active":3,"km_active":516,"n_planned":0,"km_planned":0,"cum_n":4,"cum_km":669,"n_hyper":0,"km_hyper":0},{"year":1991,"n_active":2,"km_active":492,"n_planned":0,"km_planned":0,"cum_n":6,"cum_km":1161,"n_hyper":0,"km_hyper":0},{"year":1992,"n_active":7,"km_active":947,"n_planned":0,"km_planned":0,"cum_n":13,"cum_km":2108,"n_hyper":0,"km_hyper":0},{"year":1993,"n_active":1,"km_active":110,"n_planned":0,"km_planned":0,"cum_n":14,"cum_km":2218,"n_hyper":0,"km_hyper":0},{"year":1994,"n_active":18,"km_active":7164,"n_planned":0,"km_planned":0,"cum_n":32,"cum_km":9382,"n_hyper":0,"km_hyper":0},{"year":1995,"n_active":12,"km_active":3618,"n_planned":0,"km_planned":0,"cum_n":44,"cum_km":13000,"n_hyper":0,"km_hyper":0},{"year":1996,"n_active":8,"km_active":3897,"n_planned":0,"km_planned":0,"cum_n":52,"cum_km":16897,"n_hyper":0,"km_hyper":0},{"year":1997,"n_active":20,"km_active":30914,"n_planned":0,"km_planned":0,"cum_n":72,"cum_km":47811,"n_hyper":0,"km_hyper":0},{"year":1998,"n_active":11,"km_active":19620,"n_planned":0,"km_planned":0,"cum_n":83,"cum_km":67431,"n_hyper":0,"km_hyper":0},{"year":1999,"n_active":30,"km_active":45103,"n_planned":0,"km_planned":0,"cum_n":113,"cum_km":112534,"n_hyper":0,"km_hyper":0},{"year":2000,"n_active":27,"km_active":104363,"n_planned":0,"km_planned":0,"cum_n":140,"cum_km":216897,"n_hyper":0,"km_hyper":0},{"year":2001,"n_active":17,"km_active":121657,"n_planned":0,"km_planned":0,"cum_n":157,"cum_km":338554,"n_hyper":0,"km_hyper":0},{"year":2002,"n_active":11,"km_active":94738,"n_planned":0,"km_planned":0,"cum_n":168,"cum_km":433292,"n_hyper":0,"km_hyper":0},{"year":2003,"n_active":8,"km_active":16343,"n_planned":0,"km_planned":0,"cum_n":176,"cum_km":449635,"n_hyper":0,"km_hyper":0},{"year":2004,"n_active":12,"km_active":12776,"n_planned":0,"km_planned":0,"cum_n":188,"cum_km":462411,"n_hyper":0,"km_hyper":0},{"year":2005,"n_active":15,"km_active":25044,"n_planned":0,"km_planned":0,"cum_n":203,"cum_km":487455,"n_hyper":0,"km_hyper":0},{"year":2006,"n_active":12,"km_active":22767,"n_planned":0,"km_planned":0,"cum_n":215,"cum_km":510222,"n_hyper":0,"km_hyper":0},{"year":2007,"n_active":15,"km_active":8136,"n_planned":0,"km_planned":0,"cum_n":230,"cum_km":518358,"n_hyper":0,"km_hyper":0},{"year":2008,"n_active":24,"km_active":44395,"n_planned":0,"km_planned":0,"cum_n":254,"cum_km":562753,"n_hyper":0,"km_hyper":0},{"year":2009,"n_active":17,"km_active":69155,"n_planned":0,"km_planned":0,"cum_n":271,"cum_km":631908,"n_hyper":0,"km_hyper":0},{"year":2010,"n_active":16,"km_active":61465,"n_planned":0,"km_planned":0,"cum_n":287,"cum_km":693373,"n_hyper":1,"km_hyper":9620},{"year":2011,"n_active":22,"km_active":32396,"n_planned":0,"km_planned":0,"cum_n":309,"cum_km":725769,"n_hyper":0,"km_hyper":0},{"year":2012,"n_active":21,"km_active":62027,"n_planned":0,"km_planned":0,"cum_n":330,"cum_km":787796,"n_hyper":0,"km_hyper":0},{"year":2013,"n_active":13,"km_active":18646,"n_planned":0,"km_planned":0,"cum_n":343,"cum_km":806442,"n_hyper":1,"km_hyper":8900},{"year":2014,"n_active":16,"km_active":30437,"n_planned":0,"km_planned":0,"cum_n":359,"cum_km":836879,"n_hyper":0,"km_hyper":0},{"year":2015,"n_active":14,"km_active":20453,"n_planned":0,"km_planned":0,"cum_n":373,"cum_km":857332,"n_hyper":0,"km_hyper":0},{"year":2016,"n_active":18,"km_active":66002,"n_planned":0,"km_planned":0,"cum_n":391,"cum_km":923334,"n_hyper":2,"km_hyper":22029},{"year":2017,"n_active":17,"km_active":74697,"n_planned":0,"km_planned":0,"cum_n":408,"cum_km":998031,"n_hyper":1,"km_hyper":10556},{"year":2018,"n_active":22,"km_active":74268,"n_planned":0,"km_planned":0,"cum_n":430,"cum_km":1072299,"n_hyper":4,"km_hyper":22613},{"year":2019,"n_active":31,"km_active":30697,"n_planned":0,"km_planned":0,"cum_n":461,"cum_km":1102996,"n_hyper":2,"km_hyper":9450},{"year":2020,"n_active":23,"km_active":68737,"n_planned":0,"km_planned":0,"cum_n":484,"cum_km":1171733,"n_hyper":4,"km_hyper":39764},{"year":2021,"n_active":18,"km_active":46960,"n_planned":0,"km_planned":0,"cum_n":502,"cum_km":1218693,"n_hyper":2,"km_hyper":9280},{"year":2022,"n_active":25,"km_active":93764,"n_planned":0,"km_planned":0,"cum_n":527,"cum_km":1312457,"n_hyper":4,"km_hyper":19959},{"year":2023,"n_active":32,"km_active":62384,"n_planned":0,"km_planned":0,"cum_n":559,"cum_km":1374841,"n_hyper":4,"km_hyper":37435},{"year":2024,"n_active":17,"km_active":78278,"n_planned":0,"km_planned":0,"cum_n":576,"cum_km":1453119,"n_hyper":1,"km_hyper":45000},{"year":2025,"n_active":17,"km_active":89995,"n_planned":0,"km_planned":0,"cum_n":593,"cum_km":1543114,"n_hyper":5,"km_hyper":74061},{"year":2026,"n_active":15,"km_active":49710,"n_planned":5,"km_planned":15236,"cum_n":608,"cum_km":1592824,"n_hyper":2,"km_hyper":20591},{"year":2027,"n_active":0,"km_active":0,"n_planned":49,"km_planned":181365,"cum_n":608,"cum_km":1592824,"n_hyper":12,"km_hyper":116582},{"year":2028,"n_active":0,"km_active":0,"n_planned":25,"km_planned":110531,"cum_n":608,"cum_km":1592824,"n_hyper":9,"km_hyper":70061},{"year":2029,"n_active":0,"km_active":0,"n_planned":18,"km_planned":105129,"cum_n":608,"cum_km":1592824,"n_hyper":5,"km_hyper":35274},{"year":2030,"n_active":0,"km_active":0,"n_planned":2,"km_planned":3134,"cum_n":608,"cum_km":1592824,"n_hyper":0,"km_hyper":0}],"peak_year":2023,"peak_n":32,"dotcom_n":74,"dotcom_km":271123,"bust_n":31,"n_by_year":{"1989":1,"1990":3,"1991":2,"1992":7,"1993":1,"1994":18,"1995":12,"1996":8,"1997":20,"1998":11,"1999":30,"2000":27,"2001":17,"2002":11,"2003":8,"2004":12,"2005":15,"2006":12,"2007":15,"2008":24,"2009":17,"2010":16,"2011":22,"2012":21,"2013":13,"2014":16,"2015":14,"2016":18,"2017":17,"2018":22,"2019":31,"2020":23,"2021":18,"2022":25,"2023":32,"2024":17,"2025":17,"2026":20,"2027":49,"2028":25,"2029":18,"2030":2},"km_peak_year":2001,"km_peak":121657,"km_2027_planned":181365,"n_2027_planned":49,"km_since_2016":735492,"km_since_2016_share":0.462,"n_since_2016":235,"km_before_2000_share":0.071,"km_dotcom_share":0.17,"median_km_by_era":{"1990s":230,"2000s":552,"2010s":548,"2020s":830,"planned":2569},"eras":[{"key":"1990s","label":"1989 to 1999","colour":"#3D3A8C","n":113,"km":112534,"share_n":0.158,"median_owners":1,"single_owner":0.637,"consortium5":0.071,"hyper":0,"hyper_km":0,"hyper_share_n":0.0,"hyper_share_km":0.0},{"key":"2000s","label":"2000 to 2009","colour":"#2F7FC1","n":158,"km":519374,"share_n":0.222,"median_owners":1.0,"single_owner":0.785,"consortium5":0.051,"hyper":0,"hyper_km":0,"hyper_share_n":0.0,"hyper_share_km":0.0},{"key":"2010s","label":"2010 to 2019","colour":"#139C8C","n":190,"km":471088,"share_n":0.266,"median_owners":1.0,"single_owner":0.747,"consortium5":0.105,"hyper":11,"hyper_km":83168,"hyper_share_n":0.058,"hyper_share_km":0.177},{"key":"2020s","label":"2020 to 2026","colour":"#E39B12","n":147,"km":489828,"share_n":0.206,"median_owners":1,"single_owner":0.721,"consortium5":0.061,"hyper":22,"hyper_km":246090,"hyper_share_n":0.15,"hyper_share_km":0.502},{"key":"planned","label":"Planned","colour":"#D9482B","n":105,"km":502770,"share_n":0.147,"median_owners":1,"single_owner":0.705,"consortium5":0.048,"hyper":29,"hyper_km":275428,"hyper_share_n":0.276,"hyper_share_km":0.548}],"era":{"1990s":{"key":"1990s","label":"1989 to 1999","colour":"#3D3A8C","n":113,"km":112534,"share_n":0.158,"median_owners":1,"single_owner":0.637,"consortium5":0.071,"hyper":0,"hyper_km":0,"hyper_share_n":0.0,"hyper_share_km":0.0},"2000s":{"key":"2000s","label":"2000 to 2009","colour":"#2F7FC1","n":158,"km":519374,"share_n":0.222,"median_owners":1.0,"single_owner":0.785,"consortium5":0.051,"hyper":0,"hyper_km":0,"hyper_share_n":0.0,"hyper_share_km":0.0},"2010s":{"key":"2010s","label":"2010 to 2019","colour":"#139C8C","n":190,"km":471088,"share_n":0.266,"median_owners":1.0,"single_owner":0.747,"consortium5":0.105,"hyper":11,"hyper_km":83168,"hyper_share_n":0.058,"hyper_share_km":0.177},"2020s":{"key":"2020s","label":"2020 to 2026","colour":"#E39B12","n":147,"km":489828,"share_n":0.206,"median_owners":1,"single_owner":0.721,"consortium5":0.061,"hyper":22,"hyper_km":246090,"hyper_share_n":0.15,"hyper_share_km":0.502},"planned":{"key":"planned","label":"Planned","colour":"#D9482B","n":105,"km":502770,"share_n":0.147,"median_owners":1,"single_owner":0.705,"consortium5":0.048,"hyper":29,"hyper_km":275428,"hyper_share_n":0.276,"hyper_share_km":0.548}},"hyper":{"n":62,"n_active":33,"n_planned":29,"km":604686,"km_active":329258,"km_planned":275428,"first":"Unity","first_year":2010,"sole":31,"sole_planned":22,"sole_active":9,"share_planned_n":0.276,"share_planned_km":0.548,"share_active_km":0.207,"share_active_n":0.054,"Google":{"n":37,"n_active":21,"n_planned":16,"km":329855,"sole":23},"Meta":{"n":21,"n_active":15,"n_planned":6,"km":262175,"sole":6},"Amazon":{"n":6,"n_active":1,"n_planned":5,"km":36907,"sole":2},"Microsoft":{"n":8,"n_active":3,"n_planned":5,"km":61633,"sole":0},"share_km_2020s":0.502,"share_km_1015":0.09,"share_km_1519":0.243,"share_km_pre2010":0.0,"n_2020s":22,"sole_list":["Junior","Curie","Dunant","Grace Hopper","Equiano","Topaz","Firmina","Anjana","TPU","Bulikula","Daraja","Honomoana","Nuvem","ORCA","Proa","Tabua","TalayLink","Alisios","Aurora","Bosun","Dhivaru","Fastnet","Halaihai","Taihei","Umoja","Petal","Sol","Sta’O’Nuk","Canoa","OlaLuz","Project Waterworth"]},"hyper_bins":[{"label":"1989 to 2009","n":271,"km":631908,"n_hyper":0,"km_hyper":0,"share_n":0.0,"share_km":0.0,"by":{"Google":0,"Meta":0,"Amazon":0,"Microsoft":0}},{"label":"2010 to 2014","n":88,"km":204971,"n_hyper":2,"km_hyper":18520,"share_n":0.023,"share_km":0.09,"by":{"Google":18520,"Meta":0,"Amazon":0,"Microsoft":0}},{"label":"2015 to 2019","n":102,"km":266117,"n_hyper":9,"km_hyper":64648,"share_n":0.088,"share_km":0.243,"by":{"Google":34025,"Meta":17005,"Amazon":0,"Microsoft":20223}},{"label":"2020 to 2026","n":147,"km":489828,"n_hyper":22,"km_hyper":246090,"share_n":0.15,"share_km":0.502,"by":{"Google":138390,"Meta":156312,"Amazon":14557,"Microsoft":6792}},{"label":"Planned","n":105,"km":502770,"n_hyper":29,"km_hyper":275428,"share_n":0.276,"share_km":0.548,"by":{"Google":138920,"Meta":88858,"Amazon":22350,"Microsoft":34618}}],"top_owners":[{"name":"Orange","n":27},{"name":"BT","n":22},{"name":"Google","n":21},{"name":"Sparkle","n":20},{"name":"Tata Communications","n":18},{"name":"Vodafone","n":17},{"name":"Telefonica","n":17},{"name":"AT&T","n":17},{"name":"Liberty Networks","n":17},{"name":"Telkom Indonesia","n":17},{"name":"Meta","n":15},{"name":"China Telecom","n":15}],"n_owners_distinct":480,"n_supplier_known":382,"top_suppliers":[{"name":"ASN","n":148,"share":0.387},{"name":"SubCom","n":75,"share":0.196},{"name":"NEC","n":55,"share":0.144},{"name":"HMN Tech","n":41,"share":0.107},{"name":"Prysmian","n":17,"share":0.045}],"big3_share":0.702,"consortia":{"max_owners":33,"max_owner_cable":"SAT-3/WASC"},"n_countries_active":185,"top_countries":[{"country":"United States","n":59,"all":90,"lps":169,"planned":23},{"country":"United Kingdom","n":51,"all":62,"lps":126,"planned":5},{"country":"Singapore","n":34,"all":34,"lps":8,"planned":13},{"country":"Italy","n":27,"all":32,"lps":55,"planned":5},{"country":"Japan","n":24,"all":43,"lps":68,"planned":9},{"country":"France","n":24,"all":30,"lps":27,"planned":5},{"country":"Indonesia","n":23,"all":61,"lps":146,"planned":7},{"country":"Denmark","n":22,"all":28,"lps":34,"planned":4},{"country":"Sweden","n":22,"all":24,"lps":28,"planned":4},{"country":"Malaysia","n":20,"all":24,"lps":21,"planned":9},{"country":"Egypt","n":17,"all":18,"lps":9,"planned":5},{"country":"United Arab Emirates","n":17,"all":18,"lps":7,"planned":3},{"country":"China","n":16,"all":21,"lps":24,"planned":2},{"country":"India","n":16,"all":18,"lps":26,"planned":5},{"country":"Saudi Arabia","n":15,"all":16,"lps":6,"planned":8}],"single":[{"country":"Anguilla","island":true,"cable":"Eastern Caribbean Fiber System (ECFS)","planned":0,"lon":-63.057,"lat":18.217},{"country":"Azerbaijan","island":false,"cable":"Trans-Caspian Fiber Optic Cable","planned":0,"lon":49.669,"lat":40.59},{"country":"Belize","island":false,"cable":"ARCOS","planned":0,"lon":-88.151,"lat":17.777},{"country":"British Indian Ocean Territory","island":true,"cable":"Oman Australia Cable (OAC)","planned":0,"lon":72.417,"lat":-7.333},{"country":"Christmas Island","island":true,"cable":"Australia-Singapore Cable (ASC)","planned":3,"lon":105.697,"lat":-10.437},{"country":"Cocos (Keeling) Islands","island":true,"cable":"Oman Australia Cable (OAC)","planned":0,"lon":96.832,"lat":-12.193},{"country":"Cook Islands","island":true,"cable":"Manatua","planned":0,"lon":-159.772,"lat":-20.025},{"country":"Gambia","island":false,"cable":"Africa Coast to Europe (ACE)","planned":0,"lon":-16.581,"lat":13.456},{"country":"Gibraltar","island":false,"cable":"Europe India Gateway (EIG)","planned":0,"lon":-5.348,"lat":36.156},{"country":"Greenland","island":true,"cable":"Greenland Connect","planned":0,"lon":-51.441,"lat":65.191},{"country":"Guinea","island":false,"cable":"Africa Coast to Europe (ACE)","planned":0,"lon":-13.704,"lat":9.514},{"country":"Guinea-Bissau","island":false,"cable":"Africa Coast to Europe (ACE)","planned":0,"lon":-15.791,"lat":11.774},{"country":"Kazakhstan","island":false,"cable":"Trans-Caspian Fiber Optic Cable","planned":0,"lon":51.2,"lat":43.65},{"country":"Liberia","island":false,"cable":"Africa Coast to Europe (ACE)","planned":0,"lon":-10.797,"lat":6.3},{"country":"Marshall Islands","island":true,"cable":"HANTRU1 Cable System","planned":0,"lon":169.402,"lat":8.14},{"country":"Montserrat","island":true,"cable":"Southern Caribbean Fiber","planned":0,"lon":-62.22,"lat":16.772},{"country":"Nauru","island":true,"cable":"East Micronesia Cable System (EMCS)","planned":0,"lon":166.921,"lat":0.547},{"country":"Nicaragua","island":false,"cable":"ARCOS","planned":0,"lon":-83.583,"lat":13.007},{"country":"Niue","island":true,"cable":"Manatua","planned":0,"lon":-169.917,"lat":-19.017},{"country":"Poland","island":false,"cable":"Baltica","planned":0,"lon":15.575,"lat":54.172},{"country":"Romania","island":false,"cable":"KAFOS","planned":0,"lon":28.583,"lat":43.817},{"country":"Saint Helena, Ascension and Tristan da Cunha","island":true,"cable":"Equiano","planned":0,"lon":-5.711,"lat":-15.919},{"country":"Saint Pierre and Miquelon","island":true,"cable":"St. Pierre and Miquelon Cable","planned":0,"lon":-56.265,"lat":46.93},{"country":"Sierra Leone","island":false,"cable":"Africa Coast to Europe (ACE)","planned":0,"lon":-13.238,"lat":8.485},{"country":"Solomon Islands","island":true,"cable":"Coral Sea Cable System (CS²)","planned":1,"lon":158.559,"lat":-8.289},{"country":"Tokelau","island":true,"cable":"Southern Cross NEXT","planned":0,"lon":-171.861,"lat":-9.039},{"country":"Turks and Caicos Islands","island":true,"cable":"ARCOS","planned":0,"lon":-72.12,"lat":21.851},{"country":"Vanuatu","island":true,"cable":"Interchange Cable Network 1 (ICN1)","planned":1,"lon":168.049,"lat":-17.213},{"country":"Wallis and Futuna","island":true,"cable":"Tui-Samoa","planned":0,"lon":-177.167,"lat":-13.789}],"n_single":29,"n_single_island":17,"n_single_island_planned":3,"n_single_land":12,"zero":[{"country":"Timor-Leste","island":false,"domestic":1,"planned":2},{"country":"Tuvalu","island":true,"domestic":0,"planned":0}],"n_two":27,"n_two_island":13,"n_islands":72,"n_islands_le2":31,"n_10plus":30,"tonga":[{"name":"Hawaiki","year":2018},{"name":"Tonga Cable","year":2013}],"tonga_cable_year":2013,"tonga_hawaiki_year":2018,"coastal_none":[{"country":"El Salvador","coast_deg":4.2},{"country":"Eritrea","coast_deg":12.9},{"country":"Montenegro","coast_deg":1.7},{"country":"North Korea","coast_deg":22.0},{"country":"Turkmenistan","coast_deg":19.0}],"top_lps":[{"name":"Batam, Indonesia","country":"Indonesia","n":14,"planned":8},{"name":"Tuas, Singapore","country":"Singapore","n":14,"planned":4},{"name":"Jeddah, Saudi Arabia","country":"Saudi Arabia","n":13,"planned":1},{"name":"Marseille, France","country":"France","n":12,"planned":4},{"name":"Mumbai, India","country":"India","n":12,"planned":4},{"name":"Fujairah, United Arab Emirates","country":"United Arab Emirates","n":12,"planned":0},{"name":"Shima, Japan","country":"Japan","n":10,"planned":3},{"name":"Changi North, Singapore","country":"Singapore","n":10,"planned":1},{"name":"Fortaleza, Brazil","country":"Brazil","n":9,"planned":1},{"name":"Helsinki, Finland","country":"Finland","n":9,"planned":1},{"name":"Piti, Guam","country":"Guam","n":8,"planned":3},{"name":"Songkhla, Thailand","country":"Thailand","n":8,"planned":2},{"name":"Zafarana, Egypt","country":"Egypt","n":8,"planned":1},{"name":"Bude, United Kingdom","country":"United Kingdom","n":8,"planned":0},{"name":"Lagos, Nigeria","country":"Nigeria","n":8,"planned":0}],"n_lp_single":1312,"lp_single_share":0.732,"n_lp_5plus":65,"n_lp_10plus":8,"n_lp_planned_only":136,"median_lp_per_cable":3.0,"max_lp_cable":"Connected Coast","max_lp":108,"zones":[{"key":"bab","name":"Bab el-Mandeb","kind":"strait","region":"Red Sea","note":"the strait between Yemen and Djibouti and Eritrea, the southern door of the Red Sea","n_active":12,"n_planned":4,"km_active":217777,"km_planned":48851,"n_landing":0,"n_since_2015":4,"first_year":1997,"n_hyper":1,"lon":43.574,"lat":12.651},{"key":"redsea","name":"Red Sea (at 20° N)","kind":"strait","region":"Red Sea","note":"a band across the Red Sea from Sudan to Saudi Arabia, south of Jeddah","n_active":13,"n_planned":4,"km_active":207940,"km_planned":48851,"n_landing":0,"n_since_2015":4,"first_year":1997,"n_hyper":1,"lon":38.833,"lat":19.996},{"key":"egypt","name":"Egypt crossing (Suez)","kind":"strait","region":"Red Sea","note":"cables that cross Egypt overland between the Mediterranean and the Red Sea","n_active":9,"n_planned":3,"km_active":170511,"km_planned":41475,"n_landing":0,"n_since_2015":5,"first_year":2005,"n_hyper":1,"lon":31.15,"lat":30.45},{"key":"hormuz","name":"Strait of Hormuz","kind":"strait","region":"Gulf","note":"between Oman's Musandam peninsula and Iran, the door to the Gulf","n_active":5,"n_planned":2,"km_active":86170,"km_planned":23631,"n_landing":0,"n_since_2015":2,"first_year":2006,"n_hyper":1,"lon":56.637,"lat":26.379},{"key":"malacca","name":"Strait of Malacca","kind":"strait","region":"Southeast Asia","note":"a band across the strait from Sumatra to Malaysia near Port Dickson","n_active":10,"n_planned":2,"km_active":88227,"km_planned":25300,"n_landing":0,"n_since_2015":6,"first_year":2002,"n_hyper":0,"lon":101.433,"lat":2.345},{"key":"luzon","name":"Luzon Strait","kind":"strait","region":"East Asia","note":"between Taiwan and Luzon, through the Batanes and Babuyan islands","n_active":10,"n_planned":2,"km_active":133110,"km_planned":17000,"n_landing":0,"n_since_2015":4,"first_year":2001,"n_hyper":4,"lon":121.1,"lat":20.59},{"key":"sicily","name":"Strait of Sicily","kind":"strait","region":"Mediterranean","note":"a band from western Sicily to Cap Bon in Tunisia, the waist of the Mediterranean","n_active":18,"n_planned":5,"km_active":189713,"km_planned":49092,"n_landing":0,"n_since_2015":7,"first_year":1998,"n_hyper":1,"lon":11.87,"lat":37.319},{"key":"gibraltar","name":"Strait of Gibraltar","kind":"strait","region":"Mediterranean","note":"between Tarifa in Spain and Morocco","n_active":3,"n_planned":0,"km_active":16729,"km_planned":0,"n_landing":0,"n_since_2015":1,"first_year":2007,"n_hyper":0,"lon":-5.6,"lat":35.966},{"key":"channel","name":"Western English Channel","kind":"strait","region":"Europe","note":"a band from Plymouth to Brittany, past which cables to the Channel and the North Sea run","n_active":5,"n_planned":0,"km_active":42463,"km_planned":0,"n_landing":0,"n_since_2015":0,"first_year":1994,"n_hyper":0,"lon":-4.1,"lat":49.52},{"key":"singapore","name":"Singapore","kind":"hub","region":"Southeast Asia","note":"within 35 km of Singapore","n_active":38,"n_planned":14,"km_active":298156,"km_planned":100168,"n_landing":34,"n_since_2015":18,"first_year":2001,"n_hyper":7,"lon":104.027,"lat":1.31},{"key":"hongkong","name":"Hong Kong","kind":"hub","region":"East Asia","note":"within 35 km of Hong Kong","n_active":14,"n_planned":2,"km_active":171067,"km_planned":10138,"n_landing":14,"n_since_2015":7,"first_year":2001,"n_hyper":3,"lon":114.404,"lat":22.286},{"key":"boso","name":"Chikura and the Boso peninsula, Japan","kind":"hub","region":"East Asia","note":"within 50 km of Chikura and Maruyama, south of Tokyo","n_active":20,"n_planned":4,"km_active":246994,"km_planned":37500,"n_landing":20,"n_since_2015":9,"first_year":1999,"n_hyper":8,"lon":140.263,"lat":34.999},{"key":"marseille","name":"Marseille","kind":"hub","region":"Mediterranean","note":"within 35 km of Marseille","n_active":12,"n_planned":4,"km_active":152234,"km_planned":45453,"n_landing":12,"n_since_2015":6,"first_year":2005,"n_hyper":2,"lon":5.154,"lat":43.262},{"key":"cornwall","name":"Cornwall (Bude and Porthcurno)","kind":"hub","region":"Europe","note":"Cornwall and its coasts, from Porthcurno to Bude","n_active":14,"n_planned":0,"km_active":137370,"km_planned":0,"n_landing":13,"n_since_2015":3,"first_year":1994,"n_hyper":3,"lon":-5.467,"lat":50.417},{"key":"hawaii","name":"Hawaii","kind":"hub","region":"Pacific","note":"the Hawaiian Islands and their waters","n_active":10,"n_planned":6,"km_active":98446,"km_planned":57479,"n_landing":10,"n_since_2015":2,"first_year":1994,"n_hyper":0,"lon":-158.512,"lat":20.602},{"key":"guam","name":"Guam","kind":"hub","region":"Pacific","note":"Guam and its waters","n_active":15,"n_planned":6,"km_active":156303,"km_planned":80474,"n_landing":15,"n_since_2015":8,"first_year":1997,"n_hyper":5,"lon":144.965,"lat":13.46},{"key":"fujairah","name":"Fujairah and the Gulf of Oman","kind":"hub","region":"Gulf","note":"within 40 km of Fujairah, UAE","n_active":15,"n_planned":1,"km_active":198502,"km_planned":10000,"n_landing":14,"n_since_2015":5,"first_year":1992,"n_hyper":1,"lon":56.545,"lat":25.165},{"key":"mumbai","name":"Mumbai","kind":"hub","region":"South Asia","note":"within 35 km of Mumbai","n_active":12,"n_planned":4,"km_active":181538,"km_planned":88851,"n_landing":12,"n_since_2015":5,"first_year":1997,"n_hyper":1,"lon":72.67,"lat":19.044},{"key":"fortaleza","name":"Fortaleza","kind":"hub","region":"Atlantic","note":"within 35 km of Fortaleza, Brazil","n_active":9,"n_planned":1,"km_active":126021,"km_planned":50000,"n_landing":9,"n_since_2015":5,"first_year":2000,"n_hyper":1,"lon":-38.39,"lat":-3.693},{"key":"florida","name":"South Florida","kind":"hub","region":"Atlantic","note":"the coast from Miami to Boca Raton and its waters","n_active":11,"n_planned":4,"km_active":102580,"km_planned":18435,"n_landing":11,"n_since_2015":3,"first_year":1994,"n_hyper":1,"lon":-79.895,"lat":26.214},{"key":"newyork","name":"New York and New Jersey","kind":"hub","region":"Atlantic","note":"Long Island and the New Jersey shore","n_active":13,"n_planned":3,"km_active":118213,"km_planned":19231,"n_landing":13,"n_since_2015":4,"first_year":1998,"n_hyper":2,"lon":-72.843,"lat":40.254}],"zone":{"bab":{"name":"Bab el-Mandeb","n_active":12,"n_planned":4,"km_active":217777,"km_planned":48851,"n_since_2015":4,"n_hyper":1,"first_year":1997},"redsea":{"name":"Red Sea (at 20° N)","n_active":13,"n_planned":4,"km_active":207940,"km_planned":48851,"n_since_2015":4,"n_hyper":1,"first_year":1997},"egypt":{"name":"Egypt crossing (Suez)","n_active":9,"n_planned":3,"km_active":170511,"km_planned":41475,"n_since_2015":5,"n_hyper":1,"first_year":2005},"hormuz":{"name":"Strait of Hormuz","n_active":5,"n_planned":2,"km_active":86170,"km_planned":23631,"n_since_2015":2,"n_hyper":1,"first_year":2006},"malacca":{"name":"Strait of Malacca","n_active":10,"n_planned":2,"km_active":88227,"km_planned":25300,"n_since_2015":6,"n_hyper":0,"first_year":2002},"luzon":{"name":"Luzon Strait","n_active":10,"n_planned":2,"km_active":133110,"km_planned":17000,"n_since_2015":4,"n_hyper":4,"first_year":2001},"sicily":{"name":"Strait of Sicily","n_active":18,"n_planned":5,"km_active":189713,"km_planned":49092,"n_since_2015":7,"n_hyper":1,"first_year":1998},"gibraltar":{"name":"Strait of Gibraltar","n_active":3,"n_planned":0,"km_active":16729,"km_planned":0,"n_since_2015":1,"n_hyper":0,"first_year":2007},"channel":{"name":"Western English Channel","n_active":5,"n_planned":0,"km_active":42463,"km_planned":0,"n_since_2015":0,"n_hyper":0,"first_year":1994},"singapore":{"name":"Singapore","n_active":38,"n_planned":14,"km_active":298156,"km_planned":100168,"n_since_2015":18,"n_hyper":7,"first_year":2001},"hongkong":{"name":"Hong Kong","n_active":14,"n_planned":2,"km_active":171067,"km_planned":10138,"n_since_2015":7,"n_hyper":3,"first_year":2001},"boso":{"name":"Chikura and the Boso peninsula, Japan","n_active":20,"n_planned":4,"km_active":246994,"km_planned":37500,"n_since_2015":9,"n_hyper":8,"first_year":1999},"marseille":{"name":"Marseille","n_active":12,"n_planned":4,"km_active":152234,"km_planned":45453,"n_since_2015":6,"n_hyper":2,"first_year":2005},"cornwall":{"name":"Cornwall (Bude and Porthcurno)","n_active":14,"n_planned":0,"km_active":137370,"km_planned":0,"n_since_2015":3,"n_hyper":3,"first_year":1994},"hawaii":{"name":"Hawaii","n_active":10,"n_planned":6,"km_active":98446,"km_planned":57479,"n_since_2015":2,"n_hyper":0,"first_year":1994},"guam":{"name":"Guam","n_active":15,"n_planned":6,"km_active":156303,"km_planned":80474,"n_since_2015":8,"n_hyper":5,"first_year":1997},"fujairah":{"name":"Fujairah and the Gulf of Oman","n_active":15,"n_planned":1,"km_active":198502,"km_planned":10000,"n_since_2015":5,"n_hyper":1,"first_year":1992},"mumbai":{"name":"Mumbai","n_active":12,"n_planned":4,"km_active":181538,"km_planned":88851,"n_since_2015":5,"n_hyper":1,"first_year":1997},"fortaleza":{"name":"Fortaleza","n_active":9,"n_planned":1,"km_active":126021,"km_planned":50000,"n_since_2015":5,"n_hyper":1,"first_year":2000},"florida":{"name":"South Florida","n_active":11,"n_planned":4,"km_active":102580,"km_planned":18435,"n_since_2015":3,"n_hyper":1,"first_year":1994},"newyork":{"name":"New York and New Jersey","n_active":13,"n_planned":3,"km_active":118213,"km_planned":19231,"n_since_2015":4,"n_hyper":2,"first_year":1998}},"straits_rank":["sicily","redsea","bab","luzon","malacca","egypt","hormuz","channel","gibraltar"],"hubs_rank":["singapore","boso","fujairah","guam","hongkong","cornwall","newyork","mumbai","marseille","florida","hawaii","fortaleza"],"red_sea_share_km":0.131,"bab_share_km":0.137,"bab_planned_names":["Africa-1","India Europe Xpress (IEX)","Raman","SeaMeWe-6"],"egypt_names":["SeaMeWe-4","IMEWE","Europe India Gateway (EIG)","Middle East North Africa (MENA) Cable System/Gulf Bridge International","SeaMeWe-5","Asia Africa Europe-1 (AAE-1)","PEACE Cable","Red2Med","2Africa"],"bab_names":["FEA","SeaMeWe-4","FALCON","SEACOM/Tata TGN-Eurasia","Eastern Africa Submarine System (EASSy)","IMEWE","Europe India Gateway (EIG)","Middle East North Africa (MENA) Cable System/Gulf Bridge International","SeaMeWe-5","Asia Africa Europe-1 (AAE-1)","PEACE Cable","2Africa"],"top_cells":[{"n":38,"lon":103.75,"lat":1.25,"near":"Sakra Island, Singapore","near_km":5},{"n":18,"lon":139.75,"lat":34.75,"near":"Chikura, Japan","near_km":31},{"n":15,"lon":56.25,"lat":25.25,"near":"Fujairah, United Arab Emirates","near_km":17},{"n":13,"lon":43.75,"lat":12.25,"near":"Djibouti City, Djibouti","near_km":98},{"n":13,"lon":39.25,"lat":21.25,"near":"Jeddah, Saudi Arabia","near_km":27},{"n":13,"lon":114.25,"lat":22.25,"near":"Chai Wan, China","near_km":2},{"n":13,"lon":-64.75,"lat":18.25,"near":"Little Saint James, Virgin Islands (U.S.)","near_km":10},{"n":12,"lon":151.25,"lat":-33.75,"near":"Oxford Falls, NSW, Australia","near_km":1},{"n":12,"lon":144.75,"lat":13.25,"near":"Agat, Guam","near_km":18},{"n":12,"lon":5.25,"lat":43.25,"near":"Marseille, France","near_km":11},{"n":12,"lon":72.75,"lat":19.25,"near":"Mumbai, India","near_km":23},{"n":12,"lon":33.25,"lat":28.25,"near":"Ras Ghareb, Egypt","near_km":21},{"n":12,"lon":12.75,"lat":35.75,"near":"Linosa, Italy","near_km":16},{"n":10,"lon":136.75,"lat":34.25,"near":"Shima, Japan","near_km":15},{"n":10,"lon":29.75,"lat":31.25,"near":"Alexandria, Egypt","near_km":15},{"n":10,"lon":24.75,"lat":60.25,"near":"Espoo, Finland","near_km":7},{"n":9,"lon":-158.25,"lat":21.25,"near":"Ko Olina, HI, United States","near_km":17},{"n":9,"lon":106.75,"lat":-5.75,"near":"Pantai Mutiara, Indonesia","near_km":40},{"n":9,"lon":-80.25,"lat":26.25,"near":"Boca Raton, FL, United States","near_km":20},{"n":9,"lon":41.75,"lat":15.25,"near":"Al Hudaydah, Yemen","near_km":139}],"grid_res":0.5,"grid_max":38,"hubs50":[{"name":"Changi North, Singapore","country":"Singapore","n":40,"stations":13},{"name":"Miura, Japan","country":"Japan","n":22,"stations":8},{"name":"Bintan, Indonesia","country":"Indonesia","n":18,"stations":6},{"name":"Piti, Guam","country":"Guam","n":15,"stations":5},{"name":"Tanshui, Taiwan","country":"Taiwan","n":15,"stations":4},{"name":"La Seyne, France","country":"France","n":15,"stations":8},{"name":"Fujairah, United Arab Emirates","country":"United Arab Emirates","n":14,"stations":2},{"name":"Chung Hom Kok, China","country":"China","n":14,"stations":7},{"name":"Jeddah, Saudi Arabia","country":"Saudi Arabia","n":13,"stations":1},{"name":"Jakarta, Indonesia","country":"Indonesia","n":13,"stations":4},{"name":"Carcavelos, Portugal","country":"Portugal","n":13,"stations":3},{"name":"Mumbai, India","country":"India","n":12,"stations":1},{"name":"San Juan, PR, United States","country":"United States","n":12,"stations":5},{"name":"Sydney, NSW, Australia","country":"Australia","n":12,"stations":7},{"name":"Alta Vista, Canary Islands, Spain","country":"Spain","n":12,"stations":10}],"n_straits":9,"n_hubs":12,"coastal_none_list":"El Salvador, Eritrea, Montenegro, North Korea and Turkmenistan","retrieved":"2026","source":"TeleGeography, Submarine Cable Map (submarinecablemap.com), CC BY-NC-SA 3.0"};
+const fmt = n => n == null || n === "" ? "n/a" : Math.round(n).toLocaleString("en-GB");
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const tip = document.getElementById("tip");
+function showTip(h, x, y) { tip.innerHTML = h; tip.style.display = "block"; const w = tip.offsetWidth; x = Math.max(w / 2 + 8, Math.min(innerWidth - w / 2 - 8, x)); tip.style.left = x + scrollX + "px"; tip.style.top = y + scrollY + "px"; }
+function hideTip() { tip.style.display = "none"; }
+document.addEventListener("click", hideTip);
+const NS = "http://www.w3.org/2000/svg";
+const el = (t, a, p) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; };
+const lbl = (svg, x, y, s, cls = "lab", anchor = "start") => { const t = el("text", { x, y, class: cls, "text-anchor": anchor }, svg); t.textContent = s; return t; };
+const redraws = [];
+function resp(box, render) { let last = 0; const go = force => { const w = Math.max(280, Math.round(box.clientWidth)); if (!force && Math.abs(w - last) < 4) return; last = w; box.innerHTML = ""; render(w, w < 560); }; new ResizeObserver(() => go()).observe(box); go(); redraws.push(() => go(true)); }
+const isDark = () => { const r = document.documentElement; return r.dataset.theme ? r.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches; };
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const small = () => innerWidth < 900;
+const ERA = {}; R.eras.forEach(e => ERA[e.key] = e);
+const ERAK = R.eras.map(e => e.key);
+const eraCol = k => isDark() && k === "1990s" ? "#8C87E0" : ERA[k].colour;
+const HYN = { G: "Google", M: "Meta", A: "Amazon", "M2": "Microsoft" };
+
+/* hero mark: a cable cross-section, rings in the decade colours */
+(function () {
+  const g = document.getElementById("heroMark"); const cx = 60, cy = 70;
+  const ring = [["planned", 54], ["2020s", 45], ["2010s", 36], ["2000s", 27], ["1990s", 18]];
+  ring.forEach(([k, r]) => el("circle", { cx, cy, r, fill: ERA[k].colour }, g));
+  el("circle", { cx, cy, r: 10, fill: "#F5F4EF" }, g);
+  for (let i = 0; i < 6; i++) { const a = i * Math.PI / 3; el("circle", { cx: cx + 5 * Math.cos(a), cy: cy + 5 * Math.sin(a), r: 2.1, fill: "#13222E" }, g); }
+  el("circle", { cx, cy, r: 2.1, fill: "#13222E" }, g);
+})();
+
+/* ---------- timeline chart ---------- */
+let tlMode = "n";
+document.querySelectorAll("#tlMode .btn").forEach(b => b.onclick = () => { tlMode = b.dataset.m; document.querySelectorAll("#tlMode .btn").forEach(x => x.setAttribute("aria-pressed", x === b)); redraws.forEach(f => f()); });
+resp(document.getElementById("tlChart"), (W, sm) => {
+  const box = document.getElementById("tlChart"); const T = R.timeline; const H = sm ? 300 : 340, m = { l: sm ? 40 : 52, r: 10, t: 34, b: 34 };
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}` }, box);
+  const key = tlMode === "n" ? ["n_active", "n_planned"] : ["km_active", "km_planned"];
+  const max = Math.max(...T.map(t => t[key[0]] + t[key[1]]));
+  const step = tlMode === "n" ? 10 : 25000; const top = Math.ceil(max / step) * step;
+  const x = i => m.l + (W - m.l - m.r) * i / T.length, bw = (W - m.l - m.r) / T.length, y = v => H - m.b - (H - m.t - m.b) * v / top;
+  for (let v = 0; v <= top; v += step) { el("line", { x1: m.l, x2: W - m.r, y1: y(v), y2: y(v), stroke: css("--rule") }, svg); lbl(svg, m.l - 6, y(v) + 4, tlMode === "n" ? v : (v / 1000) + "k", "lab s m", "end"); }
+  // era bands
+  const band = (a, b, txt) => { const i0 = T.findIndex(t => t.year === a), i1 = T.findIndex(t => t.year === b); el("rect", { x: x(i0) - 1, y: m.t - 22, width: x(i1 + 1) - x(i0) + 2, height: H - m.b - m.t + 22, fill: css("--panel"), opacity: .7 }, svg); lbl(svg, (x(i0) + x(i1 + 1)) / 2, m.t - 9, txt, "lab s b", "middle"); };
+  band(1999, 2001, sm ? "dot-com" : "dot-com boom");
+  band(2016, 2026, sm ? "cloud era" : "the cloud companies arrive");
+  for (let v = 0; v <= top; v += step) el("line", { x1: m.l, x2: W - m.r, y1: y(v), y2: y(v), stroke: css("--rule"), "stroke-opacity": .6 }, svg);
+  T.forEach((t, i) => {
+    const a = t[key[0]], p = t[key[1]], era = R.eras.find(e => e.key !== "planned" && t.year >= +e.label.slice(0, 4) && t.year <= (e.key === "2020s" ? 2030 : +e.label.slice(-4)));
+    const g = el("g", {}, svg);
+    if (a) el("rect", { x: x(i) + .8, y: y(a), width: Math.max(1, bw - 1.6), height: y(0) - y(a), fill: era ? eraCol(era.key) : "#999" }, g);
+    if (p) el("rect", { x: x(i) + .8, y: y(a + p), width: Math.max(1, bw - 1.6), height: y(a) - y(a + p), fill: ERA.planned.colour, opacity: .9 }, g);
+    const hit = el("rect", { x: x(i), y: m.t - 20, width: bw, height: H - m.t - m.b + 20, fill: "transparent" }, g);
+    const h = `<b>${t.year}</b><br>${t.n_active ? fmt(t.n_active) + " in service, " + fmt(t.km_active) + " km" : "none in service"}${t.n_planned ? "<br>" + fmt(t.n_planned) + " planned, " + fmt(t.km_planned) + " km" : ""}${t.n_hyper ? "<br>" + t.n_hyper + " part-owned by a cloud company" : ""}`;
+    hit.addEventListener("mousemove", e => showTip(h, e.clientX, e.clientY - 4)); hit.addEventListener("mouseleave", hideTip);
+    if (t.year % (sm ? 10 : 5) === 0) lbl(svg, x(i) + bw / 2, H - m.b + 16, t.year, "lab s m", "middle");
+  });
+  el("line", { x1: m.l, x2: W - m.r, y1: y(0), y2: y(0), stroke: css("--fg") }, svg);
+  lbl(svg, m.l, 12, tlMode === "n" ? "cables" : "kilometres", "lab s m");
+});
+
+/* ---------- hyperscaler chart ---------- */
+resp(document.getElementById("hyChart"), (W, sm) => {
+  const box = document.getElementById("hyChart"); const B = R.hyper_bins; const rh = 34, m = { l: sm ? 104 : 130, r: 52, t: 6 };
+  const H = m.t + B.length * (rh + 10) + 26; const svg = el("svg", { viewBox: `0 0 ${W} ${H}` }, box);
+  const x = v => m.l + (W - m.l - m.r) * v;
+  [0, .25, .5, .75, 1].forEach(v => { el("line", { x1: x(v), x2: x(v), y1: m.t, y2: H - 22, stroke: css("--rule") }, svg); lbl(svg, x(v), H - 6, Math.round(v * 100) + "%", "lab s m", "middle"); });
+  B.forEach((b, i) => {
+    const y0 = m.t + i * (rh + 10);
+    el("rect", { x: x(0), y: y0, width: x(1) - x(0), height: rh, fill: css("--panel") }, svg);
+    el("rect", { x: x(0), y: y0, width: x(b.share_km) - x(0), height: rh, fill: i === B.length - 1 ? ERA.planned.colour : css("--cool") }, svg);
+    lbl(svg, m.l - 8, y0 + rh / 2 + 4, b.label, "lab b", "end");
+    lbl(svg, x(b.share_km) + 6, y0 + rh / 2 + 4, Math.round(b.share_km * 100) + "%", "lab b");
+    const hit = el("rect", { x: 0, y: y0, width: W, height: rh, fill: "transparent" }, svg);
+    const h = `<b>${b.label}</b><br>${fmt(b.km_hyper)} of ${fmt(b.km)} km part-owned (${b.n_hyper} of ${b.n} cables)<br>` + Object.entries(b.by).filter(([k, v]) => v).map(([k, v]) => `${k}: ${fmt(v)} km`).join("<br>");
+    hit.addEventListener("mousemove", e => showTip(h, e.clientX, e.clientY - 4)); hit.addEventListener("mouseleave", hideTip);
+  });
+});
+
+/* ---------- map ---------- */
+const ESRI = "https://server.arcgisonline.com/ArcGIS/rest/services/";
+const ESRI_ATT = 'Tiles &copy; Esri | Cables &copy; <a href="https://www.submarinecablemap.com/">TeleGeography</a> CC BY-NC-SA 3.0';
+const LYDEF = { base: "plain", hills: false, hillK: 45, labels: true, labelK: 70, bounds: false, cables: true, lps: true, zones: true, grid: false, width: 2 };
+const LY = { ...LYDEF };
+try { Object.assign(LY, JSON.parse(localStorage.getItem("cables_layers") || "{}")); } catch (e) {}
+const saveLY = () => { try { localStorage.setItem("cables_layers", JSON.stringify(LY)); } catch (e) {} };
+const map = L.map("map", { minZoom: 1, maxZoom: 11, worldCopyJump: false, maxBounds: [[-80, -380], [85, 380]], zoomSnap: .5 }).setView([20, small() ? 60 : 40], small() ? 1 : 2);
+["hills:250", "grid:380", "zones:400", "labels:430", "cab:450", "lps:600", "names:620"].forEach(s => { const [n, z] = s.split(":"); map.createPane(n); map.getPane(n).style.zIndex = z; });
+["hills", "labels", "names", "grid"].forEach(n => map.getPane(n).style.pointerEvents = "none");
+const canvas = L.canvas({ pane: "cab", padding: .3, tolerance: 6 });
+const lpCanvas = L.canvas({ pane: "lps", padding: .3, tolerance: 3 });
+let base = null, hills = null, labels = null, bounds = null;
+function setTiles() {
+  [base, labels, hills, bounds].forEach(l => { if (l) map.removeLayer(l); });
+  const t = isDark() ? "Dark" : "Light";
+  const url = LY.base === "relief" ? ESRI + "World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}" : LY.base === "ocean" ? ESRI + "Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}" : LY.base === "satellite" ? ESRI + "World_Imagery/MapServer/tile/{z}/{y}/{x}" : `${ESRI}Canvas/World_${t}_Gray_Base/MapServer/tile/{z}/{y}/{x}`;
+  base = L.tileLayer(url, { maxZoom: 16, maxNativeZoom: LY.base === "relief" || LY.base === "ocean" ? 10 : 16, attribution: ESRI_ATT }).addTo(map);
+  hills = L.tileLayer(ESRI + "Elevation/World_Hillshade/MapServer/tile/{z}/{y}/{x}", { maxZoom: 16, maxNativeZoom: 16, pane: "hills" });
+  labels = L.tileLayer(`${ESRI}Canvas/World_${t}_Gray_Reference/MapServer/tile/{z}/{y}/{x}`, { maxZoom: 16, pane: "labels" });
+  bounds = L.tileLayer(ESRI + "Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}", { maxZoom: 16, pane: "labels" });
+  applyLayers();
+}
+function applyLayers() {
+  if (!base) return;
+  if (LY.hills) { hills.addTo(map); hills.setOpacity(Math.min(1, .15 + LY.hillK / 120)); } else map.removeLayer(hills);
+  if (LY.labels) { labels.addTo(map); labels.setOpacity(LY.labelK / 100); } else map.removeLayer(labels);
+  if (LY.bounds) bounds.addTo(map); else map.removeLayer(bounds);
+  if (cabLayer) { if (LY.cables) cabLayer.addTo(map); else map.removeLayer(cabLayer); }
+  if (lpLayer) { if (LY.lps) lpLayer.addTo(map); else map.removeLayer(lpLayer); }
+  if (zoneLayer) { if (LY.zones) { zoneLayer.addTo(map); if (map.getZoom() >= 3.5) zoneLabels.addTo(map); else map.removeLayer(zoneLabels); } else { map.removeLayer(zoneLayer); map.removeLayer(zoneLabels); } }
+  if (gridLayer) { if (LY.grid) gridLayer.addTo(map); else map.removeLayer(gridLayer); } else if (LY.grid) loadGrid();
+  restyle(); legend();
+}
+(function layerControl() {
+  const Ctl = L.Control.extend({ options: { position: "topright" }, onAdd() {
+    const d = L.DomUtil.create("div"); L.DomEvent.disableClickPropagation(d); L.DomEvent.disableScrollPropagation(d);
+    d.innerHTML = `<button class="lyrBtn" aria-expanded="false">Map layers</button>
+<div class="lyrPanel" hidden>
+ <div class="row"><label style="font-weight:600">Base map</label><div class="sub"><select data-k="base" aria-label="Base map"><option value="plain">Plain grey</option><option value="ocean">Ocean floor</option><option value="relief">Shaded relief</option><option value="satellite">Satellite</option></select></div></div>
+ <div class="row"><label><input type="checkbox" data-k="hills"> Hill shading</label><div class="sub"><span>strength</span><input type="range" data-k="hillK" min="10" max="100" step="5" aria-label="Hill shading strength"></div></div>
+ <div class="row"><label><input type="checkbox" data-k="labels"> Place names</label><div class="sub"><span>strength</span><input type="range" data-k="labelK" min="20" max="100" step="5" aria-label="Place name strength"></div></div>
+ <div class="row"><label><input type="checkbox" data-k="bounds"> Borders and more places</label></div>
+ <div class="hd">Cables</div>
+ <div class="row"><label><input type="checkbox" data-k="cables"> Cable routes</label><div class="sub"><span>width</span><input type="range" data-k="width" min="1" max="4" step=".5" aria-label="Cable width"></div></div>
+ <div class="row"><label><input type="checkbox" data-k="lps"> Landing points</label></div>
+ <div class="row"><label><input type="checkbox" data-k="zones"> Choke points</label></div>
+ <div class="row"><label><input type="checkbox" data-k="grid"> Cable density (half-degree cells)</label></div>
+ <button class="reset">Reset layers</button>
+</div>`;
+    return d; } });
+  map.addControl(new Ctl());
+  const box = map.getContainer(), btn = box.querySelector(".lyrBtn"), pan = box.querySelector(".lyrPanel");
+  btn.onclick = () => { const o = pan.hidden; pan.hidden = !o; btn.setAttribute("aria-expanded", o); };
+  const sync = () => pan.querySelectorAll("[data-k]").forEach(i => { const k = i.dataset.k; if (i.type === "checkbox") i.checked = LY[k]; else i.value = LY[k]; });
+  pan.querySelectorAll("[data-k]").forEach(i => i.addEventListener(i.type === "range" ? "input" : "change", () => {
+    const k = i.dataset.k; LY[k] = i.type === "checkbox" ? i.checked : (k === "base" ? i.value : +i.value);
+    if (k === "hillK") LY.hills = true; if (k === "labelK") LY.labels = true; if (k === "width") LY.cables = true;
+    sync(); saveLY(); if (k === "base") setTiles(); else applyLayers();
+  }));
+  pan.querySelector(".reset").onclick = () => { Object.assign(LY, LYDEF); saveLY(); sync(); setTiles(); };
+  window.syncLayers = sync; sync();
+})();
+const Note = L.Control.extend({ options: { position: "bottomleft" }, onAdd() { const d = L.DomUtil.create("div", "mapnote"); d.id = "mapnote"; L.DomEvent.disableClickPropagation(d); return d; } });
+map.addControl(new Note());
+L.control.scale({ imperial: false, position: "bottomright" }).addTo(map);
+
+/* ---------- state and data ---------- */
+const S = { year: 2031, eras: new Set(ERAK), sel: null, selType: null };
+let SITE = null, CAB = [], cabLayer = null, lpLayer = null, zoneLayer = null, zoneLabels = L.layerGroup(), gridLayer = null;
+const byId = {};
+const visible = c => S.eras.has(c.era) && (c.year == null ? S.year > 2030 : c.year <= S.year);
+function cabStyle(c) {
+  const sel = S.sel && ((S.selType === "cable" && S.sel === c.id) || (S.selType === "lp" && c.lps.includes(S.sel)) || (S.selType === "country" && c.cty.has(S.sel)) || (S.selType === "zone" && S.zoneSet.has(c.id)));
+  const dim = S.sel && !sel;
+  const w = LY.width * (sel ? 1.9 : 1);
+  if (!visible(c)) return { opacity: 0, weight: 0 };
+  return { color: eraCol(c.era), weight: LY.grid && !sel ? Math.min(w, 1.2) : w, opacity: dim ? .14 : LY.grid && !sel ? .3 : (c.planned ? .95 : .88), dashArray: c.planned ? `${4 * LY.width},${3 * LY.width}` : null, lineCap: "round" };
+}
+function restyle() {
+  if (!cabLayer) return;
+  CAB.forEach(c => c.layers.forEach(l => l.setStyle(cabStyle(c))));
+  if (S.sel) CAB.forEach(c => { if (cabStyle(c).opacity > .5 && S.sel) c.layers.forEach(l => l.bringToFront()); });
+  restyleLps(); status();
+}
+function restyleLps() {
+  if (!lpLayer) return; const k = map.getZoom() < 3 ? .6 : map.getZoom() < 5 ? .8 : 1, fg = css("--fg"), card = css("--card");
+  LPL.forEach(o => { const n = lpCount(o.i); const on = n > 0 && (!LY.grid || (S.selType === "lp" && S.sel === o.i)); o.m.setStyle({ radius: on ? k * Math.min(9, 2.2 + Math.sqrt(n) * 1.25) : 0, opacity: on ? 1 : 0, fillOpacity: on ? .95 : 0, weight: k < 1 ? .9 : 1.2, color: fg, fillColor: S.selType === "lp" && S.sel === o.i ? ERA.planned.colour : card }); });
+}
+const lpCount = i => SITE.lpCab[i].filter(c => visible(c)).length;
+function status() {
+  const vis = CAB.filter(c => visible(c)); const act = vis.filter(c => !c.planned), pl = vis.filter(c => c.planned);
+  const km = act.reduce((s, c) => s + c.km, 0);
+  const lab = S.year > 2030 ? "All" : S.year;
+  document.getElementById("yr").textContent = lab;
+  const t = S.year > 2030 ? `${fmt(act.length)} cables in service, ${fmt(km)} km, and ${fmt(pl.length)} planned` : (S.year <= 2026 ? `By ${S.year}: ${fmt(act.length)} of today's cables in service, ${fmt(km)} km` : `By ${S.year}: ${fmt(act.length)} in service and ${fmt(pl.length)} planned`);
+  document.getElementById("yrs").textContent = t + (S.eras.size < ERAK.length ? " (some decades hidden)" : "");
+  document.getElementById("mapnote").innerHTML = `<b>${lab === "All" ? "Today and planned" : lab}</b>${t}`;
+}
+function legend() {
+  const d = document.getElementById("legend");
+  d.innerHTML = R.eras.map(e => `<span><i style="background:${eraCol(e.key)}" class="${e.key === "planned" ? "dash" : ""}"></i>${esc(e.key === "planned" ? "Planned (dashed)" : "Ready " + e.label)}</span>`).join("") +
+    (LY.lps ? `<span><i class="pt"></i>Landing point (size: cables)</span>` : "") + (LY.zones ? `<span><i class="zn"></i>Choke point</span>` : "") + (LY.grid ? `<span><i class="gr"></i>Cables per half-degree cell (3 to ${R.grid_max})</span>` : "");
+}
+// era buttons
+(function () { const row = document.getElementById("eraRow");
+  R.eras.forEach(e => { const b = document.createElement("button"); b.className = "btn"; b.setAttribute("aria-pressed", "true"); b.innerHTML = `<span class="dot" style="background:${e.colour}"></span>${e.key === "planned" ? "Planned" : e.label}`;
+    b.onclick = () => { if (S.eras.has(e.key) && S.eras.size === ERAK.length) { S.eras = new Set([e.key]); } else if (S.eras.has(e.key)) { S.eras.delete(e.key); if (!S.eras.size) S.eras = new Set(ERAK); } else S.eras.add(e.key);
+      row.querySelectorAll(".btn").forEach((x, i) => x.setAttribute("aria-pressed", S.eras.has(ERAK[i]))); restyle(); };
+    row.appendChild(b); });
+  const all = document.createElement("button"); all.className = "btn"; all.textContent = "All"; all.onclick = () => { S.eras = new Set(ERAK); row.querySelectorAll(".btn").forEach((x, i) => i < ERAK.length && x.setAttribute("aria-pressed", "true")); restyle(); }; row.appendChild(all);
+})();
+// time slider and play
+const slider = document.getElementById("slider"); let timer = null;
+slider.addEventListener("input", () => { S.year = +slider.value; restyle(); });
+document.getElementById("play").onclick = () => {
+  const b = document.getElementById("play");
+  if (timer) { clearInterval(timer); timer = null; b.textContent = "▶ Play"; return; }
+  if (S.year > 2030) S.year = 1988; b.textContent = "❚❚ Pause";
+  timer = setInterval(() => { S.year++; slider.value = S.year; restyle(); if (S.year > 2030) { clearInterval(timer); timer = null; b.textContent = "▶ Play"; } }, 420);
+};
+
+const shift = (co, dx) => co.map(l => l.map(([x, y]) => [y, x + dx]));
+fetch("data/site.json").then(r => r.json()).then(s => { SITE = s; return fetch("data/cables.geojson"); }).then(r => r.json()).then(G => {
+  const lps = SITE.lps;
+  SITE.lpCab = lps.map(() => []);
+  SITE.cables.forEach(a => {
+    const c = { id: a[0], name: a[1], year: a[2], planned: !!a[3], era: a[4], km: a[5], kmRoute: !!a[6], rfs: a[7], owners: a[8], hyp: a[9], sup: a[10], lps: a[11], url: a[12], layers: [] };
+    c.cty = new Set(c.lps.map(i => lps[i][1])); byId[c.id] = c; CAB.push(c); c.lps.forEach(i => SITE.lpCab[i].push(c));
+  });
+  cabLayer = L.layerGroup();
+  G.features.forEach(f => { const c = byId[f.properties.id]; [-360, 0, 360].forEach(dx => {
+    const l = L.polyline(shift(f.geometry.coordinates, dx), { renderer: canvas, interactive: true });
+    l.on("click", e => { L.DomEvent.stopPropagation(e); pick("cable", c.id); });
+    l.on("mouseover", e => { const r = map.getContainer().getBoundingClientRect(); showTip(`<b>${esc(c.name)}</b><br>${c.planned ? "Planned" + (c.year ? ", expected " + c.year : "") : "Ready for service " + esc(c.rfs || c.year)} · ${fmt(c.km)} km`, r.left + e.containerPoint.x, r.top + e.containerPoint.y); });
+    l.on("mouseout", hideTip);
+    c.layers.push(l); cabLayer.addLayer(l); }); });
+  lpLayer = L.layerGroup(); window.LPL = [];
+  lps.forEach((p, i) => [-360, 0, 360].forEach(dx => {
+    const m = L.circleMarker([p[3], p[2] + dx], { renderer: lpCanvas, radius: 3 });
+    m.on("click", e => { L.DomEvent.stopPropagation(e); pick("lp", i); });
+    m.on("mouseover", e => { const r = map.getContainer().getBoundingClientRect(); showTip(`<b>${esc(p[0])}</b><br>${lpCount(i)} cable${lpCount(i) === 1 ? "" : "s"} shown`, r.left + e.containerPoint.x, r.top + e.containerPoint.y); });
+    m.on("mouseout", hideTip); LPL.push({ i, m }); lpLayer.addLayer(m); }));
+  // choke points
+  return fetch("data/chokepoints.geojson");
+}).then(r => r.json()).then(Z => {
+  zoneLayer = L.geoJSON(Z, { pane: "zones", style: f => ({ color: ERA.planned.colour, weight: 1.6, dashArray: f.properties.kind === "hub" ? "3,3" : null, fillColor: ERA.planned.colour, fillOpacity: .08 }),
+    onEachFeature: (f, l) => l.on("click", e => { L.DomEvent.stopPropagation(e); pick("zone", f.properties.key); }) });
+  SITE.zones.forEach(z => L.marker([z[8], z[7]], { pane: "names", interactive: false, icon: L.divIcon({ className: "zoneL", html: `${esc(z[1].replace(/ \(.*\)/, ""))}<small>${z[3]} cables</small>`, iconSize: [150, 26], iconAnchor: [75, -6] }) }).addTo(zoneLabels));
+  setTiles(); intro(); buildTables(); buildSearch(); focusRow();
+}).catch(e => { console.error(e); document.getElementById("side").textContent = "The map data could not be loaded."; });
+function loadGrid() {
+  gridLayer = L.layerGroup(); const M = 85.0511;
+  [-360, 0, 360].forEach(dx => L.imageOverlay("data/grid_density.png", [[-M, -180 + dx], [M, 180 + dx]], { pane: "grid", opacity: .9, className: "gridImg" }).addTo(gridLayer));
+  if (LY.grid) gridLayer.addTo(map);
+}
+
+/* ---------- side panel ---------- */
+const side = document.getElementById("side");
+const tgLink = id => `<a href="https://www.submarinecablemap.com/submarine-cable/${encodeURIComponent(id)}" target="_blank" rel="noopener">TeleGeography page</a>`;
+function intro() {
+  S.sel = null; S.selType = null; restyle();
+  side.innerHTML = `<h4>The network</h4><div class="big">${fmt(R.n_active)} cables</div><p class="sub">in service, ${fmt(R.km_active)} km, and ${fmt(R.n_planned)} planned (${fmt(R.km_planned)} km)</p>
+<p>Click a cable, a landing point or a choke point. Drag the slider or press Play to watch the network grow, year by year, from ${R.first_year}.</p>
+<h4>Longest cables</h4><table>${R.longest.slice(0, 6).map(c => `<tr><td><span class="go" data-c="${esc(CAB.find(x => x.name === c.name).id)}">${esc(c.name)}</span><br><small>${c.planned ? "planned" : c.year}, ${c.n_countries} countries</small></td><td class="num">${fmt(c.km)} km</td></tr>`).join("")}</table>
+<h4>Busiest landing points</h4><table>${R.top_lps.slice(0, 6).map(p => `<tr><td><span class="go" data-l="${esc(p.name)}">${esc(p.name)}</span></td><td class="num">${p.n}</td></tr>`).join("")}</table>`;
+  wire();
+}
+function wire() {
+  side.querySelectorAll("[data-c]").forEach(a => a.onclick = () => pick("cable", a.dataset.c, true));
+  side.querySelectorAll("[data-l]").forEach(a => a.onclick = () => pick("lp", SITE.lps.findIndex(p => p[0] === a.dataset.l), true));
+  side.querySelectorAll("[data-k]").forEach(a => a.onclick = () => pick("country", a.dataset.k, true));
+  side.querySelectorAll(".back").forEach(a => a.onclick = intro);
+}
+function fitTo(latlngs) {
+  if (!latlngs.length) return; const b = L.latLngBounds(latlngs);
+  if (b.getNorth() - b.getSouth() < .5 && b.getEast() - b.getWest() < .5) { map.flyTo(b.getCenter(), 7, { duration: .8 }); return; }
+  map.flyToBounds(b.pad(.15), { maxZoom: 7, duration: .8 });
+}
+function pick(type, key, fly) {
+  S.sel = key; S.selType = type;
+  if (type === "zone") { const z0 = SITE.zones.find(z => z[0] === key); S.zoneSet = new Set([...z0[9], ...z0[10]]); }
+  restyle();
+  const lps = SITE.lps;
+  let h = `<button class="back">← All cables</button>`;
+  if (type === "cable") {
+    const c = byId[key]; const hy = c.hyp ? [...c.hyp].map(k => k).join("") : "";
+    const owners = c.owners ? c.owners.split("; ").map(o => /^(Google|Meta|Microsoft|Amazon Web Services)$/.test(o) ? `<b>${esc(o)}</b>` : esc(o)).join(", ") : "not listed";
+    h += `<h4>Cable</h4><div class="big">${esc(c.name)}</div><p class="sub"><span class="chip" style="background:${eraCol(c.era)}">${c.planned ? "Planned" : "Ready " + ERA[c.era].label}</span></p>
+<table><tr><td>Ready for service</td><td class="num">${esc(c.rfs || "not given")}${c.planned ? " (expected)" : ""}</td></tr><tr><td>Length</td><td class="num">${fmt(c.km)} km${c.kmRoute ? "<br><small>measured from the drawn route</small>" : ""}</td></tr>
+<tr><td>Landing points</td><td class="num">${c.lps.length}</td></tr><tr><td>Countries</td><td class="num">${c.cty.size}</td></tr></table>
+<h4>Owners</h4><p>${owners}</p>${c.sup ? `<h4>Supplier</h4><p>${esc(c.sup)}</p>` : ""}
+<h4>Landing points</h4><ul>${c.lps.map(i => `<li><span class="go" data-l="${esc(lps[i][0])}">${esc(lps[i][0])}</span></li>`).join("")}</ul>
+<p class="sub">${tgLink(c.id)}${c.url ? ` · <a href="${esc(c.url)}" target="_blank" rel="noopener">cable website</a>` : ""}</p>`;
+    if (fly) { const pts = []; c.layers.filter((l, i) => i % 3 === 1).forEach(l => l.getLatLngs().forEach(a => a.forEach(p => pts.push(p)))); fitTo(pts.length ? pts : c.lps.map(i => [lps[i][3], lps[i][2]])); }
+  } else if (type === "lp") {
+    const p = lps[key]; const cs = SITE.lpCab[key].slice().sort((a, b) => (a.year || 9999) - (b.year || 9999));
+    h += `<h4>Landing point</h4><div class="big">${esc(p[0])}</div><p class="sub">${p[4]} cable${p[4] === 1 ? "" : "s"} in service${p[5] ? ", " + p[5] + " planned" : ""} · <span class="go" data-k="${esc(p[1])}">all of ${esc(p[1])}</span></p>
+<table>${cs.map(c => `<tr><td><span class="go" data-c="${esc(c.id)}">${esc(c.name)}</span></td><td class="num">${c.planned ? "planned" : c.year}</td></tr>`).join("")}</table>`;
+    if (fly) map.flyTo([p[3], p[2]], Math.max(map.getZoom(), 6), { duration: .8 });
+  } else if (type === "country") {
+    const cs = CAB.filter(c => c.cty.has(key)).sort((a, b) => (a.year || 9999) - (b.year || 9999)); const cr = SITE.countries.find(c => c[0] === key);
+    const intl = cs.filter(c => !c.planned && c.cty.size > 1).length;
+    h += `<h4>Country or territory</h4><div class="big">${esc(key)}</div><p class="sub">${intl} international cable${intl === 1 ? "" : "s"} in service, ${cs.filter(c => !c.planned).length} in all, ${cs.filter(c => c.planned).length} planned${cr && cr[4] ? " · an island with no land border" : ""}</p>
+<table>${cs.map(c => `<tr><td><span class="go" data-c="${esc(c.id)}">${esc(c.name)}</span>${c.cty.size === 1 ? " <small>domestic</small>" : ""}</td><td class="num">${c.planned ? "planned" : c.year}</td></tr>`).join("")}</table>`;
+    if (fly) fitTo(lps.filter(p => p[1] === key).map(p => [p[3], p[2]]));
+  } else if (type === "zone") {
+    const z = SITE.zones.find(z => z[0] === key);
+    h += `<h4>${z[2] === "hub" ? "Landing hub" : "Strait or corridor"}</h4><div class="big">${esc(z[1])}</div><p class="sub">${esc(z[6])}</p>
+<table><tr><td>Cables in service</td><td class="num">${z[3]}</td></tr><tr><td>Planned</td><td class="num">${z[4]}</td></tr><tr><td>Combined length in service</td><td class="num">${fmt(z[5])} km</td></tr></table>
+<table>${[...z[9], ...z[10]].map(i => byId[i]).map(c => `<tr><td><span class="go" data-c="${esc(c.id)}">${esc(c.name)}</span></td><td class="num">${c.planned ? "planned" : c.year}</td></tr>`).join("")}</table>`;
+    if (fly) map.flyTo([z[8], z[7]], z[2] === "hub" ? 6 : 5.5, { duration: .8 });
+  }
+  side.innerHTML = h; wire();
+  if (small() && fly) document.getElementById("map").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+map.on("click", () => { if (S.sel) intro(); });
+map.on("zoomend", () => { if (zoneLayer && LY.zones) { if (map.getZoom() >= 3.5) zoneLabels.addTo(map); else map.removeLayer(zoneLabels); } if (lpLayer) restyleLps(); });
+
+/* ---------- search and focus ---------- */
+function buildSearch() {
+  const q = document.getElementById("q"), sug = document.getElementById("sug"); let items = [], sel = -1;
+  const idx = [...CAB.map(c => ({ t: "cable", k: c.id, n: c.name, s: c.planned ? "planned cable" : "cable, " + c.year })),
+    ...SITE.countries.map(c => ({ t: "country", k: c[0], n: c[0], s: `country, ${c[1]} international cables` })),
+    ...SITE.lps.map((p, i) => ({ t: "lp", k: i, n: p[0], s: `landing point, ${p[4]} cables` }))];
+  const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  function show() { sug.innerHTML = items.map((it, i) => `<li role="option" aria-selected="${i === sel}" data-i="${i}">${esc(it.n)} <span>${esc(it.s)}</span></li>`).join(""); sug.style.display = items.length ? "block" : "none"; sug.querySelectorAll("li").forEach(li => li.onmousedown = e => { e.preventDefault(); go(items[+li.dataset.i]); }); }
+  function go(it) { q.value = it.n; sug.style.display = "none"; pick(it.t, it.k, true); }
+  q.addEventListener("input", () => { const v = norm(q.value.trim()); sel = -1; if (v.length < 2) { items = []; show(); return; }
+    items = idx.filter(it => norm(it.n).includes(v)).sort((a, b) => (norm(a.n).startsWith(v) ? 0 : 1) - (norm(b.n).startsWith(v) ? 0 : 1) || ({ country: 0, cable: 1, lp: 2 }[a.t] - { country: 0, cable: 1, lp: 2 }[b.t])).slice(0, 12); show(); });
+  q.addEventListener("keydown", e => { if (e.key === "ArrowDown") { sel = Math.min(items.length - 1, sel + 1); show(); e.preventDefault(); } else if (e.key === "ArrowUp") { sel = Math.max(0, sel - 1); show(); e.preventDefault(); } else if (e.key === "Enter" && items.length) go(items[Math.max(0, sel)]); else if (e.key === "Escape") { sug.style.display = "none"; } });
+  q.addEventListener("blur", () => setTimeout(() => sug.style.display = "none", 150));
+}
+function focusRow() {
+  const row = document.getElementById("focusRow");
+  [["World", [20, 40], 2], ["Red Sea and Suez", [22, 38], 5], ["Singapore and Malacca", [2.5, 103], 6], ["Luzon Strait", [21, 121], 5.5], ["Mediterranean", [38, 15], 4.5], ["North Atlantic", [47, -35], 3], ["Pacific", [10, -170], 2.5], ["Caribbean", [17, -70], 4.5]].forEach(([n, c, z]) => {
+    const b = document.createElement("button"); b.className = "btn"; b.textContent = n; b.onclick = () => { map.flyTo(c, small() ? z - .5 : z, { duration: .8 }); }; row.appendChild(b); });
+}
+
+/* ---------- tables ---------- */
+function rankTable(boxId, rows, unit) {
+  const box = document.getElementById(boxId); const max = Math.max(...rows.map(r => r.a + r.p));
+  box.innerHTML = `<table class="rank"><thead><tr><th>${unit}</th><th class="num">In service</th><th class="num">Planned</th><th class="num">Combined km</th><th style="width:34%"></th></tr></thead><tbody>${rows.map((r, i) =>
+    `<tr class="cl" data-i="${i}"><td>${esc(r.n)}</td><td class="num">${r.a}</td><td class="num">${r.p || ""}</td><td class="num">${r.km == null ? "" : fmt(r.km)}</td><td><span class="bar" style="width:${(r.a / max * 100).toFixed(1)}%"></span><span class="bar p" style="width:${(r.p / max * 100).toFixed(1)}%"></span></td></tr>`).join("")}</tbody></table>`;
+  box.querySelectorAll("tr.cl").forEach(tr => tr.onclick = () => { const r = rows[+tr.dataset.i]; LY.zones = true; LY.cables = true; applyLayers(); window.syncLayers(); document.getElementById("atlas").scrollIntoView({ behavior: "smooth" }); setTimeout(() => pick(r.t, r.k, true), 350); });
+}
+function buildTables() {
+  const zr = k => SITE.zones.filter(z => z[2] === k).sort((a, b) => b[3] - a[3] || b[5] - a[5]).map(z => ({ n: z[1], a: z[3], p: z[4], km: z[5], t: "zone", k: z[0] }));
+  rankTable("straitTable", zr("strait"), "Strait or corridor");
+  rankTable("hubTable", zr("hub"), "Hub area");
+  const cr = SITE.countries.slice(0, 15).map(c => ({ n: c[0], a: c[1], p: c[3], km: null, t: "country", k: c[0] }));
+  rankTable("ctyTable", cr, "Country or territory");
+  document.querySelector("#ctyTable th:nth-child(4)").textContent = "";
+  document.getElementById("singleCards").innerHTML = R.single.filter(s => s.island).map(s => `<div class="card" data-k="${esc(s.country)}" style="--c:${ERA.planned.colour}"><b>${esc(s.country)}</b>${esc(s.cable)}${s.planned ? `<br><span class="pl">+${s.planned} planned</span>` : ""}</div>`).join("");
+  document.querySelectorAll("#singleCards .card").forEach(c => c.onclick = () => { document.getElementById("atlas").scrollIntoView({ behavior: "smooth" }); setTimeout(() => pick("country", c.dataset.k, true), 350); });
+  const H = R.hyper; document.getElementById("hyCards").innerHTML = ["Google", "Meta", "Microsoft", "Amazon"].map(k => `<div class="card" style="--c:var(--cool);cursor:default"><b>${k}</b>${H[k].n} cables: ${H[k].n_active} in service, ${H[k].n_planned} planned<br>${fmt(H[k].km)} km${H[k].sole ? `, ${H[k].sole} on its own` : ""}</div>`).join("");
+}
+
+/* ---------- theme ---------- */
+document.getElementById("theme").onclick = () => { const r = document.documentElement; r.dataset.theme = isDark() ? "light" : "dark"; try { localStorage.setItem("cables_theme", r.dataset.theme); } catch (e) {} setTiles(); redraws.forEach(f => f()); legend(); };
+try { const t = localStorage.getItem("cables_theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+legend();
+</script>
+<!-- map-fullscreen v1 -->
+<style id="mfs-style">
+.mfs-btn{position:absolute;top:10px;right:10px;z-index:1001;width:34px;height:34px;border:2px solid rgba(0,0,0,.25);border-radius:4px;background:#fff;color:#222;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;box-shadow:0 1px 4px rgba(0,0,0,.2)}
+.mfs-btn:hover{background:#f2f2f2}
+.mfs-btn svg{width:18px;height:18px}
+.mfs-host.mfs-btn-left .mfs-btn{right:auto;left:54px}
+.mfs-fake{position:fixed!important;inset:0!important;width:100vw!important;height:100vh!important;height:100dvh!important;max-width:none!important;max-height:none!important;margin:0!important;z-index:100000!important;border-radius:0!important}
+html.mfs-lock,html.mfs-lock body{overflow:hidden!important}
+:fullscreen.mfs-host{width:100vw!important;height:100vh!important;max-width:none!important;max-height:none!important;margin:0!important;border-radius:0!important}
+</style>
+<script id="mfs-script">
+(function(){
+  var ICON_OPEN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>';
+  var ICON_CLOSE='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"/></svg>';
+  function poke(){setTimeout(function(){window.dispatchEvent(new Event('resize'));},60);setTimeout(function(){window.dispatchEvent(new Event('resize'));},400);}
+  function realFS(){return document.fullscreenElement||document.webkitFullscreenElement;}
+  function add(el){
+    if(el.__mfs)return; el.__mfs=1;
+    var cs=getComputedStyle(el); if(cs.position==='static')el.style.position='relative';
+    el.classList.add('mfs-host');
+    // avoid clashing with a top-right Leaflet control (e.g. "Map layers")
+    var tr=el.querySelector('.leaflet-top.leaflet-right');
+    if(tr&&tr.children.length){ el.classList.add('mfs-btn-left'); }
+    var b=document.createElement('button'); b.type='button'; b.className='mfs-btn';
+    b.title='Full screen map'; b.setAttribute('aria-label','Full screen map'); b.innerHTML=ICON_OPEN;
+    ['click','dblclick','mousedown','touchstart','wheel'].forEach(function(t){b.addEventListener(t,function(e){e.stopPropagation();},{passive:t!=='click'});});
+    function setIcon(on){b.innerHTML=on?ICON_CLOSE:ICON_OPEN;b.title=on?'Exit full screen':'Full screen map';b.setAttribute('aria-label',b.title);}
+    function exitFake(){el.classList.remove('mfs-fake');document.documentElement.classList.remove('mfs-lock');setIcon(false);poke();}
+    b.addEventListener('click',function(e){
+      e.preventDefault();
+      if(el.classList.contains('mfs-fake')){exitFake();return;}
+      if(realFS()){(document.exitFullscreen||document.webkitExitFullscreen).call(document);return;}
+      var req=el.requestFullscreen||el.webkitRequestFullscreen;
+      if(req){ try{ var p=req.call(el); if(p&&p.catch)p.catch(function(){el.classList.add('mfs-fake');document.documentElement.classList.add('mfs-lock');setIcon(true);poke();}); }catch(err){el.classList.add('mfs-fake');document.documentElement.classList.add('mfs-lock');setIcon(true);poke();} }
+      else { el.classList.add('mfs-fake');document.documentElement.classList.add('mfs-lock');setIcon(true);poke(); }
+    });
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&el.classList.contains('mfs-fake'))exitFake();});
+    ['fullscreenchange','webkitfullscreenchange'].forEach(function(t){document.addEventListener(t,function(){setIcon(realFS()===el);poke();});});
+    el.appendChild(b);
+  }
+  function scan(){
+    var els=document.querySelectorAll('[data-fullscreen-map], .leaflet-container, .maplibregl-map, .mapboxgl-map');
+    els.forEach(function(el){
+      if(el.closest('.mfs-host')&&!el.classList.contains('mfs-host'))return;
+      var r=el.getBoundingClientRect(); if(r.width<200||r.height<150)return;
+      add(el);
+    });
+  }
+  function start(){scan(); var n=0; var t=setInterval(function(){scan(); if(++n>20)clearInterval(t);},500);}
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start); else start();
+})();
+</script>
+<!-- /map-fullscreen -->
+
+</body>
+</html>

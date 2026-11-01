@@ -1,0 +1,63 @@
+name,rfs_year,status,length_km,hyperscaler_owners,n_owners,all_owners
+Unity,2010,in service,9620,Google,6,Bharti Airtel; Google; KDDI; Singtel; TIME dotCom; Telstra
+Southeast Asia-Japan Cable (SJC),2013,in service,8900,Google,10,China Mobile; China Telecom; Chunghwa Telecom; Globe Telecom; Google; KDDI; National Telecom; Singtel; Telkom Indonesia; Unified National Networks (UNN)
+Asia Pacific Gateway (APG),2016,in service,10400,Meta,13,China Mobile; China Telecom; China Unicom; Chunghwa Telecom; KT; LG Uplus; Meta; NTT; National Telecom; Starhub; TIME dotCom; VNPT International; Viettel Corporation
+FASTER,2016,in service,11629,Google,6,China Mobile; China Telecom; Google; KDDI; Singtel; TIME dotCom
+Monet,2017,in service,10556,Google,4,Algar Telecom; Angola Cables; Antel Uruguay; Google
+Junior,2018,in service,390,Google,1,Google
+MAREA,2018,in service,6605,Meta; Microsoft,3,Meta; Microsoft; Telxius
+New Cross Pacific (NCP) Cable System,2018,in service,13618,Microsoft,7,China Mobile; China Telecom; China Unicom; Chunghwa Telecom; KT; Microsoft; Softbank
+Tannat,2018,in service,2000,Google,2,Antel Uruguay; Google
+INDIGO-Central,2019,in service,4850,Google,5,Australia’s Academic and Research Network (AARNET); Google; Indosat Ooredoo; Optus; Superloop
+INDIGO-West,2019,in service,4600,Google,6,Australia’s Academic and Research Network (AARNET); Google; Indosat Ooredoo; Singtel; Superloop; Telstra
+Curie,2020,in service,10476,Google,1,Google
+Havfrue/AEC-2,2020,in service,7650,Google; Meta,4,Bulk Infrastructure; EXA Infrastructure; Google; Meta
+JUPITER,2020,in service,14557,Amazon; Meta,6,Amazon Web Services; Meta; NTT; PCCW; PLDT; Softbank
+Japan-Guam-Australia South (JGA-S),2020,in service,7081,Google,3,Australia’s Academic and Research Network (AARNET); Google; Lightstorm
+Dunant,2021,in service,6400,Google,1,Google
+Malbec,2021,in service,2880,Meta,2,Meta; V.tal
+Grace Hopper,2022,in service,7191,Google,1,Google
+Havhingsten/CeltixConnect-2 (CC-2),2022,in service,301,Meta,3,Bulk Infrastructure; EXA Infrastructure; Meta
+Havhingsten/North Sea Connect (NSC),2022,in service,661,Meta,3,Bulk Infrastructure; EXA Infrastructure; Meta
+Pacific Light Cable Network (PLCN),2022,in service,11806,Google; Meta,2,Google; Meta
+Amitie,2023,in service,6792,Meta; Microsoft,5,EXA Infrastructure; Meta; Microsoft; Orange; Vodafone
+Blue,2023,in service,5055,Google,3,Google; Sparkle; Zain Omantel International
+Equiano,2023,in service,15000,Google,1,Google
+Topaz,2023,in service,10588,Google,1,Google
+2Africa,2024,in service,45000,Meta,8,Bayobab; China Mobile; Meta; Orange; Telecom Egypt; Vodafone; WIOCC; center3
+Apricot,2025,in service,11972,Google; Meta,5,Chunghwa Telecom; Google; Meta; NTT; PLDT
+Bifrost,2025,in service,19888,Meta,3,Keppel T&T; Meta; Telin
+Echo,2025,in service,17184,Google; Meta,2,Google; Meta
+Firmina,2025,in service,14517,Google,1,Google
+Southeast Asia-Japan Cable 2 (SJC2),2025,in service,10500,Meta,10,China Mobile; Chunghwa Telecom; DongHwa Telecom; KDDI; Meta; SK Broadband; Singtel; Telin; True Corporation; VNPT International
+Anjana,2026,in service,7121,Meta,1,Meta
+TPU,2026,in service,13470,Google,1,Google
+Beaufort,2027,planned,158,Amazon; Microsoft,3,Amazon Web Services; Microsoft; Vodafone
+Bulikula,2027,planned,21600,Google,1,Google
+Daraja,2027,planned,4108,Meta,1,Meta
+Honomoana,2027,planned,15215,Google,1,Google
+JAKO,2027,planned,260,Amazon; Microsoft,4,Amazon Web Services; Arteria; Dreamline; Microsoft
+Nuvem,2027,planned,7194,Google,1,Google
+ORCA,2027,planned,12482,Meta,1,Meta
+Proa,2027,planned,2891,Google,1,Google
+Raman,2027,planned,7376,Google,3,Google; Sparkle; Zain Omantel International
+SeaMeWe-6,2027,planned,21700,Microsoft,16,Bahrain Telecommunications Company (Batelco); Bangladesh Submarine Cable Company Limited (BSCCL); Bharti Airtel; China Unicom; Dhiraagu; Djibouti Telecom; Microsoft; Mobily; Orange; PCCW; Singtel; Sri Lanka Telecom; Telecom Egypt; Telekom Malaysia; Telin; Transworld
+Tabua,2027,planned,14751,Google,1,Google
+TalayLink,2027,planned,8847,Google,1,Google
+Alisios,2028,planned,6747,Google,1,Google
+Aurora,2028,planned,7268,Meta,1,Meta
+Bosun,2028,planned,2788,Google,1,Google
+Candle,2028,planned,8000,Meta,7,Globe Telecom; IPS; Inc.; Meta; Softbank; Telekom Malaysia; XLSmart
+Dhivaru,2028,planned,7215,Google,1,Google
+Fastnet,2028,planned,5411,Amazon,1,Amazon Web Services
+Halaihai,2028,planned,17483,Google,1,Google
+Taihei,2028,planned,7000,Google,1,Google
+Umoja,2028,planned,8149,Google,1,Google
+Asia United Gateway East (AUG East),2029,planned,8900,Amazon; Microsoft,9,Amazon Web Services; Arteria; Chunghwa Telecom; Dreamline; Globe Telecom; Microsoft; Singtel; Telekom Malaysia; Unified National Networks (UNN)
+I-2SEA,2029,planned,3600,Microsoft,4,Lightstorm; Microsoft; Singtel; Tata Communications
+Petal,2029,planned,7000,Meta,1,Meta
+Sol,2029,planned,8153,Google,1,Google
+Sta’O’Nuk,2029,planned,7621,Amazon,1,Amazon Web Services
+Canoa,,planned,1677,Google,1,Google
+OlaLuz,,planned,1834,Google,1,Google
+Project Waterworth,,planned,50000,Meta,1,Meta

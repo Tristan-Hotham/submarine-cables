@@ -1,0 +1,714 @@
+id,name,rfs,rfs_year,status,era,length_km,length_source,length_stated_km,route_km,n_landings,n_countries,international,countries,owners,n_owners,hyperscaler_owners,suppliers,url
+rnne-rdvig,Rønne-Rødvig,1989,1989,in service,1990s,153.0,TeleGeography,153.0,152.1,2,1,0,Denmark,TDC Group,1,,,
+almera-melilla-alme,Almería-Melilla (ALME),1990,1990,in service,1990s,198.0,TeleGeography,198.0,182.2,2,1,0,Spain,Telefonica,1,,Nexans,https://www.telefonica.com/
+bt-mt-1,BT-MT-1,1990,1990,in service,1990s,80.0,TeleGeography,80.0,70.4,2,2,1,Isle of Man; United Kingdom,BT; Manx Telecom,2,,,
+transcan-2,TRANSCAN-2,1990,1990,in service,1990s,238.0,TeleGeography,238.0,176.2,4,1,0,Spain,Telefonica,1,,,
+apocs-1,APOCS 1,1991,1991,in service,1990s,175,route,,174.8,2,1,0,Canada,Bell Canada,1,,,https://www.bce.ca/
+penbal-4,Penbal-4,1991,1991,in service,1990s,317.0,TeleGeography,317.0,323.9,3,1,0,Spain,Telefonica,1,,,
+corse-continent-4-cc4,Corse-Continent 4 (CC4),1992,1992,in service,1990s,190.0,TeleGeography,190.0,188.3,2,1,0,France,Orange,1,,ASN,
+finland-estonia-2-eesf-2,Finland-Estonia 2 (EESF-2),1992,1992,in service,1990s,98.0,TeleGeography,98.0,93.0,2,2,1,Estonia; Finland,Arelion; Telia Eesti (formerly Eesti Telekom; EMT; Elion),4,,,
+lanis-1,Lanis-1,1992,1992,in service,1990s,113.0,TeleGeography,113.0,108.5,2,2,1,Isle of Man; United Kingdom,Vodafone,1,,,
+lanis-2,Lanis-2,1992,1992,in service,1990s,67.0,TeleGeography,67.0,64.0,2,2,1,Isle of Man; United Kingdom,Vodafone,1,,,
+lanis-3,Lanis-3,1992,1992,in service,1990s,122.0,TeleGeography,122.0,113.3,2,1,0,United Kingdom,Vodafone,1,,,
+taino-carib,Taino-Carib,1992 January,1992,in service,1990s,187.0,TeleGeography,187.0,121.9,3,1,0,United States,AT&T; Altice USA; CANTV; Cogent; Embratel; Liberty Networks; Orange; SETAR,8,,AT&T SSI,
+uae-iran,UAE-Iran,1992,1992,in service,1990s,170.0,TeleGeography,170.0,183.1,2,2,1,Iran; United Arab Emirates,Telecommunication Infrastructure Company of Iran; e&,2,,ASN,
+turcyos-1,Turcyos-1,1993,1993,in service,1990s,110.0,TeleGeography,110.0,93.8,2,2,1,Cyprus; Turkey,Turk Telekom,1,,ASN,
+aden-djibouti,Aden-Djibouti,1994,1994,in service,1990s,269.0,TeleGeography,269.0,244.9,2,2,1,Djibouti; Yemen,Djibouti Telecom; Orange; Sparkle; Tata Communications; TeleYemen,5,,ASN,https://www.teleyemen.com.ye/
+americas-i-north,Americas-I North,1994 September,1994,in service,1990s,2012.0,TeleGeography,2012.0,2224.3,2,1,0,United States,AT&T,1,,SubCom,
+botnia,Botnia,1994,1994,in service,1990s,93.0,TeleGeography,93.0,119.2,2,2,1,Finland; Sweden,Arelion,1,,ASN,
+cantat-3,CANTAT-3,1994 November,1994,in service,1990s,270.0,TeleGeography,270.0,314.1,4,1,0,Denmark,Shefa,1,,ASN,http://www.shefa.fo
+columbus-ii-b,Columbus-II b,1994 December,1994,in service,1990s,2068.0,TeleGeography,2068.0,2135.3,2,1,0,United States,AT&T; SETAR,2,,SubCom,
+denmark-sweden-17,Denmark-Sweden 17,1994,1994,in service,1990s,11.0,TeleGeography,11.0,7.4,2,2,1,Denmark; Sweden,TDC Group; Tele2,2,,,
+est-tet,Est-Tet,1994 July,1994,in service,1990s,113.0,TeleGeography,113.0,102.7,2,2,1,Morocco; Spain,Maroc Telecom; Telxius,2,,STC Submarine Systems,
+finland-estonia-3-eesf-3,Finland-Estonia 3 (EESF-3),1994,1994,in service,1990s,104.0,TeleGeography,104.0,94.1,2,2,1,Estonia; Finland,Arelion; Telia Eesti (formerly Eesti Telekom; EMT; Elion),4,,,
+globalconnect-denmark-sweden,GlobalConnect Denmark-Sweden,1994,1994,in service,1990s,39,route,,38.9,2,2,1,Denmark; Sweden,GlobalConnect,1,,,https://www.globalconnectcarrier.com/
+guernsey-jersey-4,Guernsey-Jersey-4,1994 January,1994,in service,1990s,36.0,TeleGeography,36.0,33.0,2,2,1,Guernsey; Jersey,Sure,1,,,
+hawaii-inter-island-cable-system-hics,Hawaii Inter-Island Cable System (HICS),1994 July,1994,in service,1990s,479.0,TeleGeography,479.0,422.1,5,1,0,United States,Hawaiian Telcom,1,,,
+italy-croatia,Italy-Croatia,1994,1994,in service,1990s,230.0,TeleGeography,230.0,114.2,2,2,1,Croatia; Italy,Hrvatski Telekom; Sparkle,2,,,
+italy-malta,Italy-Malta,1994,1994,in service,1990s,238.0,TeleGeography,238.0,298.6,2,2,1,Italy; Malta,GO plc; Sparkle,2,,ASN,
+latvia-sweden-1-lv-se-1,Latvia-Sweden 1 (LV-SE 1),1994,1994,in service,1990s,304.0,TeleGeography,304.0,284.3,2,2,1,Latvia; Sweden,Tele2; Tet,2,,,
+penbal-5,Penbal-5,1994,1994,in service,1990s,315.0,TeleGeography,315.0,312.0,2,1,0,Spain,Telefonica,1,,,
+tegopa,TEGOPA,1994,1994,in service,1990s,222.0,TeleGeography,222.0,182.7,3,1,0,Spain,Telefonica,1,,,
+uk-channel-islands-7,UK-Channel Islands-7,1994 January,1994,in service,1990s,124.0,TeleGeography,124.0,149.0,2,2,1,Guernsey; United Kingdom,BT; Sure,2,,,
+uk-channel-islands-8,UK-Channel Islands-8,1994 January,1994,in service,1990s,237.0,TeleGeography,237.0,239.1,2,2,1,Jersey; United Kingdom,BT,1,,,
+apocs-2,APOCS 2,1995,1995,in service,1990s,200,route,,200.0,4,1,0,Canada,Bell Canada,1,,,https://www.bce.ca/
+antigua-st-kitts,Antigua-St.Kitts,1995,1995,in service,1990s,141.0,TeleGeography,141.0,106.9,2,2,1,Antigua and Barbuda; Saint Kitts and Nevis,Liberty Networks,1,,ASN,https://libertynet.com
+bcs-east,BCS East,1995,1995,in service,1990s,97.0,TeleGeography,97.0,66.6,2,2,1,Latvia; Lithuania,Arelion,1,,Ericsson,
+bass-strait-1,Bass Strait-1,1995,1995,in service,1990s,241.0,TeleGeography,241.0,241.1,2,1,0,Australia,Telstra,1,,ASN,
+cadmos,CADMOS,1995 September,1995,in service,1990s,230.0,TeleGeography,230.0,209.3,3,2,1,Cyprus; Lebanon,A1 Telekom Austria; AT&T; Cyta; Deutsche Telekom; Lebanese Ministry of Telecommunications; Orange; Sparkle; Syrian Telecommunications Establishment; Tata Communications,9,,SubCom,
+corse-continent-5-cc5,Corse-Continent 5 (CC5),1995,1995,in service,1990s,299.0,TeleGeography,299.0,290.7,2,1,0,France,Orange,1,,ASN,
+eastern-caribbean-fiber-system-ecfs,Eastern Caribbean Fiber System (ECFS),1995 September,1995,in service,1990s,1335.0,TeleGeography,1335.0,1520.0,13,13,1,Anguilla; Antigua and Barbuda; Barbados; Dominica; Grenada; Guadeloupe; Martinique; Saint Kitts and Nevis; Saint Lucia; Saint Vincent and the Grenadines; Sint Maarten; Trinidad and Tobago; Virgin Islands (U.K.),AT&T; Claro Dominicana (Codetel); Guyana Telephone and Telegraph (GT&T); Liberty Networks; Orange; Verizon,6,,ASN,
+italy-greece-1-ig-1,Italy-Greece 1 (IG-1),1995,1995,in service,1990s,169.0,TeleGeography,169.0,147.6,2,2,1,Greece; Italy,WIS Telecom,1,,,http://www.wis.one
+italy-monaco,Italy-Monaco,1995,1995,in service,1990s,162.0,TeleGeography,162.0,124.6,2,2,1,Italy; Monaco,Monaco Telecom; Sparkle,2,,Prysmian,
+sweden-estonia-ee-s-1,Sweden-Estonia (EE-S 1),1995 June,1995,in service,1990s,240.0,TeleGeography,240.0,369.7,3,2,1,Estonia; Sweden,Arelion; GN Great Nordic; Telia Eesti (formerly Eesti Telekom; EMT; Elion),5,,ASN,
+ugarit,UGARIT,1995 February,1995,in service,1990s,239.0,TeleGeography,239.0,210.2,2,2,1,Cyprus; Syria,A1 Telekom Austria; AT&T; BT; Cyta; Deutsche Telekom; Lebanese Ministry of Telecommunications; Orange; Singtel; Sparkle; Syrian Telecommunications Establishment; Tata Communications; Telefonica; Vivacom,13,,SubCom,
+unisur,Unisur,1995 March,1995,in service,1990s,265.0,TeleGeography,265.0,241.0,2,2,1,Argentina; Uruguay,Antel Uruguay; Telxius,2,,ASN,
+adria-1,Adria-1,1996 September,1996,in service,1990s,440.0,TeleGeography,440.0,441.2,3,3,1,Albania; Croatia; Greece,ALBtelecom; Hrvatski Telekom,2,,ASN,
+bugio,BUGIO,1996 July,1996,in service,1990s,73.0,TeleGeography,73.0,60.3,2,1,0,Portugal,Altice Portugal,1,,,
+brazilian-festoon,Brazilian Festoon,1996,1996,in service,1990s,2552.0,TeleGeography,2552.0,2480.9,14,1,0,Brazil,Embratel,1,,,http://www.embratel.com.br
+denmark-sweden-18,Denmark-Sweden 18,1996,1996,in service,1990s,7,route,,6.6,2,2,1,Denmark; Sweden,TDC Group; Telenor,2,,,
+izu-islands-cable-system,Izu Islands Cable System,1996,1996,in service,1990s,230,route,,230.0,4,1,0,Japan,NTT,1,,,
+jeju-mainland-2,Jeju-Mainland 2,1996,1996,in service,1990s,191.0,TeleGeography,191.0,135.7,2,1,0,South Korea,KT,1,,NEC,
+romsar-2,ROMSAR 2,1996,1996,in service,1990s,359,route,,358.6,4,1,0,Italy,Sparkle,1,,,
+les-dhyres-cable,Îles d'Hyères Cable,1996,1996,in service,1990s,45.0,TeleGeography,45.0,39.3,5,1,0,France,Orange,1,,ASN,
+aletar,Aletar,1997 April,1997,in service,1990s,787.0,TeleGeography,787.0,702.5,2,2,1,Egypt; Syria,Liban Telecom; Syrian Telecommunications Establishment; Telecom Egypt,3,,ASN,
+antillas-1,Antillas 1,1997 June,1997,in service,1990s,601.0,TeleGeography,601.0,584.5,3,2,1,Dominican Republic; United States,Altice Dominicana; Antelecom; Claro Dominicana (Codetel); Liberty Networks; SETAR,5,,SubCom,
+bcs-east-west-interlink,BCS East-West Interlink,1997 November,1997,in service,1990s,218.0,TeleGeography,218.0,211.6,2,2,1,Lithuania; Sweden,Arelion,1,,Ericsson,
+berytar,BERYTAR,1997 April,1997,in service,1990s,134.0,TeleGeography,134.0,185.7,4,2,1,Lebanon; Syria,Lebanese Ministry of Telecommunications; Syrian Telecommunications Establishment,2,,ASN,
+bahamas-2,Bahamas 2,1997 June,1997,in service,1990s,476.0,TeleGeography,476.0,450.0,3,2,1,Bahamas; United States,Bermuda Telephone Company (BTC),1,,SubCom,
+baltica,Baltica,1997 March,1997,in service,1990s,437.0,TeleGeography,437.0,408.5,4,3,1,Denmark; Poland; Sweden,Arelion; Orange Polska; Slovak Telekom; TDC Group; Telenor; Ukrtelecom,6,,,
+cabo-verde-telecom-domestic-submarine-cable-phase-1,Cabo Verde Telecom Domestic Submarine Cable Phase 1,1997,1997,in service,1990s,470,route,,470.0,5,1,0,Cape Verde,Cabo Verde Telecom (CVT),1,,,https://www.cvtelecom.cv
+calvi-st-florent,Calvi-St. Florent,1997,1997,in service,1990s,64.0,TeleGeography,64.0,61.1,2,1,0,France,Orange,1,,ASN,
+cayman-jamaica-fiber-system-cjfs,Cayman-Jamaica Fiber System (CJFS),1997 June,1997,in service,1990s,1197.0,TeleGeography,1197.0,746.3,6,2,1,Cayman Islands; Jamaica,CW Cayman; CW Jamaica,2,,ASN,
+colombian-festoon,Colombian Festoon,1997,1997,in service,1990s,400.0,TeleGeography,400.0,300.7,5,1,0,Colombia,,0,,,
+fea,FEA,1997 November,1997,in service,1990s,11886,route,,11886.4,8,7,1,Egypt; India; Jordan; Malaysia; Saudi Arabia; Thailand; United Arab Emirates,FLAG,1,,SubCom,https://flagtel.com/
+hawaii-island-fibre-network-hifn,Hawaii Island Fibre Network (HIFN),1997 June,1997,in service,1990s,529.0,TeleGeography,529.0,536.4,7,1,0,United States,Hawaiian Telcom; Lumen,2,,,
+italy-albania,Italy-Albania,1997,1997,in service,1990s,240.0,TeleGeography,240.0,218.6,2,2,1,Albania; Italy,ALBtelecom; Sparkle,2,,,
+jamaica-submarine-cable-festoon-system-jscfs,Jamaica Submarine Cable Festoon System (JSCFS),1997,1997,in service,1990s,342.0,TeleGeography,342.0,296.9,4,1,0,Jamaica,CW Jamaica,1,,,
+kafos,KAFOS,1997 June,1997,in service,1990s,538.0,TeleGeography,538.0,430.9,4,3,1,Bulgaria; Romania; Turkey,Turk Telekom International,1,,ASN,
+mariana-guam-cable,Mariana-Guam Cable,1997,1997,in service,1990s,268.0,TeleGeography,268.0,225.8,4,2,1,Guam; Northern Mariana Islands,PTI Pacifica,1,,,
+miyazaki-okinawa-cable-moc,Miyazaki-Okinawa Cable (MOC),1997,1997,in service,1990s,845,route,,844.7,2,1,0,Japan,KDDI,1,,NEC,
+pldt-domestic-fiber-optic-network-dfon,PLDT Domestic Fiber Optic Network (DFON),1997,1997,in service,1990s,11100.0,TeleGeography,11100.0,1982.4,13,1,0,Philippines,PLDT,1,,,http://www.pldt.com.ph
+st-thomas-st-croix-system,St. Thomas-St. Croix System,1997 May,1997,in service,1990s,183.0,TeleGeography,183.0,194.8,7,1,0,Virgin Islands (U.S.),Virgin Islands Next Generation Networks; Inc.,2,,,http://www.vingn.com
+ulysses-2,Ulysses 2,1997,1997,in service,1990s,199.0,TeleGeography,199.0,198.2,2,2,1,Netherlands; United Kingdom,Verizon,1,,,
+atlantic-crossing-1-ac-1,Atlantic Crossing-1 (AC-1),1998 May,1998,in service,1990s,14301.0,TeleGeography,14301.0,13245.5,4,4,1,Germany; Netherlands; United Kingdom; United States,Colt,1,,SubCom,
+azores-fiber-optic-system-afos,Azores Fiber Optic System (AFOS),1998 July,1998,in service,1990s,1100.0,TeleGeography,1100.0,890.7,7,1,0,Portugal,Altice Portugal,1,,Norddeutsche Seekabelwerke GmbH (NSW),
+bcs-north---phase-1,BCS North - Phase 1,1998,1998,in service,1990s,513.0,TeleGeography,513.0,504.4,5,2,1,Finland; Sweden,Arelion,1,,Ericsson,
+dalian-yantai-cable,Dalian-Yantai Cable,1998 March,1998,in service,1990s,146.0,TeleGeography,146.0,158.7,2,1,0,China,China Telecom,1,,ASN,
+danica-north,Danica North,1998,1998,in service,1990s,25.0,TeleGeography,25.0,27.6,2,2,1,Denmark; Sweden,Colt,1,,Ericsson,
+farland-north,Farland North,1998,1998,in service,1990s,150.0,TeleGeography,150.0,151.6,2,2,1,Netherlands; United Kingdom,BT,1,,,
+fiber-optic-gulf-fog,Fiber Optic Gulf (FOG),1998 June,1998,in service,1990s,1300.0,TeleGeography,1300.0,1200.1,4,4,1,Bahrain; Kuwait; Qatar; United Arab Emirates,Bahrain Telecommunications Company (Batelco); Kuwait Ministry of Communications; Ooredoo; e&,4,,Fujitsu,
+italy-libya,Italy-Libya,1998,1998,in service,1990s,570.0,TeleGeography,570.0,533.3,2,2,1,Italy; Libya,Libya International Telecommunications Company; Sparkle,2,,ASN,
+sagres,Sagres,1998 July,1998,in service,1990s,302.0,TeleGeography,302.0,210.5,2,1,0,Portugal,Altice Portugal,1,,,
+taba-aqaba,Taba-Aqaba,1998,1998,in service,1990s,13.0,TeleGeography,13.0,15.1,2,2,1,Egypt; Jordan,National Electric Power Company of Jordan,1,,,
+venezuelan-festoon,Venezuelan Festoon,1998,1998,in service,1990s,1200.0,TeleGeography,1200.0,1233.8,12,1,0,Venezuela,CANTV,1,,,
+alaska-united-east-au-east,Alaska United East (AU-East),1999 February,1999,in service,1990s,3751.0,TeleGeography,3751.0,2977.6,4,1,0,United States,GCI Communication Corp,1,,SubCom,https://www.gci.com/
+alonso-de-ojeda,Alonso de Ojeda,1999,1999,in service,1990s,122.0,TeleGeography,122.0,121.2,2,2,1,Aruba; Curaçao,SETAR; United Telecommunication Services (UTS),2,,ASN,
+american-1,AmeriCan-1,1999 December,1999,in service,1990s,140.0,TeleGeography,140.0,227.0,5,2,1,Canada; United States,Bell Canada; Ledcor Industries Inc.; Rogers Communications; Zayo,4,,,
+amerigo-vespucci,Amerigo Vespucci,1999,1999,in service,1990s,87.0,TeleGeography,87.0,68.8,2,2,1,Curaçao; Netherlands,Antelecom,1,,ASN,
+candalta,CANDALTA,1999,1999,in service,1990s,110.0,TeleGeography,110.0,155.5,2,1,0,Spain,Telefonica,1,,,
+circe-north,Circe North,1999 February,1999,in service,1990s,203.0,TeleGeography,203.0,191.0,2,2,1,Netherlands; United Kingdom,Zayo; euNetworks,2,,ASN,
+circe-south,Circe South,1999 February,1999,in service,1990s,115.0,TeleGeography,115.0,107.6,2,2,1,France; United Kingdom,Zayo; euNetworks,2,,ASN,
+columbus-iii-azores-portugal,Columbus-III Azores-Portugal,1999 December,1999,in service,1990s,1512,route,,1511.7,2,1,0,Portugal,Altice Portugal,1,,,https://altice.net/altice-international
+concerto,Concerto,1999,1999,in service,1990s,550.0,TeleGeography,550.0,200.1,2,2,1,Netherlands; United Kingdom,EXA Infrastructure,1,,ASN,https://exainfra.net/
+haikou-beihai-cable,Haikou-Beihai Cable,1999,1999,in service,1990s,198.0,TeleGeography,198.0,188.2,2,1,0,China,China Telecom,1,,ASN,
+japan-information-highway-jih,Japan Information Highway (JIH),1999,1999,in service,1990s,5150.0,TeleGeography,5150.0,4263.6,9,1,0,Japan,KDDI,1,,NEC,
+lfon-libyan-fiber-optic-network,LFON (Libyan Fiber Optic Network),1999,1999,in service,1990s,1639.0,TeleGeography,1639.0,1631.6,13,1,0,Libya,Libyan Post; Telecommunications and Information Technology Company (LPTIC Holding),2,,ASN,
+national-digital-transmission-network-ndtn,National Digital Transmission Network (NDTN),1999 March,1999,in service,1990s,1400.0,TeleGeography,1400.0,917.1,4,1,0,Philippines,Telecoms Infrastructure Corporation of the Philippines (TelicPhil),1,,,
+ningbo-zhoushan-cable,Ningbo-Zhoushan Cable,1999 July,1999,in service,1990s,35.0,TeleGeography,35.0,36.5,2,1,0,China,China Telecom,1,,ASN,
+northstar,NorthStar,1999 October,1999,in service,1990s,3229.0,TeleGeography,3229.0,3048.6,4,1,0,United States,Alaska Communications,1,,ASN,https://www.alaskacommunications.com
+pacific-crossing-1-pc-1,Pacific Crossing-1 (PC-1),1999 December,1999,in service,1990s,21000.0,TeleGeography,21000.0,19616.3,4,2,1,Japan; United States,Pacific Crossing,1,,SubCom,http://www.pc1.com
+pan-european-crossing-uk-belgium,Pan European Crossing (UK-Belgium),1999,1999,in service,1990s,117.0,TeleGeography,117.0,107.4,2,2,1,Belgium; United Kingdom,Colt,1,,,
+panam-south,PanAm South,1999,1999,in service,1990s,1340.0,TeleGeography,1340.0,1388.1,2,2,1,Ecuador; Panama,Corporacion Nacional de Telecomunicaciones (CNT); Liberty Networks,2,,ASN; SubCom,
+sirius-north,Sirius North,1999,1999,in service,1990s,147.0,TeleGeography,147.0,129.7,2,1,0,United Kingdom,Virgin Media Business,1,,,
+sirius-south,Sirius South,1999,1999,in service,1990s,219.0,TeleGeography,219.0,219.0,2,2,1,Ireland; United Kingdom,Virgin Media Business,1,,,
+solas,Solas,1999 April,1999,in service,1990s,232.0,TeleGeography,232.0,203.7,2,2,1,Ireland; United Kingdom,Vodafone; eir,2,,,
+sunoque-i,Sunoque I,1999 October,1999,in service,1990s,84,route,,83.5,2,1,0,Canada,Hydro-Québec; Telus,2,,,
+sunoque-ii,Sunoque II,1999 October,1999,in service,1990s,50,route,,50.0,2,1,0,Canada,Hydro-Québec; Telus,2,,,
+tampnet-north,Tampnet North,1999 July,1999,in service,1990s,1751.0,TeleGeography,1751.0,871.3,3,2,1,Norway; United Kingdom,Tampnet,1,,Ericsson; Nexans,https://www.tampnet.com/
+tampnet-south,Tampnet South,1999 July,1999,in service,1990s,1751.0,TeleGeography,1751.0,750.3,2,2,1,Norway; United Kingdom,Tampnet,1,,Ericsson; Nexans,https://www.tampnet.com/
+tenerife-gran-canaria,Tenerife-Gran Canaria,1999,1999,in service,1990s,110.0,TeleGeography,110.0,86.8,2,1,0,Spain,Telefonica,1,,,
+whidbey-island-camano-island,Whidbey Island-Camano Island,1999,1999,in service,1990s,4.0,TeleGeography,4.0,6.8,2,1,0,United States,Whidbey Telecom,1,,Prysmian,
+whidbey-island-everett,Whidbey Island-Everett,1999,1999,in service,1990s,9.0,TeleGeography,9.0,11.3,2,1,0,United States,Whidbey Telecom,1,,Prysmian,
+whidbey-island-hat-island,Whidbey Island-Hat Island,1999,1999,in service,1990s,4.0,TeleGeography,4.0,4.7,2,1,0,United States,Whidbey Telecom,1,,Prysmian,
+whidbey-island-seattle,Whidbey Island-Seattle,1999,1999,in service,1990s,44.0,TeleGeography,44.0,39.6,2,1,0,United States,Whidbey Telecom,1,,Prysmian,
+americas-ii-west,Americas-II West,2000 August,2000,in service,2000s,217.0,TeleGeography,217.0,184.5,2,2,1,United States; Virgin Islands (U.S.),AT&T; Liberty Networks; Sparkle,3,,SubCom,
+bcs-north---phase-2,BCS North - Phase 2,2000,2000,in service,2000s,280.0,TeleGeography,280.0,258.0,3,2,1,Finland; Russia,Arelion,1,,Ericsson,
+baltic-sea-submarine-cable,Baltic Sea Submarine Cable,2000,2000,in service,2000s,1042.0,TeleGeography,1042.0,884.1,3,3,1,Estonia; Finland; Sweden,CITIC Telecom International,1,,ASN,https://www.citictel.com/
+continente-madeira,Continente-Madeira,2000 February,2000,in service,2000s,1179.0,TeleGeography,1179.0,983.2,2,1,0,Portugal,Altice Portugal,1,,,https://altice.net/altice-international
+esat-2,ESAT-2,2000,2000,in service,2000s,245.0,TeleGeography,245.0,216.3,2,2,1,Ireland; United Kingdom,Esat BT,1,,SubCom,
+elektra-globalconnect-1-gc1,Elektra-GlobalConnect 1 (GC1),2000 August,2000,in service,2000s,44.0,TeleGeography,44.0,59.0,2,2,1,Denmark; Germany,GlobalConnect,1,,,https://www.globalconnectcarrier.com/
+fehmarn-blt,Fehmarn Bält,2000,2000,in service,2000s,20.0,TeleGeography,20.0,21.5,2,2,1,Denmark; Germany,Arelion,1,,Ericsson,
+finland-estonia-connection-1-fec-1,Finland Estonia Connection 1 (FEC-1),2000 January,2000,in service,2000s,87,route,,86.8,2,2,1,Estonia; Finland,Elisa Corporation,1,,ASN,http://www.elisa.com
+finland-estonia-connection-2-fec-2,Finland Estonia Connection 2 (FEC-2),2000,2000,in service,2000s,83,route,,83.3,2,2,1,Estonia; Finland,Elisa Corporation,1,,ASN,http://www.elisa.com
+georgia-russia,Georgia-Russia,2000 December,2000,in service,2000s,433.0,TeleGeography,433.0,378.1,3,2,1,Georgia; Russia,FOPTNET; GEO-METRIA; Rostelecom,3,,ASN,https://www.company.rt.ru/
+germany-denmark-3,Germany-Denmark 3,2000 March,2000,in service,2000s,47,route,,47.0,2,2,1,Denmark; Germany,TDC Group,1,,,
+globenet,GlobeNet,2000 October,2000,in service,2000s,23500.0,TeleGeography,23500.0,22124.3,7,5,1,Bermuda; Brazil; Colombia; United States; Venezuela,V.tal,1,,ASN,https://www.vtal.com/en/home/
+israel-coasting-1-ic-1,Israel Coasting 1 (IC-1),2000 September,2000,in service,2000s,340.0,TeleGeography,340.0,346.5,7,1,0,Israel,Partner Communications Company,1,,Prysmian,
+jeju-mainland-3,Jeju-Mainland 3,2000,2000,in service,2000s,236.0,TeleGeography,236.0,181.2,2,1,0,South Korea,KT,1,,NEC,
+lic-lin-lamp,Lic-Lin-Lamp,2000,2000,in service,2000s,240.0,TeleGeography,240.0,216.7,3,1,0,Italy,Sparkle,1,,,
+manx-northern-ireland,Manx-Northern Ireland,2000,2000,in service,2000s,59.0,TeleGeography,59.0,57.3,2,2,1,Isle of Man; United Kingdom,BT,1,,,
+mid-atlantic-crossing-mac,Mid-Atlantic Crossing (MAC),2000 June,2000,in service,2000s,7500.0,TeleGeography,7500.0,6718.6,3,2,1,United States; Virgin Islands (U.S.),Cirion Technologies,1,,ASN,https://www.ciriontechnologies.com
+pan-european-crossing-uk-ireland,Pan European Crossing (UK-Ireland),2000 September,2000,in service,2000s,495.0,TeleGeography,495.0,463.2,4,2,1,Ireland; United Kingdom,Colt,1,,,
+pan-american-crossing-pac,Pan-American Crossing (PAC),2000 March,2000,in service,2000s,10000.0,TeleGeography,10000.0,6615.8,5,4,1,Costa Rica; Mexico; Panama; United States,Cirion Technologies,1,,SubCom,https://www.ciriontechnologies.com
+scandinavian-ring-north,Scandinavian Ring North,2000,2000,in service,2000s,5.0,TeleGeography,5.0,18.3,2,2,1,Denmark; Sweden,Arelion,1,,Ericsson,
+scandinavian-ring-south,Scandinavian Ring South,2000,2000,in service,2000s,21.0,TeleGeography,21.0,33.6,2,2,1,Denmark; Sweden,Arelion,1,,Ericsson,
+south-american-crossing-sac,South American Crossing (SAC),2000 September,2000,in service,2000s,20000.0,TeleGeography,20000.0,18319.9,11,8,1,Argentina; Brazil; Chile; Colombia; Panama; Peru; Venezuela; Virgin Islands (U.S.),Cirion Technologies; Sparkle,2,,ASN,https://www.ciriontechnologies.com
+southern-cross-cable-network-sccn,Southern Cross Cable Network (SCCN),2000 November,2000,in service,2000s,30500.0,TeleGeography,30500.0,26544.1,9,4,1,Australia; Fiji; New Zealand; United States,Southern Cross Cable Network,1,,ASN; Fujitsu,http://www.southerncrosscables.com
+transcan-3,TRANSCAN-3,2000,2000,in service,2000s,210.0,TeleGeography,210.0,215.7,2,1,0,Spain,Telefonica,1,,,
+taiwan-penghu-kinmen-matsu-no-2-tpkm2,Taiwan Penghu Kinmen Matsu No.2 (TPKM2),2000,2000,in service,2000s,467.0,TeleGeography,467.0,461.9,6,1,0,Taiwan,Chunghwa Telecom,1,,NEC,
+tangerine,Tangerine,2000 September,2000,in service,2000s,112.0,TeleGeography,112.0,106.2,2,2,1,Belgium; United Kingdom,Colt,1,,,
+yellow,Yellow,2000 September,2000,in service,2000s,7001.0,TeleGeography,7001.0,5581.8,2,2,1,United Kingdom; United States,Colt,1,,SubCom,
+apcn-2,APCN-2,2001 December,2001,in service,2000s,19000.0,TeleGeography,19000.0,16987.8,10,7,1,China; Japan; Malaysia; Philippines; Singapore; South Korea; Taiwan,AT&T; BT; China Telecom; China Unicom; Chunghwa Telecom; HKBN; KDDI; KT; LG Uplus; NTT; Optus; Orange; PCCW; PLDT; Singtel; Softbank; Starhub; Tata Communications; Telekom Malaysia; Telstra; Verizon; Vodafone,22,,NEC,
+arcos,ARCOS,2001 December,2001,in service,2000s,8704.0,TeleGeography,8704.0,7849.9,24,14,1,Bahamas; Belize; Colombia; Costa Rica; Curaçao; Dominican Republic; Guatemala; Honduras; Mexico; Nicaragua; Panama; Turks and Caicos Islands; United States; Venezuela,AT&T; Alestra; Bahamas Telecommunications Company; Belize Telemedia; CANTV; Claro Dominicana (Codetel); Enitel; Hondutel; ICE (Kolbi); InterNexa; Liberty Networks; Orbinet Overseas; RACSA; Telecomunicaciones Ultramarinas de Puerto Rico; Telepuerto San Isidro; Tigo Colombia; Tricom USA; United Telecommunication Services (UTS); Verizon,19,,Prysmian; SubCom,https://libertynet.com
+aqualink,Aqualink,2001 December,2001,in service,2000s,769,route,,769.3,11,1,0,New Zealand,One NZ,1,,,
+australia-japan-cable-ajc,Australia-Japan Cable (AJC),2001 December,2001,in service,2000s,12700.0,TeleGeography,12700.0,11200.0,6,3,1,Australia; Guam; Japan,AT&T; NTT; Softbank; Telstra; Verizon,5,,SubCom,https://ajcable.com/
+bahamas-internet-cable-system-bics,Bahamas Internet Cable System (BICS),2001 July,2001,in service,2000s,1100.0,TeleGeography,1100.0,807.2,7,2,1,Bahamas; United States,Cable Bahamas,1,,,https://www.rev.bs/business-solutions/
+balalink,Balalink,2001 October,2001,in service,2000s,274.0,TeleGeography,274.0,265.3,2,1,0,Spain,IslaLink,1,,,http://www.islalink.es
+chi,CHI,2001,2001,in service,2000s,3932.0,TeleGeography,3932.0,4047.0,2,1,0,United States,Hawaiian Telcom; Verizon,2,,ASN; Fujitsu,
+exa-north-and-south,EXA North and South,2001 April,2001,in service,2000s,12200.0,TeleGeography,12200.0,10086.4,5,4,1,Canada; Ireland; United Kingdom; United States,EXA Infrastructure,1,,SubCom,https://exainfra.net/
+flag-atlantic-1-fa-1,FLAG Atlantic-1 (FA-1),2001 June,2001,in service,2000s,14500.0,TeleGeography,14500.0,11820.5,4,3,1,France; United Kingdom; United States,FLAG,1,,ASN,https://flagtel.com/
+flag-north-asia-loopreach-north-asia-loop,FLAG North Asia Loop/REACH North Asia Loop,2001 June,2001,in service,2000s,9504.0,TeleGeography,9504.0,8432.1,4,4,1,China; Japan; South Korea; Taiwan,FLAG; PCCW; Telstra,3,,ASN; Fujitsu,
+globalconnect-2-gc2,GlobalConnect 2 (GC2),2001 August,2001,in service,2000s,95.0,TeleGeography,95.0,98.8,2,2,1,Denmark; Sweden,GlobalConnect,1,,,https://www.globalconnectcarrier.com/
+kattegat-2,Kattegat 2,2001,2001,in service,2000s,75.0,TeleGeography,75.0,143.2,4,2,1,Denmark; Sweden,TDC Group,1,,,
+mednautilus-submarine-system,MedNautilus Submarine System,2001 November,2001,in service,2000s,7000.0,TeleGeography,7000.0,6422.3,7,5,1,Cyprus; Greece; Israel; Italy; Turkey,Sparkle,1,,ASN,https://www.globalbackbone.tisparkle.com/
+nelson-levin,Nelson-Levin,2001 June,2001,in service,2000s,212.0,TeleGeography,212.0,215.1,2,1,0,New Zealand,Spark New Zealand,1,,,http://www.spark.co.nz
+south-america-1-sam-1,South America-1 (SAm-1),2001 March,2001,in service,2000s,25000.0,TeleGeography,25000.0,22810.9,16,9,1,Argentina; Brazil; Chile; Colombia; Dominican Republic; Ecuador; Guatemala; Peru; United States,Telxius,1,,SubCom,http://www.telxius.com/
+tata-tgn-atlantic-south,Tata TGN-Atlantic South,2001 June,2001,in service,2000s,5708,route,,5708.0,2,2,1,United Kingdom; United States,Tata Communications,1,,,http://www.tatacommunications.com
+thailand-domestic-submarine-cable-network-tdscn,Thailand Domestic Submarine Cable Network (TDSCN),2001 May,2001,in service,2000s,884.0,TeleGeography,884.0,885.6,5,1,0,Thailand,National Telecom,1,,,
+cabo-verde-telecom-domestic-submarine-cable-phase-2,Cabo Verde Telecom Domestic Submarine Cable Phase 2,2002,2002,in service,2000s,251,route,,251.0,3,1,0,Cape Verde,Cabo Verde Telecom (CVT),1,,,https://www.cvtelecom.cv
+eac-c2c,EAC-C2C,2002 November,2002,in service,2000s,36500.0,TeleGeography,36500.0,32775.6,16,6,1,China; Japan; Philippines; Singapore; South Korea; Taiwan,Telstra,1,,ASN; KDD-SCS; SubCom,https://www.telstrainternational.com/
+korea-japan-cable-network-kjcn,Korea-Japan Cable Network (KJCN),2002 March,2002,in service,2000s,500.0,TeleGeography,500.0,460.8,3,2,1,Japan; South Korea,KT; NTT; QTNet; Softbank,4,,ASN; Fujitsu,
+muroran-hachinohe,Muroran-Hachinohe,2002,2002,in service,2000s,280.0,TeleGeography,280.0,230.9,2,1,0,Japan,Softbank,1,,NEC,
+safe,SAFE,2002 April,2002,in service,2000s,13500.0,TeleGeography,13500.0,13009.8,6,5,1,India; Malaysia; Mauritius; Réunion; South Africa,AT&T; Angola Telecom; BICS; Camtel; China Telecom; Chunghwa Telecom; Cogent; Ghana Telecommunications Company; KPN; Liquid Intelligent Technologies; Maroc Telecom; Mauritius Telecom; NATCOM (Nigeria); OPT; Orange; Orange Cote d’Ivoire; PCCW; Singtel; Sonatel; Sparkle; Tata Communications; Telecom Namibia; Telefonica; Telekom Malaysia; Telkom South Africa; Telstra; Verizon; Vodafone,28,,SubCom,
+sat-3wasc,SAT-3/WASC,2002 April,2002,in service,2000s,14350.0,TeleGeography,14350.0,14741.2,12,11,1,Angola; Benin; Cameroon; Côte d'Ivoire; Gabon; Ghana; Nigeria; Portugal; Senegal; South Africa; Spain,AT&T; Altice Portugal; Angola Telecom; BICS; BT; Camtel; China Telecom; Chunghwa Telecom; Cogent; Cyta; Deutsche Telekom; Ghana Telecommunications Company; KPN; KT; Liquid Intelligent Technologies; Maroc Telecom; Mauritius Telecom; NATCOM (Nigeria); OPT; Orange; Orange Cote d’Ivoire; PCCW; SBIN (La Société Béninoise d’Infrastructures Numériques); Singtel; Sparkle; Tata Communications; Telecom Namibia; Telekom Malaysia; Telkom South Africa; Telstra; Telxius; Verizon; Vodafone,33,,ASN,
+subcan-link-1,Subcan Link 1,2002 May,2002,in service,2000s,143.0,TeleGeography,143.0,174.8,2,1,0,Spain,Cable Submarine de Canarias,1,,SubCom,
+subcan-link-2,Subcan Link 2,2002 May,2002,in service,2000s,136.0,TeleGeography,136.0,207.2,2,1,0,Spain,Cable Submarine de Canarias,1,,SubCom,
+tata-tgn-pacific,Tata TGN-Pacific,2002 December,2002,in service,2000s,22300.0,TeleGeography,22300.0,20627.2,5,3,1,Guam; Japan; United States,Tata Communications,1,,SubCom,http://www.tatacommunications.com
+tata-tgn-western-europe,Tata TGN-Western Europe,2002 June,2002,in service,2000s,3578.0,TeleGeography,3578.0,3516.0,3,3,1,Portugal; Spain; United Kingdom,Tata Communications,1,,SubCom,http://www.tatacommunications.com
+i2i-cable-network-i2icn,i2i Cable Network (i2icn),2002 April,2002,in service,2000s,3200.0,TeleGeography,3200.0,2970.8,2,2,1,India; Singapore,Bharti Airtel,1,,ASN,http://www.airtel.in
+apollo,Apollo,2003 February,2003,in service,2000s,13000.0,TeleGeography,13000.0,11595.1,4,3,1,France; United Kingdom; United States,Vodafone,1,,ASN,https://www.vodafone.com/business/solutions/by-business-type/carrier-and-infrastructure-provider/submarine-and-terrestrial-cables/apollo
+bass-strait-2,Bass Strait-2,2003,2003,in service,2000s,239.0,TeleGeography,239.0,239.3,2,1,0,Australia,Telstra,1,,ASN,
+cam-ring,CAM Ring,2003,2003,in service,2000s,1120.0,TeleGeography,1120.0,1120.6,3,1,0,Portugal,Altice Portugal,1,,ASN,
+cross-sound-cable,Cross Sound Cable,2003,2003,in service,2000s,40.0,TeleGeography,40.0,39.1,2,1,0,United States,Cross Sound Cable Company,1,,Ericsson,https://www.crosssoundcable.com/dark-fiber-optics/
+link-1-phase-1,Link 1 Phase-1,2003 December,2003,in service,2000s,368.0,TeleGeography,368.0,354.7,2,1,0,Indonesia,XLSmart,1,,,https://www.xl.co.id
+link-3-phase-1,Link 3 Phase-1,2003 December,2003,in service,2000s,275.0,TeleGeography,275.0,237.7,2,1,0,Indonesia,XLSmart,1,,,https://www.xl.co.id
+saudi-arabia-sudan-1-sas-1,Saudi Arabia-Sudan-1 (SAS-1),2003 April,2003,in service,2000s,333.0,TeleGeography,333.0,292.8,2,2,1,Saudi Arabia; Sudan,Sudatel; The Arab Investment Company; center3,3,,ASN,
+thailand-indonesia-singapore-tis,Thailand-Indonesia-Singapore (TIS),2003 December,2003,in service,2000s,968.0,TeleGeography,968.0,1024.8,3,3,1,Indonesia; Singapore; Thailand,National Telecom; Singtel; Telkom Indonesia,3,,NEC,
+alaska-united-west-au-west,Alaska United West (AU-West),2004 June,2004,in service,2000s,2485.0,TeleGeography,2485.0,2758.2,3,1,0,United States,GCI Communication Corp,1,,NEC,https://www.gci.com/
+east-west-submarine-cable-system,East-West Submarine Cable System,2004,2004,in service,2000s,950.0,TeleGeography,950.0,884.0,4,2,1,Indonesia; Malaysia,Sacofa,1,,,https://www.sacofa.com.my
+epic-malta-sicily-cable-system-emscs,Epic Malta-Sicily Cable System (EMSCS),2004 July,2004,in service,2000s,260.0,TeleGeography,260.0,278.9,2,2,1,Italy; Malta,Epic,1,,ASN,https://epic.com.mt/
+farice-1,FARICE-1,2004 January,2004,in service,2000s,1205.0,TeleGeography,1205.0,1234.4,3,3,1,Faroe Islands; Iceland; United Kingdom,Korda,1,,Prysmian,https://kordanetworks.com/
+ingrid,INGRID,2004 October,2004,in service,2000s,64.0,TeleGeography,64.0,61.0,4,3,1,France; Guernsey; Jersey,CIEG,1,,,
+link-2-phase-1,Link 2 Phase-1,2004 January,2004,in service,2000s,281.0,TeleGeography,281.0,264.7,2,1,0,Indonesia,XLSmart,1,,,https://www.xl.co.id
+oteglobe-kokkini-bari,OTEGLOBE Kokkini-Bari,2004 June,2004,in service,2000s,700.0,TeleGeography,700.0,659.3,2,2,1,Greece; Italy,OTEGLOBE,1,,ASN,http://www.oteglobe.gr
+okinawa-miyakojima-ishigaki,Okinawa-Miyakojima-Ishigaki,2004,2004,in service,2000s,467.0,TeleGeography,467.0,421.6,3,1,0,Japan,NTT,1,,,
+qatar-u-a-e-submarine-cable-system,Qatar-U.A.E. Submarine Cable System,2004 December,2004,in service,2000s,100.0,TeleGeography,100.0,351.5,4,2,1,Qatar; United Arab Emirates,Ooredoo; e&,2,,,
+sint-maarten-puerto-rico-network-one-smpr-1,Sint Maarten Puerto Rico Network One (SMPR-1),2004 December,2004,in service,2000s,375.0,TeleGeography,375.0,353.1,3,3,1,Saint Martin; Sint Maarten; United States,Dauphin Telecom; TelEm Group,2,,,
+svalbard-undersea-cable-system,Svalbard Undersea Cable System,2004 January,2004,in service,2000s,2714.0,TeleGeography,2714.0,2279.4,2,1,0,Norway,Space Norway,1,,SubCom,https://spacenorway.no
+tata-tgn-tata-indicom,Tata TGN-Tata Indicom,2004 November,2004,in service,2000s,3175.0,TeleGeography,3175.0,3047.5,2,2,1,India; Singapore,Tata Communications,1,,SubCom,http://www.tatacommunications.com
+basslink,Basslink,2005 November,2005,in service,2000s,298.0,TeleGeography,298.0,288.2,2,1,0,Australia,Basslink Telecoms,1,,,
+cogim,COGIM,2005,2005,in service,2000s,438.0,TeleGeography,438.0,429.2,2,1,0,Canada,Télébec,1,,,
+dumai-melaka-cable-system-dmcs,Dumai-Melaka Cable System (DMCS),2005 February,2005,in service,2000s,159.0,TeleGeography,159.0,143.9,2,2,1,Indonesia; Malaysia,Telekom Malaysia; Telkom Indonesia,2,,NEC,https://www.tm.com.my
+grand-bahama-bimini-submarine-cable,Grand Bahama Bimini Submarine Cable,2005,2005,in service,2000s,117.0,TeleGeography,117.0,106.4,2,1,0,Bahamas,Bahamas Telecommunications Company,1,,,
+janna,Janna,2005 April,2005,in service,2000s,634.0,TeleGeography,634.0,603.8,4,1,0,Italy,EXA Infrastructure; Regione Sardegne; Tiscali; WINDTRE,4,,Norddeutsche Seekabelwerke GmbH (NSW),
+kuwait-iran,Kuwait-Iran,2005 June,2005,in service,2000s,380.0,TeleGeography,380.0,322.0,4,2,1,Iran; Kuwait,Kuwait Ministry of Communications; Telecommunication Infrastructure Company of Iran,2,,Prysmian,
+link-1-phase-2,Link 1 Phase-2,2005 May,2005,in service,2000s,94.0,TeleGeography,94.0,93.1,2,1,0,Indonesia,XLSmart,1,,,https://www.xl.co.id
+link-2-phase-2,Link 2 Phase-2,2005 May,2005,in service,2000s,221.0,TeleGeography,221.0,218.3,2,1,0,Indonesia,XLSmart,1,,,https://www.xl.co.id
+link-3-phase-2,Link 3 Phase-2,2005 May,2005,in service,2000s,342.0,TeleGeography,342.0,423.4,3,1,0,Indonesia,XLSmart,1,,,https://www.xl.co.id
+link-4-phase-2,Link 4 Phase-2,2005 March,2005,in service,2000s,300.0,TeleGeography,300.0,265.1,2,1,0,Indonesia,XLSmart,1,,,https://www.xl.co.id
+link-5-phase-2,Link 5 Phase-2,2005 July,2005,in service,2000s,365.0,TeleGeography,365.0,361.2,2,1,0,Indonesia,XLSmart,1,,,https://www.xl.co.id
+med-cable-network,Med Cable Network,2005 October,2005,in service,2000s,1300.0,TeleGeography,1300.0,1518.7,4,2,1,Algeria; France,Orascom Telecom Holding,1,,ASN,
+red-hook-little-saint-james,Red Hook-Little Saint James,2005,2005,in service,2000s,5.0,TeleGeography,5.0,3.1,2,1,0,Virgin Islands (U.S.),Virgin Islands Water and Power Authority,1,,Prysmian,
+seamewe-4,SeaMeWe-4,2005 December,2005,in service,2000s,20000.0,TeleGeography,20000.0,19164.8,16,14,1,Algeria; Bangladesh; Egypt; France; India; Italy; Malaysia; Pakistan; Saudi Arabia; Singapore; Sri Lanka; Thailand; Tunisia; United Arab Emirates,Algerie Telecom; Bangladesh Submarine Cable Company Limited (BSCCL); Bharti Airtel; National Telecom; Orange; Pakistan Telecommunications Company Ltd.; Singtel; Sparkle; Sri Lanka Telecom; Tata Communications; Telecom Egypt; Telekom Malaysia; Tunisia Telecom; Verizon; center3; e&,16,,ASN; Fujitsu,https://www.seamewe4.net/
+sweden-latvia,Sweden-Latvia,2005 January,2005,in service,2000s,391.0,TeleGeography,391.0,345.3,3,2,1,Latvia; Sweden,Latvia State Radio and Television Centre,1,,,http://www.lvrtc.lv
+bahamas-domestic-submarine-network-bdsni,Bahamas Domestic Submarine Network (BDSNi),2006,2006,in service,2000s,2735.0,TeleGeography,2735.0,2828.1,15,2,1,Bahamas; Haiti,Bahamas Telecommunications Company,1,,SubCom,http://www.btcbahamas.com
+bharat-lanka-cable-system,Bharat Lanka Cable System,2006 June,2006,in service,2000s,325.0,TeleGeography,325.0,321.8,2,2,1,India; Sri Lanka,Bharat Sanchar Nigam Ltd. (BSNL); Sri Lanka Telecom,2,,NEC,
+falcon,FALCON,2006 September,2006,in service,2000s,10300.0,TeleGeography,10300.0,11642.2,19,14,1,Bahrain; Egypt; India; Iran; Iraq; Kuwait; Maldives; Oman; Qatar; Saudi Arabia; Sri Lanka; Sudan; United Arab Emirates; Yemen,FLAG,1,,ASN,https://flagtel.com/
+fibralink,Fibralink,2006 March,2006,in service,2000s,1102.0,TeleGeography,1102.0,1124.2,5,3,1,Dominican Republic; Haiti; Jamaica,Liberty Networks,1,,ASN,https://libertynet.com
+global-caribbean-network-gcn,Global Caribbean Network (GCN),2006 September,2006,in service,2000s,890.0,TeleGeography,890.0,829.9,6,5,1,Guadeloupe; Saint Barthélemy; Saint Martin; United States; Virgin Islands (U.S.),Loret Group,1,,,https://groupeloret.net/brand/global-caribbean-network/
+globalconnect-3-gc3,GlobalConnect 3 (GC3),2006,2006,in service,2000s,19.0,TeleGeography,19.0,22.3,2,1,0,Denmark,GlobalConnect,1,,,https://www.globalconnectcarrier.com/
+globalconnect-kpn,GlobalConnect-KPN,2006,2006,in service,2000s,43.0,TeleGeography,43.0,66.3,2,2,1,Denmark; Germany,GlobalConnect,1,,,https://www.globalconnectcarrier.com/
+jasuka,JaSuKa,2006,2006,in service,2000s,1936,route,,1935.6,7,1,0,Indonesia,Telkom Indonesia,1,,NEC,https://www.telkom.co.id/
+java-kalimantan-sulawesi-jakasusi,Java-Kalimantan-Sulawesi (JAKASUSI),2006,2006,in service,2000s,1100.0,TeleGeography,1100.0,1048.0,3,1,0,Indonesia,Indosat Ooredoo,1,,ASN,https://indosatooredoo.com/
+sarco,SARCO,2006,2006,in service,2000s,17,route,,16.8,2,2,1,France; Italy,Free,1,,,
+southern-caribbean-fiber,Southern Caribbean Fiber,2006 September,2006,in service,2000s,3000.0,TeleGeography,3000.0,2660.3,16,15,1,Antigua and Barbuda; Barbados; Dominica; Grenada; Guadeloupe; Martinique; Montserrat; Saint Barthélemy; Saint Kitts and Nevis; Saint Lucia; Saint Martin; Saint Vincent and the Grenadines; Trinidad and Tobago; United States; Virgin Islands (U.S.),Digicel,1,,ASN; SubCom,
+transworld-tw1,Transworld (TW1),2006 June,2006,in service,2000s,1300.0,TeleGeography,1300.0,1312.7,3,3,1,Oman; Pakistan; United Arab Emirates,Transworld,1,,SubCom,http://www.tw1.com
+atlas-offshore,Atlas Offshore,2007 July,2007,in service,2000s,1634.0,TeleGeography,1634.0,1512.1,2,2,1,France; Morocco,Maroc Telecom,1,,ASN,https://www.iam.ma
+batam-rengit-cable-system-brcs,Batam-Rengit Cable System (BRCS),2007 October,2007,in service,2000s,64.0,TeleGeography,64.0,129.7,2,2,1,Indonesia; Malaysia,XLSmart,1,,,https://www.xl.co.id/
+dhiraagu-slt-submarine-cable-network,Dhiraagu-SLT Submarine Cable Network,2007 February,2007,in service,2000s,850.0,TeleGeography,850.0,786.6,2,2,1,Maldives; Sri Lanka,Dhiraagu; Sri Lanka Telecom,2,,NEC,https://www.dhiraagu.com.mv/
+e-llan,E-LLAN,2007,2007,in service,2000s,102,route,,101.6,2,2,1,Isle of Man; United Kingdom,Manx Electricity Authority,1,,,
+ec-link,EC Link,2007 October,2007,in service,2000s,1078.0,TeleGeography,1078.0,848.4,2,2,1,Curaçao; Trinidad and Tobago,Liberty Networks,1,,SubCom,https://libertynet.com
+gemini-bermuda,Gemini Bermuda,2007 October,2007,in service,2000s,1501.0,TeleGeography,1501.0,1368.8,2,2,1,Bermuda; United States,Liberty Networks; Orange,2,,Orange Marine; Xtera,
+high-capacity-undersea-guernsey-optical-fibre-hugo,High-capacity Undersea Guernsey Optical-fibre (HUGO),2007,2007,in service,2000s,425.0,TeleGeography,425.0,349.1,4,3,1,France; Guernsey; United Kingdom,Sure; Vodafone,2,,Xtera,
+ixchel,Ixchel,2007 August,2007,in service,2000s,20.0,TeleGeography,20.0,31.2,2,1,0,Mexico,Telmex,1,,ASN,https://telmex.com/
+jerry-newton,Jerry Newton,2007 October,2007,in service,2000s,88.0,TeleGeography,88.0,67.3,2,2,1,"Bonaire, Sint Eustatius and Saba; Curaçao",Liberty Networks,1,,SubCom,https://libertynet.com
+kodiak-kenai-fiber-link-kkfl,Kodiak Kenai Fiber Link (KKFL),2007 January,2007,in service,2000s,966.0,TeleGeography,966.0,994.4,6,1,0,United States,GCI Communication Corp,1,,ASN,https://www.gci.com/
+konstanz-friedrichshafen,Konstanz-Friedrichshafen,2007,2007,in service,2000s,26.0,TeleGeography,26.0,23.1,2,1,0,Germany,Stadtwerke Konstanz,1,,,
+la-gomera-el-hierro,La Gomera-El Hierro,2007,2007,in service,2000s,102,route,,102.0,2,1,0,Spain,Telefonica,1,,,
+polar-circle-cable,Polar Circle Cable,2007 September,2007,in service,2000s,1004.0,TeleGeography,1004.0,759.5,7,1,0,Norway,KystTele,1,,,http://www.kysttele.no
+ruppione-isolella,Ruppione-Isolella,2007,2007,in service,2000s,62.0,TeleGeography,62.0,54.2,2,1,0,France,Corsica Haut Débit,1,,,
+sovetskaya-gavan-ilyinskoye,Sovetskaya Gavan-Ilyinskoye,2007,2007,in service,2000s,214.0,TeleGeography,214.0,178.6,2,1,0,Russia,TTK,1,,,
+alaska-united-southeast-au-se,Alaska United Southeast (AU-SE),2008 November,2008,in service,2000s,626.0,TeleGeography,626.0,688.1,7,1,0,United States,GCI Communication Corp,1,,SubCom,https://www.gci.com/
+caucasus-cable-system,Caucasus Cable System,2008 November,2008,in service,2000s,1200.0,TeleGeography,1200.0,1123.5,2,2,1,Bulgaria; Georgia,Caucasus Online,1,,SubCom,http://www.co.ge/en/
+channel-islands-9-liberty-submarine-cable,Channel Islands-9 Liberty Submarine Cable,2008 June,2008,in service,2000s,134,route,,134.0,2,2,1,Guernsey; United Kingdom,JTGlobal,1,,,
+colombia-florida-express-cfx-1,Colombia-Florida Express (CFX-1),2008 August,2008,in service,2000s,2438.0,TeleGeography,2438.0,2286.1,4,3,1,Colombia; Jamaica; United States,Liberty Networks,1,,SubCom,https://libertynet.com/contact
+go-1-mediterranean-cable-system,GO-1 Mediterranean Cable System,2008 December,2008,in service,2000s,290.0,TeleGeography,290.0,259.3,2,2,1,Italy; Malta,GO plc,1,,ASN,https://www.go.com.mt/business
+gondwana-1,Gondwana-1,2008 September,2008,in service,2000s,2151.0,TeleGeography,2151.0,2004.1,2,2,1,Australia; New Caledonia,OPT,1,,ASN,https://www.opt.nc/
+gulf-of-mexico-fiber-optic-network,Gulf of Mexico Fiber Optic Network,2008,2008,in service,2000s,1200.0,TeleGeography,1200.0,903.9,2,1,0,United States,Tampnet,1,,SubCom,https://www.tampnet.com/
+hachijojima-mainland,Hachijojima-Mainland,2008,2008,in service,2000s,230,route,,229.5,2,1,0,Japan,NTT,1,,,
+hokkaido-sakhalin-cable-system-hscs,Hokkaido-Sakhalin Cable System (HSCS),2008 July,2008,in service,2000s,570.0,TeleGeography,570.0,402.0,2,2,1,Japan; Russia,NTT; TTK,2,,NEC,
+matrix-cable-system,Matrix Cable System,2008 August,2008,in service,2000s,1055.0,TeleGeography,1055.0,1206.1,3,2,1,Indonesia; Singapore,Matrix NAP Info; Matrix Networks,2,,SubCom,https://matrixnetworks.sg/
+moratelindo-international-cable-system-1-mic-1,Moratelindo International Cable System-1 (MIC-1),2008 January,2008,in service,2000s,70.0,TeleGeography,70.0,36.4,2,2,1,Indonesia; Singapore,Moratelindo,1,,,http://www.moratelindo.co.id
+northern-lights,Northern Lights,2008,2008,in service,2000s,67.0,TeleGeography,67.0,57.8,2,1,0,United Kingdom,BT,1,,,
+oskarshamn-visby,Oskarshamn-Visby,2008,2008,in service,2000s,122,route,,121.9,2,1,0,Sweden,GlobalConnect,1,,,https://www.globalconnectcarrier.com/
+persona,Persona,2008,2008,in service,2000s,800.0,TeleGeography,800.0,384.5,2,1,0,Canada,Eastlink,1,,Nexans,
+picot-1,Picot-1,2008,2008,in service,2000s,244,route,,244.2,3,1,0,New Caledonia,OPT,1,,ASN,https://www.opt.nc/
+russia-japan-cable-network-rjcn,Russia-Japan Cable Network (RJCN),2008 September,2008,in service,2000s,1800.0,TeleGeography,1800.0,1567.1,2,2,1,Japan; Russia,KDDI; Rostelecom,2,,NEC,
+s-u-b-cable-system,S-U-B Cable System,2008,2008,in service,2000s,2009.0,TeleGeography,2009.0,2046.6,3,1,0,Indonesia,Telkom Indonesia,1,,NEC,
+shefa-2,SHEFA-2,2008 March,2008,in service,2000s,1000.0,TeleGeography,1000.0,813.0,7,2,1,Faroe Islands; United Kingdom,Shefa,1,,Xtera,http://www.shefa.fo
+sjjk,SJJK,2008 December,2008,in service,2000s,543.0,TeleGeography,543.0,550.0,5,1,0,Indonesia,XLSmart,1,,,https://www.xl.co.id
+sto-hel-one,STO-HEL-One,2008,2008,in service,2000s,560.0,TeleGeography,560.0,186.1,4,2,1,Finland; Sweden,GlobalConnect,1,,Ericsson,https://www.globalconnectcarrier.com/
+telstra-endeavour,Telstra Endeavour,2008 September,2008,in service,2000s,9125.0,TeleGeography,9125.0,8247.5,2,2,1,Australia; United States,Telstra,1,,ASN,https://www.telstrainternational.com/
+trans-pacific-express-tpe-cable-system,Trans-Pacific Express (TPE) Cable System,2008 August,2008,in service,2000s,17968.0,TeleGeography,17968.0,15335.5,6,5,1,China; Japan; South Korea; Taiwan; United States,AT&T; China Telecom; China Unicom; Chunghwa Telecom; KT; NTT; Verizon,7,,SubCom,https://tpecable.org:59876/
+vodafone-greece-domestic,Vodafone Greece Domestic,2008,2008,in service,2000s,92.0,TeleGeography,92.0,103.5,2,1,0,Greece,Vodafone,1,,Norddeutsche Seekabelwerke GmbH (NSW),https://www.vodafone.gr/
+vstervik-visby,Västervik-Visby,2008,2008,in service,2000s,101,route,,101.5,2,1,0,Sweden,GlobalConnect,1,,,https://www.globalconnectcarrier.com/
+acs-alaska-oregon-network-akorn,ACS Alaska-Oregon Network (AKORN),2009 April,2009,in service,2000s,3000.0,TeleGeography,3000.0,2966.7,4,1,0,United States,Alaska Communications,1,,SubCom,https://www.alaskacommunications.com
+asia-america-gateway-aag-cable-system,Asia-America Gateway (AAG) Cable System,2009 November,2009,in service,2000s,20000.0,TeleGeography,20000.0,19345.9,10,9,1,Brunei; China; Guam; Malaysia; Philippines; Singapore; Thailand; United States; Vietnam,AT&T; BT; Bharti Airtel; Eastern Telecom; Ezecom; Globe Telecom; Indosat Ooredoo; National Telecom; PLDT; Saigon Postel Corporation; Spark New Zealand; Starhub; Telekom Malaysia; Telkom Indonesia; Telstra; Unified National Networks (UNN); VNPT International; Viettel Corporation,18,,ASN; NEC,https://asia-america-gateway.com/
+batam-dumai-melaka-bdm,Batam Dumai Melaka (BDM),2009 November,2009,in service,2000s,353.0,TeleGeography,353.0,411.0,3,2,1,Indonesia; Malaysia,Moratelindo; Telekom Malaysia,2,,HMN Tech,http://www.moratelindo.co.id
+batam-singapore-cable-system-bscs,Batam Singapore Cable System (BSCS),2009,2009,in service,2000s,73.0,TeleGeography,73.0,38.0,2,2,1,Indonesia; Singapore,Telkom Indonesia,1,,NEC,
+caribbean-bermuda-u-s-cbus,Caribbean-Bermuda U.S. (CBUS),2009 October,2009,in service,2000s,1700.0,TeleGeography,1700.0,1547.5,2,2,1,Bermuda; Virgin Islands (U.K.),Liberty Networks; Orange,2,,Xtera,
+danice,DANICE,2009 August,2009,in service,2000s,2304.0,TeleGeography,2304.0,2081.7,2,2,1,Denmark; Iceland,Korda,1,,SubCom,https://kordanetworks.com/
+greenland-connect,Greenland Connect,2009 March,2009,in service,2000s,4580.0,TeleGeography,4580.0,4354.4,4,3,1,Canada; Greenland; Iceland,Tusass A/S,1,,ASN,https://www.tusass.gl/
+hannibal-system,HANNIBAL System,2009 October,2009,in service,2000s,178.0,TeleGeography,178.0,166.3,2,2,1,Italy; Tunisia,Tunisia Telecom,1,,HMN Tech,http://www.tunisietelecom.tn
+jakabare,JAKABARE,2009 November,2009,in service,2000s,1330.0,TeleGeography,1330.0,1384.9,4,2,1,Indonesia; Singapore,Indosat Ooredoo,1,,NEC,https://indosatooredoo.com
+lower-indian-ocean-network-lion,Lower Indian Ocean Network (LION),2009 November,2009,in service,2000s,1060.0,TeleGeography,1060.0,975.1,3,3,1,Madagascar; Mauritius; Réunion,Mauritius Telecom; Orange; Orange Madagascar,3,,ASN,https://lion-submarinesystem.com
+melita-1,Melita 1,2009 June,2009,in service,2000s,97.0,TeleGeography,97.0,97.0,2,2,1,Italy; Malta,Melita,1,,Norddeutsche Seekabelwerke GmbH (NSW),http://www.melita.com
+pipe-pacific-cable-1-ppc-1,PIPE Pacific Cable-1 (PPC-1),2009 October,2009,in service,2000s,6900.0,TeleGeography,6900.0,6072.7,3,3,1,Australia; Guam; Papua New Guinea,Vocus Communications,1,,SubCom,http://www.vocus.com.au
+paniolo-cable-network,Paniolo Cable Network,2009,2009,in service,2000s,576.0,TeleGeography,576.0,403.2,7,1,0,United States,Hawaiian Telcom,1,,,
+seacomtata-tgn-eurasia,SEACOM/Tata TGN-Eurasia,2009 July,2009,in service,2000s,15000.0,TeleGeography,15000.0,12919.4,8,8,1,Djibouti; Egypt; India; Kenya; Mozambique; Saudi Arabia; South Africa; Tanzania,SEACOM; Tata Communications,2,,SubCom,http://www.seacom.mu
+samoa-american-samoa-sas,Samoa-American Samoa (SAS),2009 May,2009,in service,2000s,250.0,TeleGeography,250.0,136.0,2,2,1,American Samoa; Samoa,American Samoa Government; Elandia,2,,,
+tata-tgn-intra-asia-tgn-ia,Tata TGN-Intra Asia (TGN-IA),2009 March,2009,in service,2000s,6700.0,TeleGeography,6700.0,6620.6,4,4,1,China; Philippines; Singapore; Vietnam,Tata Communications,1,,SubCom,http://www.tatacommunications.com
+the-east-african-marine-system-teams,The East African Marine System (TEAMS),2009 October,2009,in service,2000s,5054.0,TeleGeography,5054.0,5057.5,2,2,1,Kenya; United Arab Emirates,TEAMS Ltd.; e&,2,,ASN,
+comoros-domestic-cable-system,Comoros Domestic Cable System,2010,2010,in service,2010s,252,route,,252.4,3,1,0,Comoros,Comores Telecom,1,,ASN,
+eastern-africa-submarine-system-eassy,Eastern Africa Submarine System (EASSy),2010 July,2010,in service,2010s,10500.0,TeleGeography,10500.0,10399.2,9,9,1,Comoros; Djibouti; Kenya; Madagascar; Mozambique; Somalia; South Africa; Sudan; Tanzania,BT; Bayobab; Bharti Airtel; Botswana Fibre Networks; Comores Telecom; Djibouti Telecom; Liquid Intelligent Technologies; Mauritius Telecom; Orange; Sudatel; Tanzania Telecommunication Corporation; Telkom Kenya; Telkom South Africa; Telma (Telecom Malagasy); Vodacom DRC; WIOCC; Zambia Telecom; center3; e&,19,,ASN,
+glo-1,Glo-1,2010 October,2010,in service,2010s,9800.0,TeleGeography,9800.0,8508.7,3,3,1,Ghana; Nigeria; United Kingdom,Globacom Limited,1,,ASN,https://www.gloworld.com
+hantru1-cable-system,HANTRU1 Cable System,2010 March,2010,in service,2010s,2917.0,TeleGeography,2917.0,3309.5,4,3,1,Guam; Marshall Islands; Micronesia,Federated States of Micronesia Telecommunications Cable Corporation (FSMTCC); Hannon Armstrong; Marshall Islands Telecommunications Authority,3,,SubCom,
+honotua,Honotua,2010 September,2010,in service,2010s,4805.0,TeleGeography,4805.0,4588.2,6,2,1,French Polynesia; United States,OPT French Polynesia,1,,ASN,http://www.opt.pf
+imewe,IMEWE,2010 December,2010,in service,2010s,12091.0,TeleGeography,12091.0,12013.0,9,8,1,Egypt; France; India; Italy; Lebanon; Pakistan; Saudi Arabia; United Arab Emirates,Bharti Airtel; Ogero; Orange; Pakistan Telecommunications Company Ltd.; Sparkle; Tata Communications; Telecom Egypt; center3; e&,9,,ASN; NEC,https://imewecable.com/
+jaka2ladema,JaKa2LaDeMa,2010,2010,in service,2010s,1700.0,TeleGeography,1700.0,1624.0,10,1,0,Indonesia,Telkom Indonesia,1,,Fujitsu; Norddeutsche Seekabelwerke GmbH (NSW),
+konstanz-meersburg,Konstanz-Meersburg,2010 Q4,2010,in service,2010s,5.0,TeleGeography,5.0,7.8,2,1,0,Germany,Stadtwerke Konstanz,1,,,
+mainone,MainOne,2010 July,2010,in service,2010s,7000.0,TeleGeography,7000.0,8267.4,5,5,1,Côte d'Ivoire; Ghana; Nigeria; Portugal; Senegal,MainOne - An Equinix Company,1,,SubCom,https://www.mainone.net/
+mishima-village,Mishima Village,2010,2010,in service,2010s,192.0,TeleGeography,192.0,165.8,4,1,0,Japan,Mishima Village,1,,,
+pgascom,PGASCOM,2010,2010,in service,2010s,264.0,TeleGeography,264.0,312.8,3,2,1,Indonesia; Singapore,PGASCOM,1,,,http://www.pgascom.co.id
+san-andres-isla-tolu-submarine-cable-sait,San Andres Isla Tolu Submarine Cable (SAIT),2010 December,2010,in service,2010s,826.0,TeleGeography,826.0,761.0,2,1,0,Colombia,Energía Integral Andina,1,,,
+suriname-guyana-submarine-cable-system-sg-scs,Suriname-Guyana Submarine Cable System (SG-SCS),2010 July,2010,in service,2010s,1249.0,TeleGeography,1249.0,1059.3,3,3,1,Guyana; Suriname; Trinidad and Tobago,Guyana Telephone and Telegraph (GT&T); Telesur,2,,HMN Tech,
+tobrok-emasaed-cable-system,Tobrok-Emasaed Cable System,2010 October,2010,in service,2010s,178.0,TeleGeography,178.0,137.9,2,1,0,Libya,Libya International Telecommunications Company,1,,HMN Tech,
+tverrlinken,Tverrlinken,2010,2010,in service,2010s,66,route,,65.8,4,1,0,Norway,KystTele,1,,,http://www.kysttele.no
+unity,Unity,2010 March,2010,in service,2010s,9620.0,TeleGeography,9620.0,9014.5,2,2,1,Japan; United States,Bharti Airtel; Google; KDDI; Singtel; TIME dotCom; Telstra,6,Google,NEC; SubCom,
+bicentenario,Bicentenario,2011 December,2011,in service,2010s,250.0,TeleGeography,250.0,235.9,2,2,1,Argentina; Uruguay,Antel Uruguay; Telecom Argentina,2,,ASN,
+cabo-verde-telecom-domestic-submarine-cable-phase-3,Cabo Verde Telecom Domestic Submarine Cable Phase 3,2011,2011,in service,2010s,724,route,,724.1,8,1,0,Cape Verde,Cabo Verde Telecom (CVT),1,,,https://www.cvtelecom.cv
+canalink,Canalink,2011,2011,in service,2010s,1835.0,TeleGeography,1835.0,3290.6,8,2,1,Morocco; Spain,Canalink,1,,ASN,http://www.canalink.tel/
+ceiba-1,Ceiba-1,2011 June,2011,in service,2010s,287.0,TeleGeography,287.0,277.3,2,1,0,Equatorial Guinea,GITGE (Gestor de Infraestructuras de Telecomunicaciones de Guinea Ecuatorial),1,,,http://www.gitge.com
+east-west-cable-ewc,East-West Cable (EWC),2011 February,2011,in service,2010s,1705.0,TeleGeography,1705.0,1476.6,3,3,1,Dominican Republic; Jamaica; Virgin Islands (U.K.),Liberty Networks,1,,Xtera,https://libertynet.com/contact
+energinet-laeso-varberg,Energinet Laeso-Varberg,2011,2011,in service,2010s,88,route,,87.8,2,2,1,Denmark; Sweden,Energinet,1,,,
+energinet-lyngsa-laeso,Energinet Lyngsa-Laeso,2011 August,2011,in service,2010s,23,route,,23.3,2,1,0,Denmark,Energinet,1,,,
+europe-india-gateway-eig,Europe India Gateway (EIG),2011 February,2011,in service,2010s,15000.0,TeleGeography,15000.0,14681.0,12,11,1,Djibouti; Egypt; Gibraltar; India; Libya; Monaco; Oman; Portugal; Saudi Arabia; United Arab Emirates; United Kingdom,AT&T; Altice Portugal; BT; Bayobab; Bharat Sanchar Nigam Ltd. (BSNL); Bharti Airtel; Djibouti Telecom; Gibtelecom; Kalaam Telecom; Libya International Telecommunications Company; Telecom Egypt; Telkom South Africa; Verizon; Vodafone; Zain Omantel International; center3; du,17,,ASN; SubCom,
+fish-north,FISH North,2011,2011,in service,2010s,90.0,TeleGeography,90.0,127.7,2,1,0,United States,Cordova Telecom Cooperative,1,,,https://www.ctcak.net/
+groote-eylandt,Groote Eylandt,2011,2011,in service,2010s,95.0,TeleGeography,95.0,87.5,2,1,0,Australia,Telstra,1,,,
+hawk,Hawk,2011,2011,in service,2010s,3400.0,TeleGeography,3400.0,3371.8,3,3,1,Cyprus; Egypt; France,FLAG,1,,Fujitsu,https://flagtel.com/
+hokkaido-rebun-rishiri,Hokkaido-Rebun-Rishiri,2011,2011,in service,2010s,64.0,TeleGeography,64.0,55.9,3,1,0,Japan,NTT,1,,,
+javali,JAVALI,2011 December,2011,in service,2010s,125,route,,125.5,2,1,0,Indonesia,Indosat Ooredoo,1,,Norddeutsche Seekabelwerke GmbH (NSW),
+mataram-kupang-cable-system-mkcs,Mataram Kupang Cable System (MKCS),2011 April,2011,in service,2010s,1318.0,TeleGeography,1318.0,1218.9,7,1,0,Indonesia,Telkom Indonesia,1,,HMN Tech,
+minamidaito-island,Minamidaito Island,2011,2011,in service,2010s,410.0,TeleGeography,410.0,362.1,2,1,0,Japan,Okinawa Prefecture,1,,,
+ogasawara-cable-network,Ogasawara Cable Network,2011 July,2011,in service,2010s,1038.0,TeleGeography,1038.0,831.8,3,1,0,Japan,Tokyo Metropolitan Government,1,,NEC,
+pencan-8,Pencan-8,2011,2011,in service,2010s,1400.0,TeleGeography,1400.0,1360.4,2,1,0,Spain,Telefonica,1,,ASN,
+romulo,Romulo,2011,2011,in service,2010s,237.0,TeleGeography,237.0,236.5,2,1,0,Spain,Red Electrica,1,,,https://www.ree.es/
+saudi-arabia-sudan-2-sas-2,Saudi Arabia-Sudan-2 (SAS-2),2011 July,2011,in service,2010s,330.0,TeleGeography,330.0,296.3,2,2,1,Saudi Arabia; Sudan,Sudatel; center3,2,,,
+te-northtgn-eurasiaseacomalexandrosmedex,TE North/TGN-Eurasia/SEACOM/Alexandros/Medex,2011 July,2011,in service,2010s,3634.0,TeleGeography,3634.0,3708.0,4,4,1,Algeria; Cyprus; Egypt; France,Algerie Telecom; Cyta; PCCW; SEACOM; Tata Communications; Telecom Egypt,6,,ASN,https://www.te.eg/wps/portal/te/Business/Wholesale/
+tenerife-la-palma,Tenerife-La Palma,2011,2011,in service,2010s,130,route,,130.1,2,1,0,Spain,Telefonica,1,,,
+turcyos-2,Turcyos-2,2011 March,2011,in service,2010s,213.0,TeleGeography,213.0,216.4,2,2,1,Cyprus; Turkey,Turk Telekom,1,,,http://www.turktelekom.com.tr
+alba-1,ALBA-1,2012 August,2012,in service,2010s,1860.0,TeleGeography,1860.0,1681.2,4,3,1,Cuba; Jamaica; Venezuela,Telecom Venezuela; Transbit,2,,ASN,
+arsat-submarine-fiber-optic-cable,ARSAT Submarine Fiber Optic Cable,2012 Q2,2012,in service,2010s,40.0,TeleGeography,40.0,33.6,2,1,0,Argentina,ARSAT,1,,,http://www.arsat.com.ar/
+africa-coast-to-europe-ace,Africa Coast to Europe (ACE),2012 December,2012,in service,2010s,17000.0,TeleGeography,17000.0,15945.7,18,18,1,Benin; Côte d'Ivoire; Equatorial Guinea; France; Gabon; Gambia; Ghana; Guinea; Guinea-Bissau; Liberia; Mauritania; Nigeria; Portugal; Sao Tome and Principe; Senegal; Sierra Leone; South Africa; Spain,Bayobab; Cable Consortium of Liberia; Canalink; Dolphin Telecom; GUILAB; Gambia Submarine Cable Company; International Mauritania Telecom; Orange; Orange Cameroun; Orange Cote d’Ivoire; Orange Mali; Republic of Cameroon; Republic of Equatorial Guinea; Republic of Gabon; Republic of Guinea Bissau; SBIN (Société Béninoise des Infrastructures Numériques du Bénin); STP Cabo; Sierra Leone Cable Company; Sonatel; Zamani Telecom,20,,ASN,
+alaska-united-turnagain-arm-auta,Alaska United Turnagain Arm (AUTA),2012,2012,in service,2010s,53.0,TeleGeography,53.0,47.7,2,1,0,United States,GCI Communication Corp,1,,,https://www.gci.com/
+asia-submarine-cable-express-asecahaya-malaysia,Asia Submarine-cable Express (ASE)/Cahaya Malaysia,2012 August,2012,in service,2010s,8148.0,TeleGeography,8148.0,7795.6,6,5,1,China; Japan; Malaysia; Philippines; Singapore,NTT; PLDT; Starhub; Telekom Malaysia,4,,NEC,
+celtixconnect-1-cc-1,CeltixConnect-1 (CC-1),2012 January,2012,in service,2010s,131.0,TeleGeography,131.0,108.2,2,2,1,Ireland; United Kingdom,EXA Infrastructure,1,,ASN,https://exainfra.net/
+cross-straits-cable-network-cscn,Cross-Straits Cable Network (CSCN),2012 August,2012,in service,2010s,21.0,TeleGeography,21.0,20.0,4,2,1,China; Taiwan,China Mobile; China Telecom; China Unicom; Chunghwa Telecom,4,,,
+dhiraagu-cable-network,Dhiraagu Cable Network,2012 April,2012,in service,2010s,1253.0,TeleGeography,1253.0,878.7,8,1,0,Maldives,Dhiraagu,1,,NEC,https://www.dhiraagu.com.mv/
+emerald-bridge-fibres,Emerald Bridge Fibres,2012 December,2012,in service,2010s,120.0,TeleGeography,120.0,116.5,2,2,1,Ireland; United Kingdom,Zayo,1,,Nexans,https://zayoeurope.com/
+exelera-north,Exelera North,2012 January,2012,in service,2010s,345.0,TeleGeography,345.0,331.5,2,2,1,Cyprus; Israel,Exelera,1,,,https://www.exelera.net/
+geo-eirgrid,Geo-Eirgrid,2012 December,2012,in service,2010s,187.0,TeleGeography,187.0,229.7,2,2,1,Ireland; United Kingdom,Eirgrid,1,,Nexans,http://www.zayo.com
+gulf-bridge-international-cable-systemmiddle-east-north-africa-cable-system-gbicsmena,Gulf Bridge International Cable System/Middle East North Africa Cable System (GBICS/MENA),2012 February,2012,in service,2010s,5270.0,TeleGeography,5270.0,4870.0,9,9,1,Bahrain; India; Iran; Iraq; Kuwait; Oman; Qatar; Saudi Arabia; United Arab Emirates,Gulf Bridge International,1,,SubCom,http://www.gbiinc.com
+jakarta-bangka-bintan-batam-singapore-b3js,Jakarta-Bangka-Bintan-Batam-Singapore (B3JS),2012 November,2012,in service,2010s,1031.0,TeleGeography,1031.0,1102.5,6,2,1,Indonesia; Singapore,Moratelindo,1,,,http://www.moratelindo.co.id
+jonah,Jonah,2012 January,2012,in service,2010s,2297.0,TeleGeography,2297.0,2045.0,2,2,1,Israel; Italy,Bezeq International Ltd.,1,,ASN,https://www.bezeqint.net/
+libreville-port-gentil-cable,Libreville-Port Gentil Cable,2012 April,2012,in service,2010s,198.0,TeleGeography,198.0,164.9,2,1,0,Gabon,Republic of Gabon,1,,,
+lower-indian-ocean-network-2-lion2,Lower Indian Ocean Network 2 (LION2),2012 April,2012,in service,2010s,2700.0,TeleGeography,2700.0,2597.9,2,2,1,Kenya; Mayotte,Emtel; Mauritius Telecom; Orange; Orange Madagascar; Société Réunionnaise du Radiotéléphone; Telkom Kenya,6,,ASN,https://lion-submarinesystem.com
+pishgaman-oman-iran-poi-network,Pishgaman Oman Iran (POI) Network,2012 June,2012,in service,2010s,400.0,TeleGeography,400.0,575.2,3,2,1,Iran; Oman,Pishgaman Kavir,1,,,http://www.poiconnections.com/
+seychelles-to-east-africa-system-seas,Seychelles to East Africa System (SEAS),2012 August,2012,in service,2010s,1930.0,TeleGeography,1930.0,1812.9,2,2,1,Seychelles; Tanzania,Seychelles Cable System Ltd.,1,,ASN,
+terra-sw,TERRA SW,2012,2012,in service,2010s,482,route,,482.3,11,1,0,United States,GCI Communication Corp,1,,,https://www.gci.com/
+tata-tgn-gulf,Tata TGN-Gulf,2012 February,2012,in service,2010s,4031.0,TeleGeography,4031.0,2096.9,6,5,1,Bahrain; Oman; Qatar; Saudi Arabia; United Arab Emirates,Tata Communications,1,,SubCom,http://www.tatacommunications.com
+west-africa-cable-system-wacs,West Africa Cable System (WACS),2012 May,2012,in service,2010s,14530.0,TeleGeography,14530.0,16061.9,13,13,1,"Angola; Cameroon; Cape Verde; Congo, Dem. Rep.; Congo, Rep.; Côte d'Ivoire; Ghana; Namibia; Nigeria; Portugal; South Africa; Spain; Togo",Altice Portugal; Angola Cables; Bayobab; Broadband Infraco; Camtel; Cape Verde Telecom; Congo Telecom; Liquid Intelligent Technologies; Office Congolais de Poste et Télécommunication; PCCW; Tata Communications; Telecom Namibia; Telkom South Africa; Togo Telecom; Vodacom DRC; Vodafone; Vodafone Espana; Vodafone Ghana,18,,ASN,https://wacscable.com/
+boracay-palawan-submarine-cable-system-bpscs,Boracay-Palawan Submarine Cable System (BPSCS),2013 June,2013,in service,2010s,332.0,TeleGeography,332.0,313.7,5,1,0,Philippines,Globe Telecom,1,,HMN Tech,
+cat-submarine-network-csn,CAT Submarine Network (CSN),2013 Q1,2013,in service,2010s,1240.0,TeleGeography,1240.0,725.7,2,1,0,Thailand,National Telecom,1,,,
+guam-okinawa-kyushu-incheon-goki,Guam Okinawa Kyushu Incheon (GOKI),2013 December,2013,in service,2010s,4244.0,TeleGeography,4244.0,3446.5,3,2,1,Guam; Japan,AT&T,1,,Xtera,http://www.att.com
+jakarta-bangka-batam-singapore-b2js,Jakarta-Bangka-Batam-Singapore (B2JS),2013 Q2,2013,in service,2010s,759.0,TeleGeography,759.0,1033.1,5,2,1,Indonesia; Singapore,Triasmitra,1,,,
+java-bali-cable-system-jbcs,Java Bali Cable System (JBCS),2013,2013,in service,2010s,29,route,,29.4,2,1,0,Indonesia,Triasmitra,1,,,http://www.triasmitra.com/
+lazaro-cardenas-manzanillo-santiago-submarine-cable-system-lcmsscs,Lazaro Cardenas-Manzanillo Santiago Submarine Cable System (LCMSSCS),2013 Q4,2013,in service,2010s,322.0,TeleGeography,322.0,390.8,3,1,0,Mexico,Telmex,1,,,https://telmex.com/
+omranepeg,OMRAN/EPEG,2013 Q1,2013,in service,2010s,600.0,TeleGeography,600.0,929.6,5,2,1,Iran; Oman,Vodafone; Zain Omantel International,2,,,http://www.omantel.om
+saba-statia-cable-system-sscs,"Saba, Statia Cable System (SSCS)",2013,2013,in service,2010s,198.0,TeleGeography,198.0,174.2,5,4,1,"Bonaire, Sint Eustatius and Saba; Saint Barthélemy; Saint Kitts and Nevis; Sint Maarten",Government of the Netherlands,1,,,http://www.sscsbv.com
+silphium,Silphium,2013 January,2013,in service,2010s,425.0,TeleGeography,425.0,403.0,2,2,1,Greece; Libya,Libya International Telecommunications Company,1,,HMN Tech,http://www.litc.ly
+southeast-asia-japan-cable-sjc,Southeast Asia-Japan Cable (SJC),2013 June,2013,in service,2010s,8900.0,TeleGeography,8900.0,7925.1,6,5,1,Brunei; China; Japan; Philippines; Singapore,China Mobile; China Telecom; Chunghwa Telecom; Globe Telecom; Google; KDDI; National Telecom; Singtel; Telkom Indonesia; Unified National Networks (UNN),10,Google,NEC; SubCom,
+taiwan-penghu-kinmen-matsu-no-3-tpkm3,Taiwan Penghu Kinmen Matsu No.3 (TPKM3),2013,2013,in service,2010s,510.0,TeleGeography,510.0,534.3,10,1,0,Taiwan,Chunghwa Telecom,1,,NEC,
+taiwan-strait-express-1-tse-1,Taiwan Strait Express-1 (TSE-1),2013 January,2013,in service,2010s,260.0,TeleGeography,260.0,203.5,2,2,1,China; Taiwan,China Mobile; China Unicom; Chunghwa Telecom; Far EasTone (FET); Taiwan International Gateway Corporation; Taiwan Mobile,6,,HMN Tech,
+tonga-cable,Tonga Cable,2013 August,2013,in service,2010s,827.0,TeleGeography,827.0,752.8,2,2,1,Fiji; Tonga,Digicel Tonga; Government of Tonga; Tonga Communications Corporation,3,,ASN,
+america-movil-submarine-cable-system-1-amx-1,America Movil Submarine Cable System-1 (AMX-1),2014,2014,in service,2010s,17800.0,TeleGeography,17800.0,17204.2,15,7,1,Brazil; Colombia; Costa Rica; Dominican Republic; Guatemala; Mexico; United States,América Móvil (Claro),1,,ASN,http://www.americamovil.com
+bt-highlands-and-islands-submarine-cable-system,BT Highlands and Islands Submarine Cable System,2014 December,2014,in service,2010s,402.0,TeleGeography,402.0,368.4,40,1,0,United Kingdom,BT,1,,,
+didon,Didon,2014 May,2014,in service,2010s,170.0,TeleGeography,170.0,162.0,2,2,1,Italy; Tunisia,Ooredoo Tunisie; Orange Tunisie,2,,ASN,
+flores-corvo-cable-system,Flores-Corvo Cable System,2014 January,2014,in service,2010s,685.0,TeleGeography,685.0,574.2,4,1,0,Portugal,Viatel,1,,HMN Tech,http://www.viatel.pt
+interchange-cable-network-1-icn1,Interchange Cable Network 1 (ICN1),2014 January,2014,in service,2010s,1259.0,TeleGeography,1259.0,1104.8,2,2,1,Fiji; Vanuatu,Interchange,1,,ASN,http://www.interchange.vu
+isles-of-scilly-cable,Isles of Scilly Cable,2014,2014,in service,2010s,50,route,,50.5,2,1,0,United Kingdom,BT,1,,,
+jambi-batam-cable-system-jiba,Jambi-Batam Cable System (JIBA),2014,2014,in service,2010s,267.0,TeleGeography,267.0,235.5,2,1,0,Indonesia,Indosat Ooredoo; Moratelindo; XLSmart,3,,,http://www.moratelindo.co.id
+kerch-strait-cable,Kerch Strait Cable,2014 April,2014,in service,2010s,46.0,TeleGeography,46.0,25.0,2,2,1,Russia; Ukraine,Miranda Media,1,,,
+middle-east-north-africa-mena-cable-systemgulf-bridge-international,Middle East North Africa (MENA) Cable System/Gulf Bridge International,2014 December,2014,in service,2010s,8000.0,TeleGeography,8000.0,7743.8,5,4,1,Egypt; Italy; Oman; Saudi Arabia,Gulf Bridge International; Telecom Egypt,2,,ASN,https://www.te.eg/wps/portal/te/Business/Wholesale/
+png-lng,PNG LNG,2014,2014,in service,2010s,200.0,TeleGeography,200.0,410.3,2,1,0,Papua New Guinea,Telikom Papua New Guinea,1,,,
+poseidon,POSEIDON,2014 April,2014,in service,2010s,800.0,TeleGeography,800.0,136.8,2,1,0,Cyprus,Ocean Specialists; Inc (OSI),2,,,
+palawan-iloilo-cable-system,Palawan-Iloilo Cable System,2014 January,2014,in service,2010s,300.0,TeleGeography,300.0,277.0,2,1,0,Philippines,PLDT,1,,,
+roquetas-melilla-cam,Roquetas-Melilla (CAM),2014 January,2014,in service,2010s,181.0,TeleGeography,181.0,168.6,2,1,0,Spain,Telefonica,1,,,https://www.telefonica.com/
+skagerrak-4,Skagerrak 4,2014 December,2014,in service,2010s,137.0,TeleGeography,137.0,218.4,2,2,1,Denmark; Norway,Statnett,1,,,
+sumatera-bangka-cable-system-sbcs,Sumatera Bangka Cable System (SBCS),2014,2014,in service,2010s,57.0,TeleGeography,57.0,135.4,2,1,0,Indonesia,Telkom Indonesia,1,,,
+tarakan-selor-cable-system-tscs,Tarakan Selor Cable System (TSCS),2014,2014,in service,2010s,83.0,TeleGeography,83.0,106.7,2,1,0,Indonesia,Telkom Indonesia,1,,,
+exa-express,EXA Express,2015 September,2015,in service,2010s,4600.0,TeleGeography,4600.0,4693.1,3,3,1,Canada; Ireland; United Kingdom,EXA Infrastructure,1,,SubCom,https://exainfra.net/
+fos-quellon-chacabuco,FOS Quellon-Chacabuco,2015 January,2015,in service,2010s,350.0,TeleGeography,350.0,317.7,2,1,0,Chile,Grupo Gtd,1,,,https://www.gtd.cl
+longyearbyen-ny-lesund,Longyearbyen-Ny-Ålesund,2015 May,2015,in service,2010s,540.0,TeleGeography,540.0,468.7,2,1,0,Norway,Sikt,1,,Nexans,
+luwuk-tutuyan-cable-system-ltcs,Luwuk Tutuyan Cable System (LTCS),2015,2015,in service,2010s,446.0,TeleGeography,446.0,342.8,2,1,0,Indonesia,Telkom Indonesia,1,,,
+malta-italy-interconnector,Malta-Italy Interconnector,2015,2015,in service,2010s,95.0,TeleGeography,95.0,97.0,2,2,1,Italy; Malta,Government of Malta,1,,,
+nigeria-cameroon-submarine-cable-system-ncscs,Nigeria Cameroon Submarine Cable System (NCSCS),2015 December,2015,in service,2010s,1100.0,TeleGeography,1100.0,962.1,2,2,1,Cameroon; Nigeria,Camtel,1,,HMN Tech,
+pacific-caribbean-cable-system-pccs,Pacific Caribbean Cable System (PCCS),2015 September,2015,in service,2010s,6163.0,TeleGeography,6163.0,6256.2,9,7,1,Aruba; Colombia; Curaçao; Ecuador; Panama; United States; Virgin Islands (U.K.),Liberty Networks; SETAR; Telconet; Telxius; United Telecommunication Services (UTS),5,,ASN,
+portsmouth-ryde-10,Portsmouth-Ryde 10,2015,2015,in service,2010s,10,route,,9.9,2,1,0,United Kingdom,BT,1,,Hexatronic,
+portsmouth-ryde-11,Portsmouth-Ryde 11,2015,2015,in service,2010s,12,route,,11.9,2,1,0,United Kingdom,BT,1,,Hexatronic,
+smpcs-packet-1,SMPCS Packet-1,2015,2015,in service,2010s,3156.0,TeleGeography,3156.0,3088.1,12,1,0,Indonesia,Telkom Indonesia,1,,ASN,
+smpcs-packet-2,SMPCS Packet-2,2015,2015,in service,2010s,3498.0,TeleGeography,3498.0,3648.7,11,1,0,Indonesia,Telkom Indonesia,1,,NEC,
+segunda-fos-canal-de-chacao,Segunda FOS Canal de Chacao,2015 January,2015,in service,2010s,40.0,TeleGeography,40.0,35.6,2,1,0,Chile,Grupo Gtd,1,,,https://www.gtd.cl
+tt1,TT1,2015 August,2015,in service,2010s,44.0,TeleGeography,44.0,42.8,2,1,0,Trinidad and Tobago,Alliance Telecommunications; Liberty Networks; TSTT,3,,,
+zayo-festoon,Zayo Festoon,2015,2015,in service,2010s,399,route,,399.3,3,1,0,United States,Zayo,1,,SubCom,
+aec-1,AEC-1,2016 January,2016,in service,2010s,5521.0,TeleGeography,5521.0,5143.4,2,2,1,Ireland; United States,EXA Infrastructure,1,,SubCom,https://exainfra.net/
+asia-pacific-gateway-apg,Asia Pacific Gateway (APG),2016 November,2016,in service,2010s,10400.0,TeleGeography,10400.0,10634.0,11,8,1,China; Japan; Malaysia; Singapore; South Korea; Taiwan; Thailand; Vietnam,China Mobile; China Telecom; China Unicom; Chunghwa Telecom; KT; LG Uplus; Meta; NTT; National Telecom; Starhub; TIME dotCom; VNPT International; Viettel Corporation,13,Meta,NEC,
+avassa,Avassa,2016 November,2016,in service,2010s,260.0,TeleGeography,260.0,251.9,4,2,1,Comoros; Mayotte,Comores Telecom; STOI,2,,HMN Tech,
+balok,BALOK,2016 February,2016,in service,2010s,60.0,TeleGeography,60.0,36.3,2,1,0,Indonesia,XLSmart,1,,,
+bay-of-bengal-gateway-bbg,Bay of Bengal Gateway (BBG),2016 Q1,2016,in service,2010s,8100.0,TeleGeography,8100.0,8826.7,6,5,1,India; Malaysia; Oman; Sri Lanka; United Arab Emirates,AT&T; China Telecom; Dialog Axiata; Reliance Jio Infocomm; Telekom Malaysia; Telstra; Vodafone; Zain Omantel International; e&,9,,ASN,https://www.bayofbengalgateway.com
+bodo-rost-cable,Bodo-Rost Cable,2016,2016,in service,2010s,109.0,TeleGeography,109.0,107.1,2,1,0,Norway,Telenor,1,,Nexans,
+c-lion1,C-Lion1,2016 March,2016,in service,2010s,1172.0,TeleGeography,1172.0,1139.3,3,2,1,Finland; Germany,Cinia Oy,1,,ASN,https://www.cinia.fi/en/
+faster,FASTER,2016 June,2016,in service,2010s,11629.0,TeleGeography,11629.0,10630.3,4,3,1,Japan; Taiwan; United States,China Mobile; China Telecom; Google; KDDI; Singtel; TIME dotCom,6,Google,NEC,
+far-east-submarine-cable-system,Far East Submarine Cable System,2016 Q2,2016,in service,2010s,1855.0,TeleGeography,1855.0,1755.2,3,1,0,Russia,Rostelecom,1,,HMN Tech,https://www.company.rt.ru/
+gtmo-1,GTMO-1,2016,2016,in service,2010s,1528.0,TeleGeography,1528.0,1235.3,2,2,1,Cuba; United States,U.S. Government,1,,Xtera,
+lynn-canal-fiber,Lynn Canal Fiber,2016 October,2016,in service,2010s,138.0,TeleGeography,138.0,119.0,3,1,0,United States,Alaska Power & Telephone Company (AP&T),1,,,http://www.aptalaska.com
+nationwide-submarine-cable-ooredoo-maldives-nascom,Nationwide Submarine Cable Ooredoo Maldives (NaSCOM),2016 December,2016,in service,2010s,1136.0,TeleGeography,1136.0,827.4,6,1,0,Maldives,Ooredoo Maldives,1,,HMN Tech,http://ooredoo.mv
+nordbalt,NordBalt,2016,2016,in service,2010s,400.0,TeleGeography,400.0,397.0,2,2,1,Lithuania; Sweden,Litgrid; Svenska Kraftnät,2,,,
+north-west-cable-system,North-West Cable System,2016 September,2016,in service,2010s,2100.0,TeleGeography,2100.0,2012.5,3,1,0,Australia,Vocus Communications,1,,ASN,http://www.vocus.com.au
+pencan-9,Pencan-9,2016,2016,in service,2010s,1398.0,TeleGeography,1398.0,1291.5,2,1,0,Spain,Telefonica,1,,,
+seamewe-5,SeaMeWe-5,2016 December,2016,in service,2010s,20000.0,TeleGeography,20000.0,19019.0,18,16,1,Bangladesh; Djibouti; Egypt; France; Indonesia; Italy; Malaysia; Myanmar; Oman; Pakistan; Saudi Arabia; Singapore; Sri Lanka; Turkey; United Arab Emirates; Yemen,Bangladesh Submarine Cable Company Limited (BSCCL); China Mobile; China Telecom; China Unicom; Djibouti Telecom; Myanmar Post and Telecommunication (MPT); Ooredoo; Orange; Singtel; Sparkle; Sri Lanka Telecom; TeleYemen; Telecom Egypt; Telekom Malaysia; Telkom Indonesia; Transworld; center3; du,18,,ASN; NEC,
+ulleung-mainland-2,Ulleung-Mainland 2,2016,2016,in service,2010s,164.0,TeleGeography,164.0,143.5,2,1,0,South Korea,KT,1,,,
+sea2shore,sea2shore,2016,2016,in service,2010s,32.0,TeleGeography,32.0,30.6,2,1,0,United States,National Grid,1,,,
+asia-africa-europe-1-aae-1,Asia Africa Europe-1 (AAE-1),2017 June,2017,in service,2010s,25000.0,TeleGeography,25000.0,23123.8,20,18,1,Cambodia; China; Djibouti; Egypt; France; Greece; India; Italy; Malaysia; Myanmar; Oman; Pakistan; Qatar; Saudi Arabia; Thailand; United Arab Emirates; Vietnam; Yemen,China Unicom; Djibouti Telecom; Hyalroute; Metfone; Mobily; National Telecom; OTEGLOBE; Ooredoo; PCCW; Pakistan Telecommunications Company Ltd.; Reliance Jio Infocomm; Retelit; TIME dotCom; TeleYemen; Telecom Egypt; VNPT International; Viettel Corporation; Zain Omantel International; e&,19,,NEC; SubCom,http://www.aaeone.com
+atisa,Atisa,2017 June,2017,in service,2010s,279.0,TeleGeography,279.0,350.4,4,2,1,Guam; Northern Mariana Islands,Docomo Pacific,1,,NEC,http://atisa.docomopacific.com
+ceiba-2,Ceiba-2,2017,2017,in service,2010s,290.0,TeleGeography,290.0,337.4,3,2,1,Cameroon; Equatorial Guinea,GITGE (Gestor de Infraestructuras de Telecomunicaciones de Guinea Ecuatorial),1,,HMN Tech,http://www.gitge.com
+energy-bridge-cable,Energy Bridge Cable,2017 July,2017,in service,2010s,13.0,TeleGeography,13.0,14.1,2,2,1,Russia; Ukraine,Miranda Media,1,,,
+greenland-connect-north,Greenland Connect North,2017 December,2017,in service,2010s,680.0,TeleGeography,680.0,631.9,4,1,0,Greenland,Tusass A/S,1,,ASN,https://www.tusass.gl/
+gulf2africa-g2a,Gulf2Africa (G2A),2017 December,2017,in service,2010s,1500.0,TeleGeography,1500.0,1614.5,3,2,1,Oman; Somalia,Golis Telecommunications; Telesom; Zain Omantel International,3,,HMN Tech,
+labuan-brunei-submarine-cable,Labuan-Brunei Submarine Cable,2017 April,2017,in service,2010s,52.0,TeleGeography,52.0,49.8,2,2,1,Brunei; Malaysia,Common Tower Technologies Sdn Bhd,1,,,http://www.cttsb.com.my
+malaysia-cambodia-thailand-mct-cable,Malaysia-Cambodia-Thailand (MCT) Cable,2017 March,2017,in service,2010s,1300.0,TeleGeography,1300.0,1331.7,3,3,1,Cambodia; Malaysia; Thailand,Symphony; Telcotech; Telekom Malaysia,3,,HMN Tech,
+monet,Monet,2017 December,2017,in service,2010s,10556.0,TeleGeography,10556.0,10627.9,3,2,1,Brazil; United States,Algar Telecom; Angola Cables; Antel Uruguay; Google,4,Google,SubCom,
+okinawa-remote-islands,Okinawa Remote Islands,2017 January,2017,in service,2010s,915.0,TeleGeography,915.0,757.3,9,1,0,Japan,Okinawa Prefecture,1,,,
+projeto-amaznia-conectada-pac-01,Projeto Amazônia Conectada (PAC 01),2017,2017,in service,2010s,800.0,TeleGeography,800.0,713.1,6,1,0,Brazil,Government of Brazil,1,,,
+quintillion-subsea-cable-network,Quintillion Subsea Cable Network,2017 December,2017,in service,2010s,1900.0,TeleGeography,1900.0,1989.1,6,1,0,United States,Quintillion,1,,ASN,https://www.quintillionglobal.com/
+sea-us,SEA-US,2017 August,2017,in service,2010s,14500.0,TeleGeography,14500.0,13774.1,7,6,1,Guam; Indonesia; Micronesia; Palau; Philippines; United States,GTA TeleGuam; Globe Telecom; Hawaiian Telcom; Lightstorm; Telin,5,,NEC,
+seabras-1,Seabras-1,2017 September,2017,in service,2010s,10800.0,TeleGeography,10800.0,10392.1,2,2,1,Brazil; United States,Seaborn Networks; Sparkle,2,,ASN,http://www.seabornnetworks.com
+sistem-kabel-rakyat-1malaysia-skr1m,Sistem Kabel Rakyat 1Malaysia (SKR1M),2017 September,2017,in service,2010s,3800.0,TeleGeography,3800.0,3298.1,6,1,0,Malaysia,TIME dotCom; Telekom Malaysia,2,,NEC,
+strategic-evolution-underwater-link-seul,Strategic Evolution Underwater Link (SEUL),2017 July,2017,in service,2010s,24.0,TeleGeography,24.0,33.6,2,1,0,Belize,Belize Telemedia,1,,HMN Tech,https://www.livedigi.com/
+tasman-global-access-tga-cable,Tasman Global Access (TGA) Cable,2017 March,2017,in service,2010s,2288.0,TeleGeography,2288.0,2199.5,2,2,1,Australia; New Zealand,One NZ; Spark New Zealand; Telstra,3,,ASN,
+australia-singapore-cable-asc,Australia-Singapore Cable (ASC),2018 September,2018,in service,2010s,4600.0,TeleGeography,4600.0,4271.8,4,4,1,Australia; Christmas Island; Indonesia; Singapore,Vocus Communications,1,,ASN,https://www.australiasingaporecable.com
+brusa,BRUSA,2018 August,2018,in service,2010s,11000.0,TeleGeography,11000.0,10924.9,4,2,1,Brazil; United States,Telxius,1,,ASN,http://www.telxius.com
+cowes-fawley-2,Cowes-Fawley 2,2018,2018,in service,2010s,4,route,,4.4,2,1,0,United Kingdom,BT,1,,,
+cyclades-a,Cyclades A,2018,2018,in service,2010s,222.0,TeleGeography,222.0,203.8,5,1,0,Greece,Grid Telecom,1,,Hellenic Cables; Prysmian,
+hawaiki,Hawaiki,2018 July,2018,in service,2010s,14000.0,TeleGeography,14000.0,14674.7,6,5,1,American Samoa; Australia; New Zealand; Tonga; United States,BW Digital,1,,SubCom,https://www.bw-digital.com/
+indonesia-global-gateway-igg-system,Indonesia Global Gateway (IGG) System,2018 May,2018,in service,2010s,5300.0,TeleGeography,5300.0,5142.1,10,2,1,Indonesia; Singapore,Telin; Telkom Indonesia,2,,NEC,https://www.telin.net/
+jakarta-surabaya-cable-system-jayabaya,Jakarta Surabaya Cable System (JAYABAYA),2018 December,2018,in service,2010s,888.0,TeleGeography,888.0,838.3,4,1,0,Indonesia,Triasmitra,1,,,http://www.triasmitra.com/
+junior,Junior,2018 Q3,2018,in service,2010s,390.0,TeleGeography,390.0,369.2,2,1,0,Brazil,Google,1,Google,Padtec,https://cloud.google.com
+lumut-pangkor-island,Lumut-Pangkor Island,2018,2018,in service,2010s,4.0,TeleGeography,4.0,6.8,2,1,0,Malaysia,Telekom Malaysia,1,,,
+marea,MAREA,2018 May,2018,in service,2010s,6605.0,TeleGeography,6605.0,6401.2,2,2,1,Spain; United States,Meta; Microsoft; Telxius,3,Meta; Microsoft,SubCom,http://www.telxius.com
+natitua,Natitua,2018 December,2018,in service,2010s,2680.0,TeleGeography,2680.0,2745.9,11,1,0,French Polynesia,OPT French Polynesia,1,,ASN,https://www.natitua.pf/
+new-cross-pacific-ncp-cable-system,New Cross Pacific (NCP) Cable System,2018 May,2018,in service,2010s,13618.0,TeleGeography,13618.0,12345.5,7,5,1,China; Japan; South Korea; Taiwan; United States,China Mobile; China Telecom; China Unicom; Chunghwa Telecom; KT; Microsoft; Softbank,7,Microsoft,SubCom,
+palapa-ring-middle,Palapa Ring Middle,2018 December,2018,in service,2010s,2100.0,TeleGeography,2100.0,1651.2,20,1,0,Indonesia,Indonesian Government,1,,HMN Tech,
+palapa-ring-west,Palapa Ring West,2018 February,2018,in service,2010s,1980.0,TeleGeography,1980.0,1655.8,11,1,0,Indonesia,Indonesian Government,1,,,
+rompin-tioman-island,Rompin-Tioman Island,2018,2018,in service,2010s,75.0,TeleGeography,75.0,74.0,2,1,0,Malaysia,Telekom Malaysia,1,,,
+seax-1,SEAX-1,2018 May,2018,in service,2010s,250.0,TeleGeography,250.0,217.2,3,3,1,Indonesia; Malaysia; Singapore,SEAX,1,,HMN Tech,https://seax.net/
+sir-abu-nuayr-cable,Sir Abu Nu’ayr Cable,2018,2018,in service,2010s,84.0,TeleGeography,84.0,135.3,2,1,0,United Arab Emirates,e&,1,,,https://www.etisalat.ae/
+south-atlantic-cable-system-sacs,South Atlantic Cable System (SACS),2018 September,2018,in service,2010s,6165.0,TeleGeography,6165.0,5826.5,2,2,1,Angola; Brazil,Angola Cables,1,,NEC,https://www.angolacables.co.ao/
+st-pierre-and-miquelon-cable,St. Pierre and Miquelon Cable,2018 May,2018,in service,2010s,200.0,TeleGeography,200.0,117.9,4,2,1,Canada; Saint Pierre and Miquelon,French Authority of St. Pierre and Miquelon,1,,ASN,
+tannat,Tannat,2018 Q1,2018,in service,2010s,2000.0,TeleGeography,2000.0,2083.6,3,3,1,Argentina; Brazil; Uruguay,Antel Uruguay; Google,2,Google,ASN,
+tonga-domestic-cable-extension-tdce,Tonga Domestic Cable Extension (TDCE),2018 January,2018,in service,2010s,410.0,TeleGeography,410.0,378.3,3,1,0,Tonga,Tonga Cable Limited,1,,ASN,
+tui-samoa,Tui-Samoa,2018 February,2018,in service,2010s,1693.0,TeleGeography,1693.0,1649.9,6,3,1,Fiji; Samoa; Wallis and Futuna,Samoa Submarine Cable Company,1,,ASN,http://ssccsamoa.com/
+5-villages-6-islands,5 Villages 6 Islands,2019,2019,in service,2010s,355.0,TeleGeography,355.0,278.5,9,1,0,Japan,Tokyo Metropolitan Government,1,,NEC,
+besut-perhentian-islands,Besut-Perhentian Islands,2019,2019,in service,2010s,21.0,TeleGeography,21.0,24.6,3,1,0,Malaysia,Telekom Malaysia,1,,,
+cobracable,COBRAcable,2019 November,2019,in service,2010s,304.0,TeleGeography,304.0,290.8,2,2,1,Denmark; Netherlands,Relined,1,,,https://www.tennet.eu/our-projects/international-connections
+caribbean-regional-communications-infrastructure-program-carcip,Caribbean Regional Communications Infrastructure Program (CARCIP),2019 June,2019,in service,2010s,225.0,TeleGeography,225.0,248.5,9,2,1,Grenada; Saint Vincent and the Grenadines,Digicel,1,,,https://www.digicelgroup.com
+chuuk-pohnpei-cable,Chuuk-Pohnpei Cable,2019 May,2019,in service,2010s,1200.0,TeleGeography,1200.0,800.1,2,1,0,Micronesia,Federated States of Micronesia Telecommunications Cable Corporation (FSMTCC),1,,NEC,https://fsmcable.com/chuuk
+crosslake-fibre,Crosslake Fibre,2019 October,2019,in service,2010s,59.0,TeleGeography,59.0,100.3,2,2,1,Canada; United States,Crosslake Fibre,1,,Hexatronic,http://www.crosslakefibre.ca
+damai-cable-system,DAMAI Cable System,2019 July,2019,in service,2010s,575.0,TeleGeography,575.0,539.7,3,1,0,Indonesia,Triasmitra,1,,,http://www.triasmitra.com/
+denpasar-waingapu-cable-systems,Denpasar-Waingapu Cable Systems,2019,2019,in service,2010s,814.0,TeleGeography,814.0,758.1,4,1,0,Indonesia,Moratelindo,1,,,http://www.moratelindo.co.id
+e-finest,E-FINEST,2019 Q4,2019,in service,2010s,87,route,,86.6,2,2,1,Estonia; Finland,Elisa Corporation,1,,,
+eastern-light-sweden-finland-i,Eastern Light Sweden-Finland I,2019 October,2019,in service,2010s,555,route,,554.6,4,2,1,Finland; Sweden,Eastern Light,1,,,https://easternlight.se/
+fly-lion3,FLY-LION3,2019 October,2019,in service,2010s,400.0,TeleGeography,400.0,281.4,2,2,1,Comoros; Mayotte,Comoros Cables; Orange; Société Réunionnaise du Radiotéléphone,3,,ASN,
+gtmo-pr,GTMO-PR,2019 April,2019,in service,2010s,1400.0,TeleGeography,1400.0,1263.0,2,2,1,Cuba; United States,U.S. Government,1,,Xtera,
+globalconnect-6-gc6,GlobalConnect 6 (GC6),2019,2019,in service,2010s,17,route,,16.8,2,1,0,Denmark,GlobalConnect,1,,Hexatronic,https://www.globalconnectcarrier.com/
+gulf-of-california-cable,Gulf of California Cable,2019 Q4,2019,in service,2010s,250.0,TeleGeography,250.0,217.0,2,1,0,Mexico,Megacable,1,,HMN Tech,https://www.megacable.com.mx/
+indigo-central,INDIGO-Central,2019 May,2019,in service,2010s,4850.0,TeleGeography,4850.0,4240.3,2,1,0,Australia,Australia’s Academic and Research Network (AARNET); Google; Indosat Ooredoo; Optus; Superloop,5,Google,ASN,
+indigo-west,INDIGO-West,2019 May,2019,in service,2010s,4600.0,TeleGeography,4600.0,4419.4,3,3,1,Australia; Indonesia; Singapore,Australia’s Academic and Research Network (AARNET); Google; Indosat Ooredoo; Singtel; Superloop; Telstra,6,Google,ASN,
+kanawa,Kanawa,2019 January,2019,in service,2010s,1746.0,TeleGeography,1746.0,1452.0,2,2,1,French Guiana; Martinique,Orange,1,,ASN,
+kumul-domestic-submarine-cable-system,Kumul Domestic Submarine Cable System,2019 February,2019,in service,2010s,5457.0,TeleGeography,5457.0,5439.5,14,1,0,Papua New Guinea,PNG DataCo Limited,1,,HMN Tech,https://www.pngdataco.com/
+kupang-alor-cable-systems,Kupang-Alor Cable Systems,2019,2019,in service,2010s,273.0,TeleGeography,273.0,258.3,2,1,0,Indonesia,Moratelindo,1,,,http://moratelindo.co.id
+lake-albert-1,Lake Albert 1,2019,2019,in service,2010s,51.0,TeleGeography,51.0,41.3,2,2,1,"Congo, Dem. Rep.; Uganda",Bandwidth and Cloud Services (BCS),1,,,https://www.bcs-ea.com/
+mauritius-and-rodrigues-submarine-cable-system-mars,Mauritius and Rodrigues Submarine Cable System (MARS),2019 February,2019,in service,2010s,677.0,TeleGeography,677.0,654.1,2,1,0,Mauritius,Mauritius Telecom,1,,HMN Tech,https://www.myt.mu/mars
+pasuli,PASULI,2019 August,2019,in service,2010s,40.0,TeleGeography,40.0,41.6,2,1,0,Indonesia,FiberStar; XLSmart,2,,,
+padang-tua-pejat,Padang-Tua Pejat,2019,2019,in service,2010s,160.0,TeleGeography,160.0,147.5,2,1,0,Indonesia,Telkom Indonesia,1,,,
+palapa-ring-east,Palapa Ring East,2019 October,2019,in service,2010s,4074,route,,4073.9,18,1,0,Indonesia,Indonesian Government; Moratelindo; Telekom PT SmartFren,3,,CCSI,
+rockabill,Rockabill,2019 November,2019,in service,2010s,221.0,TeleGeography,221.0,213.8,2,2,1,Ireland; United Kingdom,euNetworks,1,,,http://www.eunetworks.com
+sakhalin-kuril-islands-cable,Sakhalin-Kuril Islands Cable,2019 March,2019,in service,2010s,940.0,TeleGeography,940.0,735.0,4,1,0,Russia,Rostelecom,1,,HMN Tech,https://www.company.rt.ru/
+sorsogon-samar-submarine-fiber-optical-interconnection-project-sssfoip,Sorsogon-Samar Submarine Fiber Optical Interconnection Project (SSSFOIP),2019,2019,in service,2010s,21.0,TeleGeography,21.0,27.5,2,1,0,Philippines,National Grid Corporation of the Philippines,1,,HMN Tech,
+sovetskaya-gavan-uglegorsk,Sovetskaya Gavan-Uglegorsk,2019,2019,in service,2010s,127.0,TeleGeography,127.0,124.6,2,1,0,Russia,Rostelecom,1,,HMN Tech,https://www.company.rt.ru/en/
+tanjung-pandan-sungai-kakap,Tanjung Pandan-Sungai Kakap,2019 Q4,2019,in service,2010s,348.0,TeleGeography,348.0,750.7,2,1,0,Indonesia,Moratelindo,1,,,http://www.moratelindo.co.id
+vancouver-bowen-island-vancouver-island,Vancouver-Bowen Island-Vancouver Island,2019 April,2019,in service,2010s,75.0,TeleGeography,75.0,75.4,4,1,0,Canada,Rogers Communications,1,,,
+x-link-submarine-cable,X-Link Submarine Cable,2019 December,2019,in service,2010s,775.0,TeleGeography,775.0,727.3,2,2,1,Barbados; Guyana,E-Networks Inc.,1,,,https://www.enetworks.gy/
+chennai-andaman-nicobar-islands-cable-cani,Chennai-Andaman & Nicobar Islands Cable (CANI),2020 August,2020,in service,2020s,2300.0,TeleGeography,2300.0,2126.0,9,1,0,India,Bharat Sanchar Nigam Ltd. (BSNL),1,,NEC,http://www.bsnl.co.in
+cook-strait,Cook Strait,2020,2020,in service,2020s,40.0,TeleGeography,40.0,33.8,2,1,0,New Zealand,Transpower NZ,1,,,https://www.transpower.co.nz/
+coral-sea-cable-system-cs,Coral Sea Cable System (CS²),2020 February,2020,in service,2020s,4700.0,TeleGeography,4700.0,4993.3,6,3,1,Australia; Papua New Guinea; Solomon Islands,PNG DataCo Limited; Solomon Island Submarine Cable Company,2,,ASN,https://coralseacablecompany.com/
+curie,Curie,2020 Q2,2020,in service,2020s,10476.0,TeleGeography,10476.0,10815.5,3,3,1,Chile; Panama; United States,Google,1,Google,SubCom,https://cloud.google.com
+cyclades-b,Cyclades B,2020,2020,in service,2020s,52.0,TeleGeography,52.0,57.8,3,1,0,Greece,Grid Telecom,1,,Hellenic Cables,
+dos-continentes-l-ll,DOS CONTINENTES l & ll,2020 March,2020,in service,2020s,95.0,TeleGeography,95.0,67.0,4,1,0,Spain,GTD España,1,,,http://www.gtdespana.com/
+eviny-digital,Eviny Digital,2020 Q2,2020,in service,2020s,210.0,TeleGeography,210.0,178.9,3,1,0,Norway,Lyse Tele AS,1,,,https://www.lyse.no/
+fibra-optica-austral,Fibra Optica Austral,2020 Q1,2020,in service,2020s,2800.0,TeleGeography,2800.0,2150.1,4,1,0,Chile,Subtel,1,,HMN Tech,https://fibraopticaaustral.cl/
+fibra-optica-al-pacfico,Fibra Optica al Pacífico,2020 September,2020,in service,2020s,1180.0,TeleGeography,1180.0,999.3,2,1,0,Peru,Entel Bolivia,1,,HMN Tech,https://www.entel.bo/
+guadeloupe-cable-des-iles-du-sud-gcis,Guadeloupe Cable des Iles du Sud (GCIS),2020,2020,in service,2020s,118.0,TeleGeography,118.0,108.5,5,1,0,Guadeloupe,Regional Councel of Guadeloupe,1,,,https://www.regionguadeloupe.fr/accueil/#_
+havfrueaec-2,Havfrue/AEC-2,2020 November,2020,in service,2020s,7650.0,TeleGeography,7650.0,7233.7,4,4,1,Denmark; Ireland; Norway; United States,Bulk Infrastructure; EXA Infrastructure; Google; Meta,4,Google; Meta,SubCom,
+jupiter,JUPITER,2020,2020,in service,2020s,14557.0,TeleGeography,14557.0,13768.6,5,3,1,Japan; Philippines; United States,Amazon Web Services; Meta; NTT; PCCW; PLDT; Softbank,6,Amazon; Meta,SubCom,
+japan-guam-australia-north-jga-n,Japan-Guam-Australia North (JGA-N),2020 July,2020,in service,2020s,2600.0,TeleGeography,2600.0,2514.4,2,2,1,Guam; Japan,Lightstorm,1,,NEC,https://www.lightstorm.net/
+japan-guam-australia-south-jga-s,Japan-Guam-Australia South (JGA-S),2020 March,2020,in service,2020s,7081.0,TeleGeography,7081.0,6905.5,3,2,1,Australia; Guam,Australia’s Academic and Research Network (AARNET); Google; Lightstorm,3,Google,ASN,https://www.lightstorm.net/
+ketchcan1-submarine-fiber-cable-system,KetchCan1 Submarine Fiber Cable System,2020 November,2020,in service,2020s,167.0,TeleGeography,167.0,156.5,2,2,1,Canada; United States,Ketchican Public Utilities,1,,,https://www.kputel.com/
+lake-albert-2,Lake Albert 2,2020,2020,in service,2020s,44.0,TeleGeography,44.0,39.8,2,2,1,"Congo, Dem. Rep.; Uganda",Bandwidth and Cloud Services (BCS),1,,,https://www.bcs-ea.com/
+malta-gozo-cable,Malta-Gozo Cable,2020 December,2020,in service,2020s,13.0,TeleGeography,13.0,11.2,2,1,0,Malta,Gozo Fibre Optic Cable Ltd.,1,,,
+manatua,Manatua,2020 July,2020,in service,2020s,3634.0,TeleGeography,3634.0,3498.9,6,4,1,Cook Islands; French Polynesia; Niue; Samoa,Avaroa Cable Ltd.; OPT French Polynesia; Samoa Submarine Cable Company; Telecom Niue,4,,SubCom,
+okinawa-cellular-cable,Okinawa Cellular Cable,2020 April,2020,in service,2020s,780.0,TeleGeography,780.0,680.0,2,1,0,Japan,Okinawa Cellular Telephone Company,1,,NEC,https://www.au.com/okinawa_cellular/
+oran-valencia-orval,Oran-Valencia (ORVAL),2020 December,2020,in service,2020s,770.0,TeleGeography,770.0,750.7,3,2,1,Algeria; Spain,Algerie Telecom,1,,ASN,https://www.algerietelecom.dz/
+prat,Prat,2020 Q2,2020,in service,2020s,3500.0,TeleGeography,3500.0,3047.4,12,1,0,Chile,Grupo Gtd,1,,Prysmian,https://www.gtd.cl
+skagenfiber-west,Skagenfiber West,2020 November,2020,in service,2020s,170.0,TeleGeography,170.0,166.9,2,2,1,Denmark; Norway,Midgard Infra,1,,,http://www.skagenfiber.no
+south-atlantic-inter-link-sail,South Atlantic Inter Link (SAIL),2020,2020,in service,2020s,5800.0,TeleGeography,5800.0,5561.0,2,2,1,Brazil; Cameroon,Camtel; China Unicom,2,,HMN Tech,
+batam-sarawak-internet-cable-system-basics,Batam Sarawak Internet Cable System (BaSICS),2021 Q1,2021,in service,2020s,762.0,TeleGeography,762.0,743.2,2,2,1,Indonesia; Malaysia,Irix Sdn Bhd,1,,,https://www.irix.my/
+converge-domestic-submarine-cable-network-cdscn,Converge Domestic Submarine Cable Network (CDSCN),2021 Q4,2021,in service,2020s,1300.0,TeleGeography,1300.0,1722.2,22,1,0,Philippines,Converge ICT,1,,HMN Tech,https://www.convergeict.com
+crosschannel-fibre,CrossChannel Fibre,2021 December,2021,in service,2020s,149.0,TeleGeography,149.0,128.6,2,2,1,France; United Kingdom,Crosslake Fibre,1,,Hexatronic,http://www.crosslakefibre.ca
+djibouti-africa-regional-express-1-dare-1,Djibouti Africa Regional Express 1 (DARE 1),2021 February,2021,in service,2020s,4854.0,TeleGeography,4854.0,10141.5,12,7,1,Djibouti; Kenya; Madagascar; Mozambique; Somalia; South Africa; Tanzania,Djibouti Telecom; Hormuud Telecom Somalia; Somtel International; Telkom Kenya,4,,SubCom,
+dunant,Dunant,2021 January,2021,in service,2020s,6400.0,TeleGeography,6400.0,6368.9,2,2,1,France; United States,Google,1,Google,SubCom,https://cloud.google.com
+ellalink,EllaLink,2021 June,2021,in service,2020s,6200.0,TeleGeography,6200.0,10552.7,11,8,1,Brazil; Cape Verde; French Guiana; Mauritania; Morocco; Portugal; Spain; Suriname,EllaLink,1,,ASN,https://www.ella.link/
+hainan-to-hong-kong-express-h2he,Hainan to Hong Kong Express (H2HE),2021 September,2021,in service,2020s,675.0,TeleGeography,675.0,487.3,3,1,0,China,China Mobile,1,,HMN Tech,https://www.chinamobileltd.com/en/global/home.php
+kingisepp-kaliningrad-system-baltika,Kingisepp-Kaliningrad System (Baltika),2021,2021,in service,2020s,1115.0,TeleGeography,1115.0,925.1,2,1,0,Russia,Rostelecom,1,,,https://www.company.rt.ru/en/
+malbec,Malbec,2021 June,2021,in service,2020s,2880.0,TeleGeography,2880.0,2688.1,4,2,1,Argentina; Brazil,Meta; V.tal,2,Meta,ASN,https://www.vtal.com/en/home/
+maldives-sri-lanka-cable-msc,Maldives Sri Lanka Cable (MSC),2021 February,2021,in service,2020s,863.0,TeleGeography,863.0,760.9,2,2,1,Maldives; Sri Lanka,Dhiraagu; Dialog Axiata; Ooredoo Maldives,3,,HMN Tech,
+maroc-telecom-west-africa,Maroc Telecom West Africa,2021 July,2021,in service,2020s,8600.0,TeleGeography,8600.0,7130.1,6,5,1,Benin; Côte d'Ivoire; Gabon; Morocco; Togo,Maroc Telecom,1,,ASN,http://www.iam.ma
+meltingpot-indianoceanic-submarine-system-metiss,Meltingpot Indianoceanic Submarine System (METISS),2021 March,2021,in service,2020s,3200.0,TeleGeography,3200.0,3186.7,4,4,1,Madagascar; Mauritius; Réunion; South Africa,CEB Fibernet; Canal+; Emtel; SFR; Telma (Telecom Malagasy); Zeop (incl. Reunicable),6,,ASN,
+minoas-east-and-west,Minoas East and West,2021,2021,in service,2020s,270.0,TeleGeography,270.0,260.4,2,1,0,Greece,Grid Telecom,1,,Prysmian,https://www.grid-telecom.com/
+no-uk,NO-UK,2021 December,2021,in service,2020s,713.0,TeleGeography,713.0,675.6,2,2,1,Norway; United Kingdom,NO-UK COM AS,1,,Xtera,https://midgardinfra.com/
+projeto-amaznia-conectada-pac-02,Projeto Amazônia Conectada (PAC 02),2021,2021,in service,2020s,1001.0,TeleGeography,1001.0,812.2,5,1,0,Brazil,Government of Brazil,1,,,
+sape-labuan-bajo-ende-kupang,Sape-Labuan Bajo-Ende-Kupang,2021 Q1,2021,in service,2020s,474.0,TeleGeography,474.0,414.8,4,1,0,Indonesia,Moratelindo,1,,,http://moratelindo.co.id
+scylla,Scylla,2021 August,2021,in service,2020s,204.0,TeleGeography,204.0,202.7,2,2,1,Netherlands; United Kingdom,euNetworks,1,,,http://www.eunetworks.com
+south-pacific-cable-system-spcsmistral,South Pacific Cable System (SPCS)/Mistral,2021 August,2021,in service,2020s,7300.0,TeleGeography,7300.0,7784.2,5,4,1,Chile; Ecuador; Guatemala; Peru,América Móvil (Claro); Telxius,2,,SubCom,
+au-aleutian,AU-Aleutian,2022 December,2022,in service,2020s,1491.0,TeleGeography,1491.0,1420.6,14,1,0,United States,GCI Communication Corp,1,,,https://www.gci.com/
+awashima-murakami,Awashima-Murakami,2022,2022,in service,2020s,66.0,TeleGeography,66.0,70.4,2,1,0,Japan,Awashimaura Village,1,,,
+eaufon-1,EAUFON 1,2022 Q1,2022,in service,2020s,1175.0,TeleGeography,1175.0,1073.7,5,1,0,Canada,Tamaani Internet,1,,ASN,http://krg.ca/
+gondwana-2picot-2,Gondwana-2/Picot-2,2022 August,2022,in service,2020s,1515.0,TeleGeography,1515.0,1671.7,7,2,1,Fiji; New Caledonia,OPT,1,,ASN,https://www.opt.nc/
+grace-hopper,Grace Hopper,2022 September,2022,in service,2020s,7191.0,TeleGeography,7191.0,7012.3,3,3,1,Spain; United Kingdom; United States,Google,1,Google,SubCom,https://cloud.google.com
+groix-4,Groix 4,2022,2022,in service,2020s,7.0,TeleGeography,7.0,7.0,2,1,0,France,Orange,1,,Prysmian,
+havhingstenceltixconnect-2-cc-2,Havhingsten/CeltixConnect-2 (CC-2),2022 March,2022,in service,2020s,301.0,TeleGeography,301.0,273.0,4,3,1,Ireland; Isle of Man; United Kingdom,Bulk Infrastructure; EXA Infrastructure; Meta,3,Meta,ASN,
+havhingstennorth-sea-connect-nsc,Havhingsten/North Sea Connect (NSC),2022 March,2022,in service,2020s,661.0,TeleGeography,661.0,636.0,2,2,1,Denmark; United Kingdom,Bulk Infrastructure; EXA Infrastructure; Meta,3,Meta,ASN,
+havsil,Havsil,2022 March,2022,in service,2020s,120.0,TeleGeography,120.0,124.0,2,2,1,Denmark; Norway,Bulk Infrastructure,1,,,http://bulkinfrastructure.com/
+hronn,Hronn,2022 September,2022,in service,2020s,270.0,TeleGeography,270.0,262.4,3,1,0,Denmark,Shefa,1,,,https://www.shefa.fo/elbowroom/
+kitadaito-island,Kitadaito Island,2022,2022,in service,2020s,410.0,TeleGeography,410.0,361.0,2,1,0,Japan,Okinawa Prefecture,1,,,
+n0r5ke-viking,N0r5ke Viking,2022 December,2022,in service,2020s,810.0,TeleGeography,810.0,699.2,16,1,0,Norway,NOR5KE Fibre AS,1,,,https://www.n0r5kefibre.com/
+norte-conectado-infovia-00,Norte Conectado (Infovia 00),2022 July,2022,in service,2020s,770.0,TeleGeography,770.0,613.8,5,1,0,Brazil,Aquamar Group; BR.Digital Telecom; ICOM Telecom; SEA Telecom; Telefonica; Wirelink,6,,Prysmian,https://www.gov.br/mcom/pt-br/acesso-a-informacao/acoes-e-programas/programas-projetos-acoes-obras-e-atividades/norte-conectado
+oman-australia-cable-oac,Oman Australia Cable (OAC),2022 October,2022,in service,2020s,11000.0,TeleGeography,11000.0,11196.9,5,4,1,Australia; British Indian Ocean Territory; Cocos (Keeling) Islands; Oman,SUBCO,1,,SubCom,https://sub.co/
+peace-cable,PEACE Cable,2022 March,2022,in service,2020s,25000.0,TeleGeography,25000.0,21246.6,14,13,1,Cyprus; Egypt; France; Kenya; Maldives; Malta; Pakistan; Saudi Arabia; Seychelles; Singapore; Somalia; Tunisia; United Arab Emirates,Peace Cable International Network Co. Ltd.,1,,HMN Tech,http://www.peacecable.net
+pacific-light-cable-network-plcn,Pacific Light Cable Network (PLCN),2022 January,2022,in service,2020s,11806.0,TeleGeography,11806.0,12444.6,3,3,1,Philippines; Taiwan; United States,Google; Meta,2,Google; Meta,SubCom,
+petropavlovsk-kamchatsky---anadyr,Petropavlovsk-Kamchatsky - Anadyr,2022 December,2022,in service,2020s,2173.0,TeleGeography,2173.0,2221.9,3,1,0,Russia,Rostelecom,1,,HMN Tech,https://www.company.rt.ru/
+polar-express,Polar Express,2022 October,2022,in service,2020s,12650.0,TeleGeography,12650.0,12524.1,10,1,0,Russia,Russian Government,1,,JSC Optic Fiber Systems,https://xn--e1ahdckegffejda6k5a1a.xn--p1ai/en/
+scotland-northern-ireland-3,Scotland-Northern Ireland 3,2022,2022,in service,2020s,42.0,TeleGeography,42.0,37.9,2,1,0,United Kingdom,BT,1,,,
+scotland-northern-ireland-4,Scotland-Northern Ireland 4,2022,2022,in service,2020s,85.0,TeleGeography,85.0,80.3,2,1,0,United Kingdom,BT,1,,,
+southern-cross-next,Southern Cross NEXT,2022 July,2022,in service,2020s,13700.0,TeleGeography,13700.0,14600.4,7,6,1,Australia; Fiji; Kiribati; New Zealand; Tokelau; United States,Southern Cross Cable Network,1,,ASN,https://www.southerncrosscables.com/
+submarine-cable-in-the-philippines-scip,Submarine Cable in the Philippines (SCiP),2022,2022,in service,2020s,1638.0,TeleGeography,1638.0,1554.7,17,1,0,Philippines,DITO Telecommunity,1,,HMN Tech,https://dito.ph/
+thetis,Thetis,2022,2022,in service,2020s,660.0,TeleGeography,660.0,642.1,20,1,0,Greece,Vodafone,1,,Nexans,https://www.vodafone.gr/
+yuza-tobishima,Yuza-Tobishima,2022 February,2022,in service,2020s,31.0,TeleGeography,31.0,37.2,2,1,0,Japan,NTT,1,,NEC,
+zeus,Zeus,2022 July,2022,in service,2020s,192,route,,191.9,2,2,1,Netherlands; United Kingdom,Zayo,1,,Hexatronic,https://zayoeurope.com/
+arimao,ARIMAO,2023,2023,in service,2020s,2470.0,TeleGeography,2470.0,2308.8,2,2,1,Cuba; Martinique,Empresa de Telecomunicaciones de Cuba; Orange,2,,,
+amitie,Amitie,2023 July,2023,in service,2020s,6792.0,TeleGeography,6792.0,6212.7,3,3,1,France; United Kingdom; United States,EXA Infrastructure; Meta; Microsoft; Orange; Vodafone,5,Meta; Microsoft,ASN,
+blue,Blue,2023,2023,in service,2020s,5055.0,TeleGeography,5055.0,4495.2,10,6,1,Cyprus; France; Greece; Israel; Italy; Jordan,Google; Sparkle; Zain Omantel International,3,Google,ASN,
+darwin-jakarta-singapore-cable-djsc,Darwin-Jakarta-Singapore Cable (DJSC),2023 July,2023,in service,2020s,1000.0,TeleGeography,1000.0,939.3,1,1,0,Australia,Vocus Communications,1,,ASN,https://www.vocus.com.au/
+equiano,Equiano,2023 February,2023,in service,2020s,15000.0,TeleGeography,15000.0,14472.6,6,6,1,"Namibia; Nigeria; Portugal; Saint Helena, Ascension and Tristan da Cunha; South Africa; Togo",Google,1,Google,ASN,https://cloud.google.com
+hokkaido-akita-cable,Hokkaido-Akita Cable,2023 Q4,2023,in service,2020s,770.0,TeleGeography,770.0,652.7,2,1,0,Japan,KDDI; NTT; Rakuten; Softbank,4,,NEC,
+iris,IRIS,2023 March,2023,in service,2020s,1770.0,TeleGeography,1770.0,1691.7,2,2,1,Iceland; Ireland,Korda,1,,SubCom,https://kordanetworks.com/
+ionian,Ionian,2023 April,2023,in service,2020s,320.0,TeleGeography,320.0,314.6,2,2,1,Greece; Italy,IslaLink,1,,,http://www.islalink.com/
+jalapati,Jalapati,2023 Q1,2023,in service,2020s,45.0,TeleGeography,45.0,30.2,2,1,0,Indonesia,CCSI,1,,CCSI,https://www.ccsi.co.id/home-id-jalapati/
+jeju-udo,Jeju-Udo,2023 December,2023,in service,2020s,3.0,TeleGeography,3.0,8.3,2,1,0,South Korea,KCTV Jeju Broadcasting; KT; LG Uplus; SK Telecom (SKT),4,,,
+medloop,Medloop,2023,2023,in service,2020s,1360.0,TeleGeography,1360.0,966.1,4,3,1,France; Italy; Spain,SIPARTECH Sarl,1,,ASN,https://www.sipartech.com/
+mercator,Mercator,2023 June,2023,in service,2020s,107,route,,106.6,2,2,1,Belgium; United Kingdom,BT,1,,SubCom,
+natitua-sud,Natitua Sud,2023 August,2023,in service,2020s,820.0,TeleGeography,820.0,875.1,3,1,0,French Polynesia,OPT French Polynesia,1,,ASN,https://www.natitua.pf/
+norfest,Norfest,2023 December,2023,in service,2020s,749.0,TeleGeography,749.0,701.1,10,2,1,Norway; Sweden,Tampnet,1,,Nexans,https://www.tampnet.com/norfest
+norte-conectado-infovia-01,Norte Conectado (Infovia 01),2023 August,2023,in service,2020s,1100.0,TeleGeography,1100.0,792.0,11,1,0,Brazil,Alloha Fibra; América Móvil (Claro); Aquamar Group; BR Fibra; ICOM Telecom; Ozônio Telecom; PPLink; SEA Telecom; TIM Brasil; Telefonica; V.tal; Você Telecom,12,,HMN Tech; HT Cabos,https://www.gov.br/mcom/pt-br/acesso-a-informacao/acoes-e-programas/programas-projetos-acoes-obras-e-atividades/norte-conectado
+patara-2,Patara-2,2023 October,2023,in service,2020s,1200.0,TeleGeography,1200.0,675.6,3,1,0,Indonesia,Telin,1,,NEC,
+philippine-domestic-submarine-cable-network-pdscn,Philippine Domestic Submarine Cable Network (PDSCN),2023 April,2023,in service,2020s,2500.0,TeleGeography,2500.0,2329.6,33,1,0,Philippines,Eastern Telecom; Globe Telecom; Infinivan Inc.,3,,Nexans,
+r100-north,R100 North,2023 Q1,2023,in service,2020s,224.0,TeleGeography,224.0,210.7,31,1,0,United Kingdom,BT,1,,Nexans,https://www.scotlandsuperfast.com/r100-programme/r100-subsea-deployment/
+red2med,Red2Med,2023 Q1,2023,in service,2020s,420.0,TeleGeography,420.0,345.2,4,1,0,Egypt,Telecom Egypt,1,,ASN,https://www.te.eg/interactivemap/#/the-digital-hub
+sealink,SEALink,2023 Q1,2023,in service,2020s,345.0,TeleGeography,345.0,356.0,3,1,0,United States,Alaska Power & Telephone Company Wireless (APTW),1,,Prysmian,https://www.aptalaska.com/
+saudi-vision,Saudi Vision,2023 May,2023,in service,2020s,1071.0,TeleGeography,1071.0,1154.5,4,1,0,Saudi Arabia,center3,1,,ASN,https://center3.com/
+senegal-horn-of-africa-regional-express-share-cable,Senegal Horn of Africa Regional Express (SHARE) Cable,2023 Q3,2023,in service,2020s,720.0,TeleGeography,720.0,661.4,2,2,1,Cape Verde; Senegal,Sénégal Numérique SA,1,,HMN Tech,https://senegalnumeriquesa.sn/
+t3,T3,2023 Q4,2023,in service,2020s,3200.0,TeleGeography,3200.0,2934.9,2,2,1,Mauritius; South Africa,Liquid Intelligent Technologies; Mauritius Telecom,2,,ASN,
+tko-connect,TKO Connect,2023 September,2023,in service,2020s,6.0,TeleGeography,6.0,12.0,2,1,0,China,HKBN; iAdvantage,2,,,
+tautira-teahupoo,Tautira-Teahupo'o,2023 Q4,2023,in service,2020s,38.0,TeleGeography,38.0,41.5,2,1,0,French Polynesia,OPT French Polynesia,1,,Prysmian,
+tokelau-submarine-cable,Tokelau Submarine Cable,2023 August,2023,in service,2020s,250.0,TeleGeography,250.0,191.8,3,1,0,Tokelau,Teletok,1,,ASN,https://www.teletokco.tk
+topaz,Topaz,2023,2023,in service,2020s,10588,route,,10587.7,5,3,1,Canada; Japan; Taiwan,Google,1,Google,NEC,https://cloud.google.com
+trans-adriatic-express-tae,Trans Adriatic Express (TAE),2023 May,2023,in service,2020s,106.0,TeleGeography,106.0,102.4,2,2,1,Albania; Italy,EXA Infrastructure; TAP AG,2,,,https://exainfra.net/
+umo,UMO,2023 September,2023,in service,2020s,2227.0,TeleGeography,2227.0,2045.8,2,2,1,Myanmar; Singapore,Campana Group,1,,HMN Tech,https://www.campanaworks.com/
+ultramar-ge,Ultramar GE,2023 March,2023,in service,2020s,263.0,TeleGeography,263.0,260.5,2,2,1,Equatorial Guinea; Sao Tome and Principe,GITGE (Gestor de Infraestructuras de Telecomunicaciones de Guinea Ecuatorial),1,,ASN,https://gitge.com/en/home/
+unitel-north-submarine-cable-unsc,Unitel North Submarine Cable (UNSC),2023 January,2023,in service,2020s,1145.0,TeleGeography,1145.0,547.7,4,1,0,Angola,Unitel (Angola),1,,HMN Tech,http://www.unitel.ao
+yui,YUI,2023 July,2023,in service,2020s,720.0,TeleGeography,720.0,736.2,4,1,0,Japan,Okinawa Cellular Telephone Company,1,,NEC,
+2africa,2Africa,2024,2024,in service,2020s,45000.0,TeleGeography,45000.0,47037.9,50,34,1,"Angola; Bahrain; Comoros; Congo, Dem. Rep.; Congo, Rep.; Côte d'Ivoire; Djibouti; Egypt; France; Gabon; Ghana; Greece; India; Iraq; Italy; Kenya; Kuwait; Madagascar; Mozambique; Nigeria; Oman; Pakistan; Portugal; Qatar; Saudi Arabia; Senegal; Seychelles; Somalia; South Africa; Spain; Sudan; Tanzania; United Arab Emirates; United Kingdom",Bayobab; China Mobile; Meta; Orange; Telecom Egypt; Vodafone; WIOCC; center3,8,Meta,ASN,https://www.2africacable.net/
+asia-direct-cable-adc,Asia Direct Cable (ADC),2024 December,2024,in service,2020s,9988.0,TeleGeography,9988.0,9458.2,7,6,1,China; Japan; Philippines; Singapore; Thailand; Vietnam,China Telecom; China Unicom; National Telecom; PLDT; Singtel; Softbank; Tata Communications; Viettel Corporation,8,,NEC,
+biznet-nusantara-cable-system-1-bncs-1,Biznet Nusantara Cable System-1 (BNCS-1),2024 Q1,2024,in service,2020s,105.0,TeleGeography,105.0,91.2,4,1,0,Indonesia,Biznet,1,,CCSI,https://www.biznetnetworks.com/
+challenger-one-bermuda,Challenger One Bermuda,2024 February,2024,in service,2020s,23,route,,22.6,1,1,0,Bermuda,ATN International,1,,ASN,
+connected-coast,Connected Coast,2024,2024,in service,2020s,2323,route,,2322.7,108,1,0,Canada,Connected Coast Network Partnership,1,,,https://connectedcoast.ca/
+deep-blue-one,Deep Blue One,2024 May,2024,in service,2020s,2250.0,TeleGeography,2250.0,1794.7,5,4,1,French Guiana; Guyana; Suriname; Trinidad and Tobago,Digicel,1,,ASN,https://www.digicelgroup.com/
+domestic-submarine-cable-of-maldives-dscom,Domestic Submarine Cable of Maldives (DSCoM),2024,2024,in service,2020s,286.0,TeleGeography,286.0,245.9,8,1,0,Maldives,Dhiraagu; Ooredoo Maldives,2,,HMN Tech,
+eaufon-2,EAUFON 2,2024 February,2024,in service,2020s,675.0,TeleGeography,675.0,728.6,6,1,0,Canada,Tamaani Internet,1,,ASN,
+globalconnect-aurora,GlobalConnect Aurora,2024 Q1,2024,in service,2020s,500.0,TeleGeography,500.0,548.6,12,3,1,Denmark; Germany; Sweden,GlobalConnect,1,,Hexatronic,https://www.globalconnectcarrier.com/
+iceni,Iceni,2024,2024,in service,2020s,206,route,,206.3,2,2,1,Netherlands; United Kingdom,BT,1,,SubCom,
+india-asia-xpress-iax,India Asia Xpress (IAX),2024 Q4,2024,in service,2020s,5791.0,TeleGeography,5791.0,10196.6,9,6,1,India; Malaysia; Maldives; Singapore; Sri Lanka; Thailand,China Mobile; Reliance Jio Infocomm,2,,SubCom,
+isle-au-haut-cable,Isle Au Haut Cable,2024 November,2024,in service,2020s,10.0,TeleGeography,10.0,12.1,2,1,0,United States,Axiom Technologies,1,,SubCom,
+kangaroo-island-2,Kangaroo Island 2,2024 July,2024,in service,2020s,43,route,,43.0,2,1,0,Australia,SA Power Networks,1,,,
+kochi-lakshadweep-islands-kli-sofc,Kochi-Lakshadweep Islands (KLI-SOFC),2024 January,2024,in service,2020s,1989.0,TeleGeography,1989.0,1661.2,12,1,0,India,Bharat Sanchar Nigam Ltd. (BSNL),1,,NEC,http://www.bsnl.co.in
+mist,MIST,2024 December,2024,in service,2020s,8100.0,TeleGeography,8100.0,6678.3,5,4,1,India; Malaysia; Singapore; Thailand,Orient Link,1,,NEC,https://orient-link.com/home/
+piano-isole-minori,Piano Isole Minori,2024 December,2024,in service,2020s,830.0,TeleGeography,830.0,774.4,31,1,0,Italy,Infratel Italia,1,,,https://www.infratelitalia.it/
+sealink-south,SEALink South,2024 November,2024,in service,2020s,159.0,TeleGeography,159.0,184.0,3,1,0,United States,Alaska Power & Telephone Company Wireless (APTW),1,,,https://www.aptalaska.com/
+airraq,Airraq,2025 Q1,2025,in service,2020s,840.0,TeleGeography,840.0,669.5,5,1,0,United States,Unicom; Inc.,2,,,https://www.gci.com/bethel-airraq-network
+apollo-east-and-west,Apollo East and West,2025 May,2025,in service,2020s,670.0,TeleGeography,670.0,648.7,2,1,0,Greece,Grid Telecom,1,,,https://www.grid-telecom.com/
+apricot,Apricot,2025 Q4,2025,in service,2020s,11972.0,TeleGeography,11972.0,11582.3,8,6,1,Guam; Indonesia; Japan; Philippines; Singapore; Taiwan,Chunghwa Telecom; Google; Meta; NTT; PLDT,5,Google; Meta,SubCom,
+bifrost,Bifrost,2025 December,2025,in service,2020s,19888.0,TeleGeography,19888.0,18224.9,8,6,1,Guam; Indonesia; Mexico; Philippines; Singapore; United States,Keppel T&T; Meta; Telin,3,Meta,ASN,
+coral-bridge,Coral Bridge,2025 August,2025,in service,2020s,14,route,,14.4,2,2,1,Egypt; Jordan,NaiTel; Telecom Egypt,2,,,
+daito-loop,Daito Loop,2025,2025,in service,2020s,18.0,TeleGeography,18.0,13.0,2,1,0,Japan,Okinawa Prefecture,1,,,
+echo,Echo,2025,2025,in service,2020s,17184.0,TeleGeography,17184.0,15903.7,6,5,1,Guam; Indonesia; Palau; Singapore; United States,Google; Meta,2,Google; Meta,NEC,
+farewell-change-fogo,Farewell-Change-Fogo,2025 August,2025,in service,2020s,16.0,TeleGeography,16.0,14.9,3,1,0,Canada,Bell Canada,1,,,
+firmina,Firmina,2025,2025,in service,2020s,14517.0,TeleGeography,14517.0,14190.6,5,5,1,Argentina; Brazil; Dominican Republic; United States; Uruguay,Google,1,Google,SubCom,https://cloud.google.com
+ithaafushi-maafushi-hulhumale,Ithaafushi-Maafushi-Hulhumale,2025 August,2025,in service,2020s,45,route,,45.3,3,1,0,Maldives,Ooredoo Maldives,1,,,
+juno,JUNO,2025 May,2025,in service,2020s,11710.0,TeleGeography,11710.0,9575.3,3,2,1,Japan; United States,Seren Juno,1,,NEC,https://seren-juno.com/
+lake-tanganyika,Lake Tanganyika,2025 Q1,2025,in service,2020s,370.0,TeleGeography,370.0,297.3,2,1,0,"Congo, Dem. Rep.",Bandwidth and Cloud Services (BCS),1,,,https://www.bcs-ea.com/
+norte-conectado-infovia-03,Norte Conectado (Infovia 03),2025,2025,in service,2020s,600.0,TeleGeography,600.0,570.3,8,1,0,Brazil,Entidade Administradora da Faixa (EAF),1,,ZTT,https://eaf.org.br/infovias
+qe-north,Q&E North,2025,2025,in service,2020s,112.0,TeleGeography,112.0,113.6,2,2,1,Belgium; United Kingdom,EXA Infrastructure,1,,,https://exainfra.net/
+southeast-asia-japan-cable-2-sjc2,Southeast Asia-Japan Cable 2 (SJC2),2025 July,2025,in service,2020s,10500.0,TeleGeography,10500.0,9894.1,10,7,1,China; Japan; Singapore; South Korea; Taiwan; Thailand; Vietnam,China Mobile; Chunghwa Telecom; DongHwa Telecom; KDDI; Meta; SK Broadband; Singtel; Telin; True Corporation; VNPT International,10,Meta,NEC,
+tmx5,TMX5,2025,2025,in service,2020s,383.0,TeleGeography,383.0,336.8,2,1,0,Mexico,Telmex,1,,,
+unitirreno,Unitirreno,2025 October,2025,in service,2020s,1156.0,TeleGeography,1156.0,1079.8,4,1,0,Italy,Azimut; Unidata,2,,ASN,http://www.unitirreno.com/
+anjana,Anjana,2026,2026,in service,2020s,7121.0,TeleGeography,7121.0,6768.4,2,2,1,Spain; United States,Meta,1,Meta,NEC,https://about.meta.com/
+carnival-submarine-network-1-csn-1,Carnival Submarine Network-1 (CSN-1),2026 Q4,2026,planned,planned,4670.0,TeleGeography,4670.0,4423.1,6,5,1,Colombia; Ecuador; Mexico; Panama; United States,Telconet,1,,ASN,https://www.telconet.net/
+east-micronesia-cable-system-emcs,East Micronesia Cable System (EMCS),2026 Q1,2026,in service,2020s,2250.0,TeleGeography,2250.0,1958.9,4,3,1,Kiribati; Micronesia; Nauru,BwebwerikiNET Limited (BNL); Federated States of Micronesia Telecommunications Cable Corporation (FSMTCC); Nauru Fibre Cable Corporation,3,,NEC,https://www.eastmicronesiacable.com/
+fnix,Fénix,2026 Q4,2026,planned,planned,378.0,TeleGeography,378.0,279.6,2,2,1,Curaçao; Venezuela,CANTV; Liberty Networks,2,,,
+maya-1-2,Maya-1.2,2026,2026,in service,2020s,2386.0,TeleGeography,2386.0,2048.6,3,3,1,Cayman Islands; Honduras; United States,Hondutel; Liberty Networks; Ufinet,3,,ASN,https://libertynetworks.com/
+medusa-submarine-cable-system,Medusa Submarine Cable System,2026,2026,in service,2020s,8760.0,TeleGeography,8760.0,8167.7,18,13,1,Algeria; Cyprus; Egypt; France; Greece; Italy; Libya; Malta; Morocco; Portugal; Spain; Syria; Tunisia,AFR-IX Telecom,1,,ASN,https://medusascs.com/
+nongsa-changi,Nongsa-Changi,2026 September,2026,planned,planned,50.0,TeleGeography,50.0,23.6,2,2,1,Indonesia; Singapore,BW Digital; Hawaiki Submarine Cable LP; Telin,3,,,
+norte-conectado-infovia-02,Norte Conectado (Infovia 02),2026 Q2,2026,in service,2020s,1796.0,TeleGeography,1796.0,817.6,13,1,0,Brazil,Entidade Administradora da Faixa (EAF),1,,ZTT,https://eaf.org.br/infovias
+norte-conectado-infovia-04,Norte Conectado (Infovia 04),2026,2026,in service,2020s,515.0,TeleGeography,515.0,511.9,4,1,0,Brazil,Entidade Administradora da Faixa (EAF),1,,ZTT,https://eaf.org.br/infovias
+pukpuk-1-cable-system,Pukpuk-1 Cable System,2026 May,2026,in service,2020s,134.0,TeleGeography,134.0,190.9,1,1,0,Indonesia,PNG DataCo Limited,1,,HMN Tech,
+qe-south,Q&E South,2026 Q2,2026,in service,2020s,141.0,TeleGeography,141.0,131.1,2,2,1,France; United Kingdom,euNetworks,1,,,
+rising-8,RISING 8,2026 May,2026,in service,2020s,1104.0,TeleGeography,1104.0,967.0,3,2,1,Indonesia; Singapore,Moratelindo; Triasmitra,2,,ASN; Norddeutsche Seekabelwerke GmbH (NSW),
+sea-h2x,SEA-H2X,2026 July,2026,in service,2020s,5746.0,TeleGeography,5746.0,4575.9,5,4,1,China; Philippines; Singapore; Thailand,China Mobile; China Unicom; Converge ICT,3,,HMN Tech,
+sihanoukville-hong-kong-shv-hk,Sihanoukville-Hong Kong (SHV-HK),2026,2026,planned,planned,2938.0,TeleGeography,2938.0,2367.1,2,2,1,Cambodia; China,Government of Cambodia,1,,HMN Tech,
+sydney-melbourne-adelaide-perth-smap,Sydney-Melbourne-Adelaide-Perth (SMAP),2026 June,2026,in service,2020s,5000.0,TeleGeography,5000.0,4994.1,5,1,0,Australia,SUBCO,1,,ASN,https://sub.co/
+tam-1,TAM-1,2026 December,2026,planned,planned,7200.0,TeleGeography,7200.0,6413.7,10,8,1,Colombia; Costa Rica; Guatemala; Honduras; Mexico; Panama; United States; Virgin Islands (U.S.),Trans Americas Fiber,1,,Xtera,https://transamericasfiber.com/
+tpu,TPU,2026 May,2026,in service,2020s,13470.0,TeleGeography,13470.0,12469.4,5,5,1,Guam; Northern Mariana Islands; Philippines; Taiwan; United States,Google,1,Google,NEC,https://cloud.google.com
+taiwan-matsu-no-4,Taiwan-Matsu No.4,2026 September,2026,in service,2020s,300.0,TeleGeography,300.0,254.2,4,1,0,Taiwan,Chunghwa Telecom,1,,,
+timor-leste-south-submarine-cable-tlssc,Timor-Leste South Submarine Cable (TLSSC),2026,2026,in service,2020s,607.0,TeleGeography,607.0,611.5,1,1,0,Timor-Leste,Government of Timor-Leste,1,,ASN,
+trans-caspian-fiber-optic-cable,Trans-Caspian Fiber Optic Cable,2026 October,2026,in service,2020s,380.0,TeleGeography,380.0,364.6,2,2,1,Azerbaijan; Kazakhstan,Azertelecom; Kazakhtelecom,2,,,
+adamasia-cable-system-1,Adamasia Cable System 1,2027 Q4,2027,planned,planned,1015.0,TeleGeography,1015.0,616.7,1,1,0,Solomon Islands,Solomon Island Submarine Cable Company,1,,SubCom,
+africa-1,Africa-1,2027,2027,planned,planned,10000.0,TeleGeography,10000.0,14192.8,11,10,1,Algeria; Djibouti; Egypt; France; Kenya; Pakistan; Saudi Arabia; Somalia; United Arab Emirates; Yemen,G42; Mobily; Pakistan Telecommunications Company Ltd.; TeleYemen; Telecom Egypt; Zain Omantel International; e&,7,,ASN,
+asia-link-cable-alc,Asia Link Cable (ALC),2027 Q1,2027,planned,planned,7200.0,TeleGeography,7200.0,5752.5,8,6,1,Brunei; China; Malaysia; Philippines; Singapore; Vietnam,China Telecom; China Unicom; DITO Telecommunity; FPT Telecom; Globe Telecom; Matrix NAP Info; Singtel; Telekom Malaysia; Unified National Networks (UNN); VNPT International; Viettel Corporation,11,,HMN Tech,
+bangladesh-private-cable-system-bpcs,Bangladesh Private Cable System (BPCS),2027,2027,planned,planned,1300.0,TeleGeography,1300.0,966.9,1,1,0,Bangladesh,CdNet Communications; Metacore Subcom; Summit Communications,3,,,
+beaufort,Beaufort,2027,2027,planned,planned,158.0,TeleGeography,158.0,118.2,2,2,1,Ireland; United Kingdom,Amazon Web Services; Microsoft; Vodafone,3,Amazon; Microsoft,,
+bernacchi-1,Bernacchi-1,2027 June,2027,planned,planned,200.0,TeleGeography,200.0,158.8,1,1,0,Australia,Firmus; SUBCO,2,,ASN,
+bulikula,Bulikula,2027,2027,planned,planned,21600.0,TeleGeography,21600.0,20331.8,8,5,1,Fiji; French Polynesia; Guam; Northern Mariana Islands; United States,Google,1,Google,SubCom,https://cloud.google.com
+cadmos-2,CADMOS-2,2027,2027,planned,planned,250.0,TeleGeography,250.0,201.7,2,2,1,Cyprus; Lebanon,Cyta; Lebanese Ministry of Telecommunications,2,,,
+celia,CELIA,2027 Q3,2027,planned,planned,3700.0,TeleGeography,3700.0,3993.4,8,7,1,"Antigua and Barbuda; Aruba; Bonaire, Sint Eustatius and Saba; Curaçao; Martinique; Saint Barthélemy; United States",APUA; Orange; SETAR; Telxius,4,,ASN,
+daraja,Daraja,2027,2027,planned,planned,4108.0,TeleGeography,4108.0,3067.8,2,2,1,Kenya; Oman,Meta,1,Meta,ASN,
+eaufon-3,EAUFON 3,2027,2027,planned,planned,900.0,TeleGeography,900.0,955.1,7,1,0,Canada,Tamaani Internet,1,,,
+emc-west-1,EMC West-1,2027 December,2027,planned,planned,3639.0,TeleGeography,3639.0,4076.6,5,4,1,Greece; Israel; Italy; Saudi Arabia,EMC Subsea Cable Company Limited,1,,ASN,
+emc-west-2,EMC West-2,2027 December,2027,planned,planned,3978.0,TeleGeography,3978.0,3830.7,4,4,1,France; Greece; Israel; Saudi Arabia,EMC Subsea Cable Company Limited,1,,ASN,
+eastern-light-sweden-finland-ii,Eastern Light Sweden-Finland II,2027,2027,planned,planned,410,route,,410.4,4,2,1,Finland; Sweden,Eastern Light,1,,,https://easternlight.se/
+fish-south,FISH South,2027,2027,planned,planned,900.0,TeleGeography,900.0,930.2,6,1,0,United States,Cordova Telecom Cooperative,1,,Prysmian; Xtera,https://www.ctcak.net/
+fish-west,FISH West,2027,2027,planned,planned,276.0,TeleGeography,276.0,273.6,4,1,0,United States,Cordova Telecom Cooperative,1,,Prysmian,https://www.ctcak.net/
+fibre-in-gulf-fig,Fibre in Gulf (FIG),2027 December,2027,planned,planned,1931.0,TeleGeography,1931.0,1868.4,7,7,1,Bahrain; Iraq; Kuwait; Oman; Qatar; Saudi Arabia; United Arab Emirates,Ooredoo,1,,ASN,https://www.ooredoo.com/
+hawaiian-islands-fiber-link-hifl,Hawaiian Islands Fiber Link (HIFL),2027 Q2,2027,planned,planned,740.0,TeleGeography,740.0,647.8,6,1,0,United States,Ocean Networks,1,,Prysmian,https://www.oceannetworks.com/
+honomoana,Honomoana,2027,2027,planned,planned,15215.0,TeleGeography,15215.0,15156.8,6,4,1,Australia; French Polynesia; New Zealand; United States,Google,1,Google,SubCom,https://cloud.google.com
+insica,INSICA,2027 Q4,2027,planned,planned,100.0,TeleGeography,100.0,61.5,2,2,1,Indonesia; Singapore,Singtel; Telin,2,,,
+ion-cable-system-1-ics1,ION Cable System-1 (ICS1),2027 January,2027,planned,planned,1041.0,TeleGeography,1041.0,1040.5,9,1,0,Indonesia,ION Network,1,,CCSI,https://www.ionnetwork.co.id
+india-europe-xpress-iex,India Europe Xpress (IEX),2027,2027,planned,planned,9775.0,TeleGeography,9775.0,10278.7,11,8,1,Djibouti; Egypt; France; Greece; India; Italy; Oman; Saudi Arabia,China Mobile; Reliance Jio Infocomm,2,,SubCom,
+indonesia-tengah-cable-systems,Indonesia Tengah Cable Systems,2027 Q4,2027,planned,planned,2641.0,TeleGeography,2641.0,2377.5,10,1,0,Indonesia,PT Jejaring Mitra Persada; Triasmitra,2,,,
+jako,JAKO,2027 Q3,2027,planned,planned,260.0,TeleGeography,260.0,227.2,2,2,1,Japan; South Korea,Amazon Web Services; Arteria; Dreamline; Microsoft,4,Amazon; Microsoft,LS Cable & System,
+kardesa,Kardesa,2027,2027,planned,planned,1385.0,TeleGeography,1385.0,1787.0,4,4,1,Bulgaria; Georgia; Turkey; Ukraine,Neqsol Holding; Vodafone,2,,Xtera,
+kattegat-cable,Kattegat Cable,2027 Q4,2027,planned,planned,92.0,TeleGeography,92.0,85.1,2,2,1,Denmark; Sweden,GlobalConnect,1,,,https://www.globalconnectcarrier.com/
+le-vasa,Le Vasa,2027 Q1,2027,planned,planned,254,route,,254.4,1,1,0,American Samoa,ASTCA,1,,SubCom,
+mjolner-east,Mjolner East,2027,2027,planned,planned,450.0,TeleGeography,450.0,289.5,4,3,1,Estonia; Finland; Sweden,GlobalConnect,1,,,https://www.globalconnectcarrier.com/
+mjolner-west,Mjolner West,2027,2027,planned,planned,250.0,TeleGeography,250.0,190.2,2,2,1,Finland; Sweden,GlobalConnect,1,,,https://www.globalconnectcarrier.com/
+mobily-red-sea-cable-mrsc,Mobily Red Sea Cable (MRSC),2027,2027,planned,planned,156,route,,155.8,2,2,1,Egypt; Saudi Arabia,Mobily,1,,,http://www.mobily.com.sa/
+new-cam-ring,New CAM Ring,2027,2027,planned,planned,3812.0,TeleGeography,3812.0,3813.8,6,1,0,Portugal,IP Telecom,1,,ASN,https://www.iptelecom.pt/
+nome-to-homer-express-nthe,Nome to Homer Express (NTHE),2027,2027,planned,planned,1545.0,TeleGeography,1545.0,1439.1,8,1,0,United States,Quintillion,1,,,https://www.quintillionglobal.com/
+nuvem,Nuvem,2027,2027,planned,planned,7194.0,TeleGeography,7194.0,6639.3,4,3,1,Bermuda; Portugal; United States,Google,1,Google,SubCom,https://cloud.google.com
+orca,ORCA,2027 Q1,2027,planned,planned,12482.0,TeleGeography,12482.0,12129.6,3,2,1,Taiwan; United States,Meta,1,Meta,ASN,https://www.meta.com/
+oceanic-tatitlek-telecommunications-enhancement-route-otter,Oceanic Tatitlek Telecommunications Enhancement Route (OTTER),2027,2027,planned,planned,50.0,TeleGeography,50.0,52.2,2,1,0,United States,Copper Valley Telecom,1,,,
+pasela,PASELA,2027 Q3,2027,planned,planned,1100.0,TeleGeography,1100.0,1046.7,2,1,0,Indonesia,Telkom Indonesia,1,,HMN Tech; PT. Lintas Teknologi Indonesia,
+proa,Proa,2027,2027,planned,planned,2891.0,TeleGeography,2891.0,2556.5,3,3,1,Guam; Japan; Northern Mariana Islands,Google,1,Google,NEC,https://cloud.google.com
+raman,Raman,2027,2027,planned,planned,7376.0,TeleGeography,7376.0,6899.7,6,5,1,Djibouti; India; Jordan; Oman; Saudi Arabia,Google; Sparkle; Zain Omantel International,3,Google,ASN,
+seamewe-6,SeaMeWe-6,2027,2027,planned,planned,21700.0,TeleGeography,21700.0,22662.9,17,15,1,Bahrain; Bangladesh; Djibouti; Egypt; France; India; Malaysia; Maldives; Oman; Pakistan; Qatar; Saudi Arabia; Singapore; Sri Lanka; United Arab Emirates,Bahrain Telecommunications Company (Batelco); Bangladesh Submarine Cable Company Limited (BSCCL); Bharti Airtel; China Unicom; Dhiraagu; Djibouti Telecom; Microsoft; Mobily; Orange; PCCW; Singtel; Sri Lanka Telecom; Telecom Egypt; Telekom Malaysia; Telin; Transworld,16,Microsoft,SubCom,
+sharm-el-sheikhtaba,Sharm El Sheikh-Taba,2027 Q4,2027,planned,planned,200.0,TeleGeography,200.0,190.0,2,1,0,Egypt,Telecom Egypt,1,,,
+sunoque-iii,Sunoque III,2027,2027,planned,planned,125.0,TeleGeography,125.0,123.3,2,1,0,Canada,Hydro-Québec; Telus,2,,Hexatronic,https://www.telus.com/
+tikal-amx3,TIKAL-AMX3,2027 Q2,2027,planned,planned,1935.0,TeleGeography,1935.0,1769.2,3,3,1,Guatemala; Mexico; United States,América Móvil (Claro); Telxius,2,,ASN,
+tabua,Tabua,2027,2027,planned,planned,14751.0,TeleGeography,14751.0,13656.6,6,3,1,Australia; Fiji; United States,Google,1,Google,SubCom,https://cloud.google.com
+talaylink,TalayLink,2027,2027,planned,planned,8847,route,,8846.8,4,3,1,Australia; Christmas Island; Thailand,Google,1,Google,SubCom,https://cloud.google.com
+tamtam,Tamtam,2027 Q4,2027,planned,planned,1000.0,TeleGeography,1000.0,930.9,5,2,1,New Caledonia; Vanuatu,Prima,1,,ASN,https://www.prima.vu/
+teide,Teide,2027 Q3,2027,planned,planned,225.0,TeleGeography,225.0,236.6,2,1,0,Spain,Canalink,1,,,
+thetis-express,Thetis Express,2027 Q3,2027,planned,planned,340.0,TeleGeography,340.0,326.3,3,1,0,Greece,Vodafone,1,,,https://www.vodafone.gr/
+trans-global-cable-system-tgcs,Trans Global Cable System (TGCS),2027,2027,planned,planned,1200.0,TeleGeography,1200.0,1271.6,7,1,0,Indonesia,Trans Indonesia Supercorridor,1,,HMN Tech,https://www.supercorridor.co.id/
+vaka,VAKA,2027,2027,planned,planned,668.0,TeleGeography,668.0,831.2,1,1,0,Tuvalu,Tuvalu Telecommunications Corporation (TTC),1,,SubCom,https://www.tuvalutelecom.tv/
+apx-east,APX East,2028 Q4,2028,planned,planned,13000.0,TeleGeography,13000.0,12704.7,4,3,1,Australia; Fiji; United States,SUBCO,1,,,https://sub.co/
+alisios,Alisios,2028,2028,planned,planned,6747,route,,6747.2,4,3,1,Chile; Dominican Republic; Panama,Google,1,Google,,
+arctic-way,Arctic Way,2028 Q2,2028,planned,planned,2568.0,TeleGeography,2568.0,2244.1,4,1,0,Norway,Space Norway,1,,SubCom,https://spacenorway.com/
+aurora,Aurora,2028 January,2028,planned,planned,7268.0,TeleGeography,7268.0,6449.2,2,2,1,Denmark; United States,Meta,1,Meta,ASN,https://about.meta.com/
+barat-timur-indonesia-1-bti-1,Barat Timur Indonesia-1 (BTI-1),2028 Q1,2028,planned,planned,4500.0,TeleGeography,4500.0,4124.8,6,1,0,Indonesia,Super Sistem (PT Super Sistem Data),1,,,
+barracuda,Barracuda,2028 Q2,2028,planned,planned,1050.0,TeleGeography,1050.0,1018.2,2,2,1,Italy; Spain,Valencia Digital Port Connect,1,,,https://valenciadigitalport.com/barracuda-infrastructure/
+bosun,Bosun,2028,2028,planned,planned,2788,route,,2788.2,2,2,1,Australia; Christmas Island,Google,1,Google,SubCom,https://cloud.google.com
+candle,Candle,2028,2028,planned,planned,8000.0,TeleGeography,8000.0,7172.9,7,6,1,Indonesia; Japan; Malaysia; Philippines; Singapore; Taiwan,Globe Telecom; IPS; Inc.; Meta; Softbank; Telekom Malaysia; XLSmart,7,Meta,NEC,
+dhivaru,Dhivaru,2028,2028,planned,planned,7215,route,,7215.2,3,3,1,Christmas Island; Maldives; Oman,Google,1,Google,SubCom,https://cloud.google.com
+ebla,Ebla,2028,2028,planned,planned,236.0,TeleGeography,236.0,209.6,2,2,1,Cyprus; Syria,Cyta; Syrian Telecommunications Establishment; UNIFI Communications,3,,Prysmian,
+fastnet,Fastnet,2028,2028,planned,planned,5411,route,,5410.9,2,2,1,Ireland; United States,Amazon Web Services,1,Amazon,,https://aws.amazon.com/
+halaihai,Halaihai,2028,2028,planned,planned,17483.0,TeleGeography,17483.0,16627.9,5,4,1,Chile; French Polynesia; Guam; Northern Mariana Islands,Google,1,Google,SubCom,https://cloud.google.com
+kunoa-north,Kunoa North,2028,2028,planned,planned,388,route,,388.2,6,1,0,United States,Hawaiian Telcom,1,,Prysmian,
+lake-michigan-chicago-crossing,Lake Michigan Chicago Crossing,2028,2028,planned,planned,199,route,,199.1,3,1,0,United States,123NET; Peninsula Fiber Network (PFN),2,,Nexans,
+lake-michigan-crossing-peninsula-and-island-connection,Lake Michigan Crossing Peninsula and Island Connection,2028,2028,planned,planned,117,route,,117.2,3,1,0,United States,123NET; Peninsula Fiber Network (PFN),2,,Nexans,
+manta,MANTA,2028 Q1,2028,planned,planned,5600.0,TeleGeography,5600.0,5126.5,6,4,1,Colombia; Mexico; Panama; United States,Gold Data; Liberty Networks; Sparkle,3,,SubCom,
+norte-conectado-infovia-05,Norte Conectado (Infovia 05),2028,2028,planned,planned,1116.0,TeleGeography,1116.0,871.7,9,1,0,Brazil,Entidade Administradora da Faixa (EAF),1,,,https://eaf.org.br/infovias
+norte-conectado-infovia-06,Norte Conectado (Infovia 06),2028,2028,planned,planned,2847.0,TeleGeography,2847.0,1299.4,2,1,0,Brazil,Entidade Administradora da Faixa (EAF),1,,,https://eaf.org.br/infovias
+norte-conectado-infovia-08,Norte Conectado (Infovia 08),2028,2028,planned,planned,2766.0,TeleGeography,2766.0,1041.6,2,1,0,Brazil,Entidade Administradora da Faixa (EAF),1,,,https://eaf.org.br/infovias
+orient-island-ring,Orient Island Ring,2028 Q1,2028,planned,planned,553.0,TeleGeography,553.0,612.3,8,2,1,Morocco; Spain,Canalink,1,,,
+reunion,ReuNION,2028,2028,planned,planned,2624,route,,2624.4,2,2,1,Réunion; South Africa,Free Reunion (Telco OI); La Réunion Connectée; Orange; Zeop (incl. Reunicable),4,,ASN,
+sx-tasman-express-sx-tx,SX Tasman Express (SX-TX),2028,2028,planned,planned,2276.0,TeleGeography,2276.0,2176.8,2,2,1,Australia; New Zealand,Southern Cross Cable Network,1,,ASN,http://www.southerncrosscables.com
+taihei,Taihei,2028,2028,planned,planned,7000.0,TeleGeography,7000.0,6172.9,2,2,1,Japan; United States,Google,1,Google,NEC,https://cloud.google.com
+umoja,Umoja,2028,2028,planned,planned,8149,route,,8149.4,2,2,1,Australia; South Africa,Google,1,Google,SubCom,https://cloud.google.com
+verena,Verena,2028 Q4,2028,planned,planned,630.0,TeleGeography,630.0,584.1,2,2,1,Denmark; United Kingdom,Midgard Infra,1,,Xtera,https://midgardinfra.com/
+apx-east-2,APX East-2,2029,2029,planned,planned,10000.0,TeleGeography,10000.0,9970.8,2,2,1,Guam; United States,SUBCO,1,,,https://sub.co/
+apx-north,APX North,2029,2029,planned,planned,9500.0,TeleGeography,9500.0,8722.0,3,3,1,Australia; Guam; Japan,SUBCO,1,,,https://sub.co/
+apx-west,APX West,2029,2029,planned,planned,4600.0,TeleGeography,4600.0,4255.4,4,3,1,Australia; Indonesia; Singapore,SUBCO,1,,,https://sub.co/
+asia-united-gateway-east-aug-east,Asia United Gateway East (AUG East),2029 Q4,2029,planned,planned,8900.0,TeleGeography,8900.0,7861.2,9,8,1,Brunei; Indonesia; Japan; Malaysia; Philippines; Singapore; South Korea; Taiwan,Amazon Web Services; Arteria; Chunghwa Telecom; Dreamline; Globe Telecom; Microsoft; Singtel; Telekom Malaysia; Unified National Networks (UNN),9,Amazon; Microsoft,NEC,
+e2a,E2A,2029,2029,planned,planned,12500.0,TeleGeography,12500.0,13446.8,6,4,1,Japan; South Korea; Taiwan; United States,Chunghwa Telecom; SK Broadband; Softbank; Verizon,4,,ASN,
+eagle,EAGLE,2029 Q4,2029,planned,planned,1900.0,TeleGeography,1900.0,1671.4,3,3,1,Albania; Egypt; Italy,4iG Group; Telecom Egypt,2,,,
+exa-meridian,EXA Meridian,2029 Q4,2029,planned,planned,6552.0,TeleGeography,6552.0,5881.2,2,2,1,United Kingdom; United States,EXA Infrastructure,1,,Xtera,https://exainfra.net/
+hawaiki-nui-1,Hawaiki Nui 1,2029,2029,planned,planned,10000.0,TeleGeography,10000.0,11259.1,9,6,1,Australia; Indonesia; Papua New Guinea; Singapore; Solomon Islands; Timor-Leste,BW Digital,1,,ASN,https://www.bw-digital.com/
+i-2sea,I-2SEA,2029 Q4,2029,planned,planned,3600.0,TeleGeography,3600.0,3493.7,4,3,1,India; Malaysia; Singapore,Lightstorm; Microsoft; Singtel; Tata Communications,4,Microsoft,NEC,
+i-am-cable,I-AM Cable,2029,2029,planned,planned,8100.0,TeleGeography,8100.0,7661.3,6,4,1,Japan; Malaysia; Singapore; South Korea,Intra‑Asia Marine Networks Co.; Ltd.,2,,ASN,
+ioema-1,IOEMA-1,2029,2029,planned,planned,1667.0,TeleGeography,1667.0,1432.5,7,5,1,Denmark; Germany; Netherlands; Norway; United Kingdom,IOEMA Fibre,1,,,https://ioemafibre.eu/
+iokwe,IOKWE,2029,2029,planned,planned,57,route,,57.3,1,1,0,Marshall Islands,Marshall Islands Telecommunications Authority,1,,SubCom,
+mvista,MViSTA,2029,2029,planned,planned,2569.0,TeleGeography,2569.0,2530.9,5,4,1,Malaysia; Singapore; Thailand; Vietnam,AsiaHub1,1,,,https://mvista.sg/
+olisipo,Olisipo,2029,2029,planned,planned,110.0,TeleGeography,110.0,115.6,2,1,0,Portugal,EllaLink,1,,,https://www.ella.link/
+petal,Petal,2029,2029,planned,planned,7000.0,TeleGeography,7000.0,6392.4,2,2,1,France; United States,Meta,1,Meta,NEC,https://about.meta.com/
+sol,Sol,2029,2029,planned,planned,8153.0,TeleGeography,8153.0,7624.2,4,4,1,Bermuda; Portugal; Spain; United States,Google,1,Google,SubCom,https://cloud.google.com
+staonuk,Sta’O’Nuk,2029,2029,planned,planned,7621,route,,7620.6,2,2,1,Japan; United States,Amazon Web Services,1,Amazon,,
+tasman-ring-network-phase-1,Tasman Ring Network-Phase 1,2029,2029,planned,planned,2300.0,TeleGeography,2300.0,2326.7,2,2,1,Australia; New Zealand,Datagrid New Zealand,1,,ASN; OMS Group,https://www.datagrid.nz/
+auur,AUÐUR,2030 Q1,2030,planned,planned,1285.0,TeleGeography,1285.0,1361.1,2,2,1,Iceland; United Kingdom,Korda,1,,,https://kordanetworks.com/
+vietnam-singapore-cable-system-vts,Vietnam-Singapore Cable System (VTS),2030,2030,planned,planned,1849,route,,1848.8,4,4,1,Malaysia; Singapore; Thailand; Vietnam,Gulf Development; Singtel; Viettel Corporation,3,,,
+andromeda,ANDROMEDA,,,planned,planned,3264,route,,3263.8,4,4,1,Greece; Israel; Italy; Jordan,Etisalat Group; Exelera; Grid Telecom,3,,,
+asia-connect-cable-1-acc-1,Asia Connect Cable-1 (ACC-1),,,planned,planned,19000.0,TeleGeography,19000.0,19091.9,10,7,1,Australia; Guam; Indonesia; Philippines; Singapore; Timor-Leste; United States,Inligo Networks,1,,,http://www.inligonetworks.com/
+barat-timur-indonesia-2-bti-2,Barat Timur Indonesia-2 (BTI-2),,,planned,planned,11600.0,TeleGeography,11600.0,5312.8,10,1,0,Indonesia,Super Sistem (PT Super Sistem Data),1,,,
+canoa,Canoa,,,planned,planned,1677,route,,1676.9,2,2,1,Bermuda; Dominican Republic,Google,1,Google,,
+olaluz,OlaLuz,,,planned,planned,1834,route,,1834.2,2,2,1,Dominican Republic; United States,Google,1,Google,,
+project-waterworth,Project Waterworth,,,planned,planned,50000.0,TeleGeography,50000.0,47432.9,9,6,1,Australia; Brazil; India; Malaysia; South Africa; United States,Meta,1,Meta,,https://about.meta.com/

@@ -1,0 +1,187 @@
+country,international_cables_in_service,domestic_cables_in_service,all_cables_in_service,planned_cables,planned_international_cables,landing_points,has_land_border,international_cable_ids
+United States,59,31,90,31,23,169,1,aec-1; america-movil-submarine-cable-system-1-amx-1; american-1; americas-ii-west; amitie; anjana; antillas-1; apollo; arcos; asia-america-gateway-aag-cable-system; atlantic-crossing-1-ac-1; bahamas-2; bahamas-internet-cable-system-bics; bifrost; brusa; colombia-florida-express-cfx-1; crosslake-fibre; curie; dunant; echo; exa-north-and-south; faster; firmina; flag-atlantic-1-fa-1; gemini-bermuda; global-caribbean-network-gcn; globenet; grace-hopper; gtmo-1; gtmo-pr; havfrueaec-2; hawaiki; honotua; juno; jupiter; ketchcan1-submarine-fiber-cable-system; marea; maya-1-2; mid-atlantic-crossing-mac; monet; new-cross-pacific-ncp-cable-system; pacific-caribbean-cable-system-pccs; pacific-crossing-1-pc-1; pacific-light-cable-network-plcn; pan-american-crossing-pac; sea-us; seabras-1; sint-maarten-puerto-rico-network-one-smpr-1; south-america-1-sam-1; southern-caribbean-fiber; southern-cross-cable-network-sccn; southern-cross-next; tata-tgn-atlantic-south; tata-tgn-pacific; telstra-endeavour; tpu; trans-pacific-express-tpe-cable-system; unity; yellow
+United Kingdom,51,11,62,5,5,126,1,2africa; amitie; apollo; atlantic-crossing-1-ac-1; bt-mt-1; celtixconnect-1-cc-1; channel-islands-9-liberty-submarine-cable; circe-south; circe-north; concerto; crosschannel-fibre; e-llan; emerald-bridge-fibres; esat-2; europe-india-gateway-eig; exa-express; exa-north-and-south; farice-1; farland-north; flag-atlantic-1-fa-1; geo-eirgrid; glo-1; grace-hopper; havhingstenceltixconnect-2-cc-2; havhingstennorth-sea-connect-nsc; high-capacity-undersea-guernsey-optical-fibre-hugo; iceni; lanis-1; lanis-2; manx-northern-ireland; mercator; no-uk; pan-european-crossing-uk-ireland; pan-european-crossing-uk-belgium; qe-north; qe-south; rockabill; scylla; shefa-2; sirius-south; solas; tampnet-north; tampnet-south; tangerine; tata-tgn-atlantic-south; tata-tgn-western-europe; uk-channel-islands-7; uk-channel-islands-8; ulysses-2; yellow; zeus
+Singapore,34,0,34,13,13,8,0,apcn-2; apricot; asia-america-gateway-aag-cable-system; asia-direct-cable-adc; asia-pacific-gateway-apg; asia-submarine-cable-express-asecahaya-malaysia; australia-singapore-cable-asc; batam-singapore-cable-system-bscs; bifrost; eac-c2c; echo; i2i-cable-network-i2icn; india-asia-xpress-iax; indigo-west; indonesia-global-gateway-igg-system; jakarta-bangka-bintan-batam-singapore-b3js; jakabare; jakarta-bangka-batam-singapore-b2js; matrix-cable-system; mist; moratelindo-international-cable-system-1-mic-1; peace-cable; pgascom; rising-8; sea-h2x; seamewe-5; seamewe-4; seax-1; southeast-asia-japan-cable-2-sjc2; southeast-asia-japan-cable-sjc; tata-tgn-intra-asia-tgn-ia; tata-tgn-tata-indicom; thailand-indonesia-singapore-tis; umo
+Italy,27,5,32,5,5,55,1,2africa; asia-africa-europe-1-aae-1; blue; didon; epic-malta-sicily-cable-system-emscs; go-1-mediterranean-cable-system; hannibal-system; imewe; ionian; italy-albania; italy-croatia; italy-greece-1-ig-1; italy-malta; italy-libya; italy-monaco; jonah; malta-italy-interconnector; medloop; mednautilus-submarine-system; melita-1; medusa-submarine-cable-system; middle-east-north-africa-mena-cable-systemgulf-bridge-international; oteglobe-kokkini-bari; sarco; seamewe-5; seamewe-4; trans-adriatic-express-tae
+Japan,24,19,43,9,9,68,0,apcn-2; apricot; asia-direct-cable-adc; asia-pacific-gateway-apg; asia-submarine-cable-express-asecahaya-malaysia; australia-japan-cable-ajc; eac-c2c; faster; flag-north-asia-loopreach-north-asia-loop; guam-okinawa-kyushu-incheon-goki; hokkaido-sakhalin-cable-system-hscs; japan-guam-australia-north-jga-n; juno; jupiter; korea-japan-cable-network-kjcn; new-cross-pacific-ncp-cable-system; pacific-crossing-1-pc-1; russia-japan-cable-network-rjcn; southeast-asia-japan-cable-2-sjc2; southeast-asia-japan-cable-sjc; tata-tgn-pacific; topaz; trans-pacific-express-tpe-cable-system; unity
+France,24,6,30,5,5,27,1,2africa; africa-coast-to-europe-ace; amitie; apollo; asia-africa-europe-1-aae-1; atlas-offshore; blue; circe-south; crosschannel-fibre; dunant; flag-atlantic-1-fa-1; hawk; high-capacity-undersea-guernsey-optical-fibre-hugo; imewe; ingrid; med-cable-network; medloop; medusa-submarine-cable-system; peace-cable; qe-south; sarco; seamewe-5; seamewe-4; te-northtgn-eurasiaseacomalexandrosmedex
+Indonesia,23,38,61,13,7,146,1,apricot; australia-singapore-cable-asc; batam-rengit-cable-system-brcs; batam-dumai-melaka-bdm; batam-sarawak-internet-cable-system-basics; batam-singapore-cable-system-bscs; bifrost; dumai-melaka-cable-system-dmcs; east-west-submarine-cable-system; echo; indigo-west; indonesia-global-gateway-igg-system; jakarta-bangka-bintan-batam-singapore-b3js; jakabare; jakarta-bangka-batam-singapore-b2js; matrix-cable-system; moratelindo-international-cable-system-1-mic-1; pgascom; rising-8; sea-us; seamewe-5; seax-1; thailand-indonesia-singapore-tis
+Denmark,22,6,28,4,4,34,1,baltica; cobracable; danice; danica-north; denmark-sweden-17; denmark-sweden-18; elektra-globalconnect-1-gc1; energinet-laeso-varberg; fehmarn-blt; germany-denmark-3; globalconnect-2-gc2; globalconnect-aurora; globalconnect-denmark-sweden; globalconnect-kpn; havfrueaec-2; havhingstennorth-sea-connect-nsc; havsil; kattegat-2; scandinavian-ring-north; scandinavian-ring-south; skagenfiber-west; skagerrak-4
+Sweden,22,2,24,4,4,28,1,baltic-sea-submarine-cable; baltica; bcs-north---phase-1; bcs-east-west-interlink; botnia; danica-north; denmark-sweden-17; denmark-sweden-18; eastern-light-sweden-finland-i; energinet-laeso-varberg; globalconnect-2-gc2; globalconnect-aurora; globalconnect-denmark-sweden; kattegat-2; latvia-sweden-1-lv-se-1; nordbalt; norfest; scandinavian-ring-north; scandinavian-ring-south; sto-hel-one; sweden-estonia-ee-s-1; sweden-latvia
+Malaysia,20,4,24,9,9,21,1,apcn-2; asia-africa-europe-1-aae-1; asia-america-gateway-aag-cable-system; asia-pacific-gateway-apg; asia-submarine-cable-express-asecahaya-malaysia; batam-rengit-cable-system-brcs; batam-dumai-melaka-bdm; batam-sarawak-internet-cable-system-basics; bay-of-bengal-gateway-bbg; dumai-melaka-cable-system-dmcs; east-west-submarine-cable-system; fea; india-asia-xpress-iax; labuan-brunei-submarine-cable; malaysia-cambodia-thailand-mct-cable; mist; safe; seamewe-5; seamewe-4; seax-1
+Egypt,17,1,18,6,5,9,1,2africa; aletar; asia-africa-europe-1-aae-1; coral-bridge; europe-india-gateway-eig; falcon; fea; hawk; imewe; medusa-submarine-cable-system; middle-east-north-africa-mena-cable-systemgulf-bridge-international; peace-cable; seacomtata-tgn-eurasia; seamewe-5; seamewe-4; taba-aqaba; te-northtgn-eurasiaseacomalexandrosmedex
+United Arab Emirates,17,1,18,3,3,7,1,2africa; asia-africa-europe-1-aae-1; bay-of-bengal-gateway-bbg; europe-india-gateway-eig; falcon; fea; fiber-optic-gulf-fog; gulf-bridge-international-cable-systemmiddle-east-north-africa-cable-system-gbicsmena; imewe; peace-cable; qatar-u-a-e-submarine-cable-system; seamewe-5; seamewe-4; tata-tgn-gulf; the-east-african-marine-system-teams; transworld-tw1; uae-iran
+China,16,5,21,2,2,24,1,apcn-2; asia-africa-europe-1-aae-1; asia-america-gateway-aag-cable-system; asia-direct-cable-adc; asia-pacific-gateway-apg; asia-submarine-cable-express-asecahaya-malaysia; cross-straits-cable-network-cscn; eac-c2c; flag-north-asia-loopreach-north-asia-loop; new-cross-pacific-ncp-cable-system; sea-h2x; southeast-asia-japan-cable-2-sjc2; southeast-asia-japan-cable-sjc; taiwan-strait-express-1-tse-1; tata-tgn-intra-asia-tgn-ia; trans-pacific-express-tpe-cable-system
+India,16,2,18,5,5,26,1,2africa; asia-africa-europe-1-aae-1; bay-of-bengal-gateway-bbg; bharat-lanka-cable-system; europe-india-gateway-eig; falcon; fea; gulf-bridge-international-cable-systemmiddle-east-north-africa-cable-system-gbicsmena; i2i-cable-network-i2icn; imewe; india-asia-xpress-iax; mist; safe; seacomtata-tgn-eurasia; seamewe-4; tata-tgn-tata-indicom
+Saudi Arabia,15,1,16,8,8,6,1,2africa; asia-africa-europe-1-aae-1; europe-india-gateway-eig; falcon; fea; gulf-bridge-international-cable-systemmiddle-east-north-africa-cable-system-gbicsmena; imewe; middle-east-north-africa-mena-cable-systemgulf-bridge-international; peace-cable; saudi-arabia-sudan-1-sas-1; saudi-arabia-sudan-2-sas-2; seacomtata-tgn-eurasia; seamewe-5; seamewe-4; tata-tgn-gulf
+Guam,15,0,15,6,6,5,0,apricot; asia-america-gateway-aag-cable-system; atisa; australia-japan-cable-ajc; bifrost; echo; guam-okinawa-kyushu-incheon-goki; hantru1-cable-system; japan-guam-australia-north-jga-n; japan-guam-australia-south-jga-s; mariana-guam-cable; pipe-pacific-cable-1-ppc-1; sea-us; tata-tgn-pacific; tpu
+Spain,14,18,32,4,3,50,1,2africa; africa-coast-to-europe-ace; anjana; canalink; ellalink; est-tet; grace-hopper; marea; medloop; medusa-submarine-cable-system; oran-valencia-orval; sat-3wasc; tata-tgn-western-europe; west-africa-cable-system-wacs
+Philippines,14,8,22,4,4,71,0,apcn-2; apricot; asia-america-gateway-aag-cable-system; asia-direct-cable-adc; asia-submarine-cable-express-asecahaya-malaysia; bifrost; eac-c2c; jupiter; pacific-light-cable-network-plcn; sea-h2x; sea-us; southeast-asia-japan-cable-sjc; tata-tgn-intra-asia-tgn-ia; tpu
+Taiwan,14,3,17,4,4,21,0,apcn-2; apricot; asia-pacific-gateway-apg; cross-straits-cable-network-cscn; eac-c2c; faster; flag-north-asia-loopreach-north-asia-loop; new-cross-pacific-ncp-cable-system; pacific-light-cable-network-plcn; southeast-asia-japan-cable-2-sjc2; taiwan-strait-express-1-tse-1; topaz; tpu; trans-pacific-express-tpe-cable-system
+Ireland,14,0,14,2,2,14,1,aec-1; celtixconnect-1-cc-1; emerald-bridge-fibres; esat-2; exa-express; exa-north-and-south; geo-eirgrid; havfrueaec-2; havhingstenceltixconnect-2-cc-2; iris; pan-european-crossing-uk-ireland; rockabill; sirius-south; solas
+Oman,14,0,14,6,6,8,1,2africa; asia-africa-europe-1-aae-1; bay-of-bengal-gateway-bbg; europe-india-gateway-eig; falcon; gulf-bridge-international-cable-systemmiddle-east-north-africa-cable-system-gbicsmena; gulf2africa-g2a; middle-east-north-africa-mena-cable-systemgulf-bridge-international; oman-australia-cable-oac; omranepeg; pishgaman-oman-iran-poi-network; seamewe-5; tata-tgn-gulf; transworld-tw1
+Australia,13,9,22,14,13,28,0,australia-japan-cable-ajc; australia-singapore-cable-asc; coral-sea-cable-system-cs; gondwana-1; hawaiki; indigo-west; japan-guam-australia-south-jga-s; oman-australia-cable-oac; pipe-pacific-cable-1-ppc-1; southern-cross-cable-network-sccn; southern-cross-next; tasman-global-access-tga-cable; telstra-endeavour
+Brazil,13,9,22,4,1,75,1,america-movil-submarine-cable-system-1-amx-1; brusa; ellalink; firmina; globenet; malbec; monet; seabras-1; south-america-1-sam-1; south-american-crossing-sac; south-atlantic-cable-system-sacs; south-atlantic-inter-link-sail; tannat
+Thailand,12,2,14,3,3,7,1,asia-africa-europe-1-aae-1; asia-america-gateway-aag-cable-system; asia-direct-cable-adc; asia-pacific-gateway-apg; fea; india-asia-xpress-iax; malaysia-cambodia-thailand-mct-cable; mist; sea-h2x; seamewe-4; southeast-asia-japan-cable-2-sjc2; thailand-indonesia-singapore-tis
+Finland,12,0,12,3,3,11,1,baltic-sea-submarine-cable; bcs-north---phase-1; bcs-north---phase-2; botnia; c-lion1; e-finest; eastern-light-sweden-finland-i; finland-estonia-2-eesf-2; finland-estonia-3-eesf-3; finland-estonia-connection-1-fec-1; finland-estonia-connection-2-fec-2; sto-hel-one
+Cyprus,11,1,12,2,2,4,1,blue; cadmos; exelera-north; hawk; mednautilus-submarine-system; medusa-submarine-cable-system; peace-cable; te-northtgn-eurasiaseacomalexandrosmedex; turcyos-2; turcyos-1; ugarit
+South Africa,11,0,11,3,3,8,1,2africa; africa-coast-to-europe-ace; djibouti-africa-regional-express-1-dare-1; eastern-africa-submarine-system-eassy; equiano; meltingpot-indianoceanic-submarine-system-metiss; safe; sat-3wasc; seacomtata-tgn-eurasia; t3; west-africa-cable-system-wacs
+Portugal,10,7,17,4,2,19,1,2africa; africa-coast-to-europe-ace; ellalink; equiano; europe-india-gateway-eig; mainone; medusa-submarine-cable-system; sat-3wasc; tata-tgn-western-europe; west-africa-cable-system-wacs
+Greece,10,6,16,5,4,36,1,2africa; adria-1; asia-africa-europe-1-aae-1; blue; ionian; italy-greece-1-ig-1; mednautilus-submarine-system; medusa-submarine-cable-system; oteglobe-kokkini-bari; silphium
+Netherlands,10,0,10,1,1,8,1,amerigo-vespucci; atlantic-crossing-1-ac-1; circe-north; cobracable; concerto; farland-north; iceni; scylla; ulysses-2; zeus
+Canada,8,11,19,2,0,155,1,american-1; crosslake-fibre; exa-express; exa-north-and-south; greenland-connect; ketchcan1-submarine-fiber-cable-system; st-pierre-and-miquelon-cable; topaz
+Norway,8,7,15,2,1,42,1,havfrueaec-2; havsil; no-uk; norfest; skagenfiber-west; skagerrak-4; tampnet-north; tampnet-south
+South Korea,8,4,12,4,4,10,1,apcn-2; asia-pacific-gateway-apg; eac-c2c; flag-north-asia-loopreach-north-asia-loop; korea-japan-cable-network-kjcn; new-cross-pacific-ncp-cable-system; southeast-asia-japan-cable-2-sjc2; trans-pacific-express-tpe-cable-system
+Djibouti,8,0,8,4,4,2,1,2africa; aden-djibouti; asia-africa-europe-1-aae-1; djibouti-africa-regional-express-1-dare-1; eastern-africa-submarine-system-eassy; europe-india-gateway-eig; seacomtata-tgn-eurasia; seamewe-5
+Nigeria,8,0,8,0,0,2,1,2africa; africa-coast-to-europe-ace; equiano; glo-1; mainone; nigeria-cameroon-submarine-cable-system-ncscs; sat-3wasc; west-africa-cable-system-wacs
+Sri Lanka,8,0,8,1,1,4,0,bay-of-bengal-gateway-bbg; bharat-lanka-cable-system; dhiraagu-slt-submarine-cable-network; falcon; india-asia-xpress-iax; maldives-sri-lanka-cable-msc; seamewe-5; seamewe-4
+Colombia,7,2,9,3,3,10,1,america-movil-submarine-cable-system-1-amx-1; arcos; colombia-florida-express-cfx-1; globenet; pacific-caribbean-cable-system-pccs; south-america-1-sam-1; south-american-crossing-sac
+Germany,7,2,9,1,1,9,1,atlantic-crossing-1-ac-1; c-lion1; elektra-globalconnect-1-gc1; fehmarn-blt; germany-denmark-3; globalconnect-aurora; globalconnect-kpn
+Argentina,7,1,8,0,0,3,1,bicentenario; firmina; malbec; south-america-1-sam-1; south-american-crossing-sac; tannat; unisur
+Malta,7,1,8,0,0,7,0,epic-malta-sicily-cable-system-emscs; go-1-mediterranean-cable-system; italy-malta; malta-italy-interconnector; melita-1; medusa-submarine-cable-system; peace-cable
+Dominican Republic,7,0,7,3,3,5,1,america-movil-submarine-cable-system-1-amx-1; antillas-1; arcos; east-west-cable-ewc; fibralink; firmina; south-america-1-sam-1
+Estonia,7,0,7,1,1,4,1,baltic-sea-submarine-cable; e-finest; finland-estonia-2-eesf-2; finland-estonia-3-eesf-3; finland-estonia-connection-1-fec-1; finland-estonia-connection-2-fec-2; sweden-estonia-ee-s-1
+Kenya,7,0,7,2,2,3,1,2africa; djibouti-africa-regional-express-1-dare-1; eastern-africa-submarine-system-eassy; lower-indian-ocean-network-2-lion2; peace-cable; seacomtata-tgn-eurasia; the-east-african-marine-system-teams
+Pakistan,7,0,7,2,2,1,1,2africa; asia-africa-europe-1-aae-1; imewe; peace-cable; seamewe-5; seamewe-4; transworld-tw1
+Qatar,7,0,7,2,2,5,1,2africa; asia-africa-europe-1-aae-1; falcon; fiber-optic-gulf-fog; gulf-bridge-international-cable-systemmiddle-east-north-africa-cable-system-gbicsmena; qatar-u-a-e-submarine-cable-system; tata-tgn-gulf
+Russia,6,7,13,0,0,28,1,bcs-north---phase-2; energy-bridge-cable; georgia-russia; hokkaido-sakhalin-cable-system-hscs; kerch-strait-cable; russia-japan-cable-network-rjcn
+Curaçao,6,0,6,2,2,2,0,alonso-de-ojeda; amerigo-vespucci; arcos; ec-link; jerry-newton; pacific-caribbean-cable-system-pccs
+Côte d'Ivoire,6,0,6,0,0,1,1,2africa; africa-coast-to-europe-ace; mainone; maroc-telecom-west-africa; sat-3wasc; west-africa-cable-system-wacs
+Fiji,6,0,6,3,3,3,0,gondwana-2picot-2; interchange-cable-network-1-icn1; southern-cross-cable-network-sccn; southern-cross-next; tonga-cable; tui-samoa
+Ghana,6,0,6,0,0,1,1,2africa; africa-coast-to-europe-ace; glo-1; mainone; sat-3wasc; west-africa-cable-system-wacs
+Iran,6,0,6,0,0,7,1,falcon; gulf-bridge-international-cable-systemmiddle-east-north-africa-cable-system-gbicsmena; kuwait-iran; omranepeg; pishgaman-oman-iran-poi-network; uae-iran
+Isle of Man,6,0,6,0,0,5,0,bt-mt-1; e-llan; havhingstenceltixconnect-2-cc-2; lanis-1; lanis-2; manx-northern-ireland
+Morocco,6,0,6,1,1,6,1,atlas-offshore; canalink; ellalink; est-tet; maroc-telecom-west-africa; medusa-submarine-cable-system
+Panama,6,0,6,4,4,7,1,arcos; curie; pacific-caribbean-cable-system-pccs; pan-american-crossing-pac; panam-south; south-american-crossing-sac
+Vietnam,6,0,6,3,3,3,1,asia-africa-europe-1-aae-1; asia-america-gateway-aag-cable-system; asia-direct-cable-adc; asia-pacific-gateway-apg; southeast-asia-japan-cable-2-sjc2; tata-tgn-intra-asia-tgn-ia
+Maldives,5,4,9,2,2,17,0,dhiraagu-slt-submarine-cable-network; falcon; india-asia-xpress-iax; maldives-sri-lanka-cable-msc; peace-cable
+Virgin Islands (U.S.),5,2,7,1,1,10,0,americas-ii-west; global-caribbean-network-gcn; mid-atlantic-crossing-mac; south-american-crossing-sac; southern-caribbean-fiber
+Jamaica,5,1,6,0,0,9,0,alba-1; cayman-jamaica-fiber-system-cjfs; colombia-florida-express-cfx-1; east-west-cable-ewc; fibralink
+Trinidad and Tobago,5,1,6,0,0,4,0,deep-blue-one; eastern-caribbean-fiber-system-ecfs; ec-link; southern-caribbean-fiber; suriname-guyana-submarine-cable-system-sg-scs
+Algeria,5,0,5,1,1,5,1,med-cable-network; medusa-submarine-cable-system; oran-valencia-orval; seamewe-4; te-northtgn-eurasiaseacomalexandrosmedex
+Bahrain,5,0,5,2,2,3,0,2africa; falcon; fiber-optic-gulf-fog; gulf-bridge-international-cable-systemmiddle-east-north-africa-cable-system-gbicsmena; tata-tgn-gulf
+Cameroon,5,0,5,0,0,3,1,ceiba-2; nigeria-cameroon-submarine-cable-system-ncscs; sat-3wasc; south-atlantic-inter-link-sail; west-africa-cable-system-wacs
+Guernsey,5,0,5,0,0,4,0,channel-islands-9-liberty-submarine-cable; guernsey-jersey-4; high-capacity-undersea-guernsey-optical-fibre-hugo; ingrid; uk-channel-islands-7
+Kuwait,5,0,5,1,1,2,1,2africa; falcon; fiber-optic-gulf-fog; gulf-bridge-international-cable-systemmiddle-east-north-africa-cable-system-gbicsmena; kuwait-iran
+Madagascar,5,0,5,0,0,4,0,2africa; djibouti-africa-regional-express-1-dare-1; eastern-africa-submarine-system-eassy; lower-indian-ocean-network-lion; meltingpot-indianoceanic-submarine-system-metiss
+Senegal,5,0,5,0,0,1,1,2africa; africa-coast-to-europe-ace; mainone; sat-3wasc; senegal-horn-of-africa-regional-express-share-cable
+Somalia,5,0,5,1,1,3,1,2africa; djibouti-africa-regional-express-1-dare-1; eastern-africa-submarine-system-eassy; gulf2africa-g2a; peace-cable
+Sudan,5,0,5,0,0,1,1,2africa; eastern-africa-submarine-system-eassy; falcon; saudi-arabia-sudan-1-sas-1; saudi-arabia-sudan-2-sas-2
+Tanzania,5,0,5,0,0,2,1,2africa; djibouti-africa-regional-express-1-dare-1; eastern-africa-submarine-system-eassy; seacomtata-tgn-eurasia; seychelles-to-east-africa-system-seas
+Tunisia,5,0,5,0,0,2,1,didon; hannibal-system; medusa-submarine-cable-system; peace-cable; seamewe-4
+Turkey,5,0,5,1,1,6,1,kafos; mednautilus-submarine-system; seamewe-5; turcyos-2; turcyos-1
+Chile,4,4,8,2,2,19,1,curie; south-america-1-sam-1; south-american-crossing-sac; south-pacific-cable-system-spcsmistral
+Mexico,4,4,8,4,4,14,1,america-movil-submarine-cable-system-1-amx-1; arcos; bifrost; pan-american-crossing-pac
+New Zealand,4,3,7,3,3,19,0,hawaiki; southern-cross-cable-network-sccn; southern-cross-next; tasman-global-access-tga-cable
+Libya,4,2,6,0,0,14,1,europe-india-gateway-eig; italy-libya; medusa-submarine-cable-system; silphium
+Angola,4,1,5,0,0,7,1,2africa; sat-3wasc; south-atlantic-cable-system-sacs; west-africa-cable-system-wacs
+Bahamas,4,1,5,0,0,21,0,arcos; bahamas-2; bahamas-domestic-submarine-network-bdsni; bahamas-internet-cable-system-bics
+Comoros,4,1,5,0,0,4,0,2africa; avassa; eastern-africa-submarine-system-eassy; fly-lion3
+"Congo, Dem. Rep.",4,1,5,0,0,5,1,2africa; lake-albert-1; lake-albert-2; west-africa-cable-system-wacs
+Gabon,4,1,5,0,0,2,1,2africa; africa-coast-to-europe-ace; maroc-telecom-west-africa; sat-3wasc
+Israel,4,1,5,3,3,8,1,blue; exelera-north; jonah; mednautilus-submarine-system
+Mauritius,4,1,5,0,0,4,0,lower-indian-ocean-network-lion; meltingpot-indianoceanic-submarine-system-metiss; safe; t3
+Venezuela,4,1,5,1,1,15,1,alba-1; arcos; globenet; south-american-crossing-sac
+Belgium,4,0,4,0,0,2,1,mercator; pan-european-crossing-uk-belgium; qe-north; tangerine
+Cuba,4,0,4,0,0,4,1,alba-1; arimao; gtmo-1; gtmo-pr
+Ecuador,4,0,4,1,1,4,1,pacific-caribbean-cable-system-pccs; panam-south; south-america-1-sam-1; south-pacific-cable-system-spcsmistral
+Guatemala,4,0,4,2,2,2,1,america-movil-submarine-cable-system-1-amx-1; arcos; south-america-1-sam-1; south-pacific-cable-system-spcsmistral
+Iceland,4,0,4,1,1,4,0,danice; farice-1; greenland-connect; iris
+Jordan,4,0,4,2,2,1,1,blue; coral-bridge; fea; taba-aqaba
+Martinique,4,0,4,1,1,2,0,arimao; eastern-caribbean-fiber-system-ecfs; kanawa; southern-caribbean-fiber
+Mozambique,4,0,4,0,0,3,1,2africa; djibouti-africa-regional-express-1-dare-1; eastern-africa-submarine-system-eassy; seacomtata-tgn-eurasia
+Saint Kitts and Nevis,4,0,4,0,0,2,0,antigua-st-kitts; eastern-caribbean-fiber-system-ecfs; saba-statia-cable-system-sscs; southern-caribbean-fiber
+Syria,4,0,4,1,1,1,1,aletar; berytar; medusa-submarine-cable-system; ugarit
+Uruguay,4,0,4,0,0,2,1,bicentenario; firmina; tannat; unisur
+Virgin Islands (U.K.),4,0,4,0,0,2,0,caribbean-bermuda-u-s-cbus; east-west-cable-ewc; eastern-caribbean-fiber-system-ecfs; pacific-caribbean-cable-system-pccs
+Yemen,4,0,4,1,1,3,1,aden-djibouti; asia-africa-europe-1-aae-1; falcon; seamewe-5
+Cape Verde,3,3,6,0,0,10,0,ellalink; senegal-horn-of-africa-regional-express-share-cable; west-africa-cable-system-wacs
+Bermuda,3,1,4,3,3,3,0,caribbean-bermuda-u-s-cbus; gemini-bermuda; globenet
+Equatorial Guinea,3,1,4,0,0,3,1,africa-coast-to-europe-ace; ceiba-2; ultramar-ge
+Guadeloupe,3,1,4,0,0,9,0,eastern-caribbean-fiber-system-ecfs; global-caribbean-network-gcn; southern-caribbean-fiber
+Micronesia,3,1,4,0,0,4,0,east-micronesia-cable-system-emcs; hantru1-cable-system; sea-us
+Peru,3,1,4,0,0,3,1,south-america-1-sam-1; south-american-crossing-sac; south-pacific-cable-system-spcsmistral
+Albania,3,0,3,1,1,2,1,adria-1; italy-albania; trans-adriatic-express-tae
+Antigua and Barbuda,3,0,3,1,1,3,0,antigua-st-kitts; eastern-caribbean-fiber-system-ecfs; southern-caribbean-fiber
+Barbados,3,0,3,0,0,3,0,eastern-caribbean-fiber-system-ecfs; southern-caribbean-fiber; x-link-submarine-cable
+Benin,3,0,3,0,0,1,1,africa-coast-to-europe-ace; maroc-telecom-west-africa; sat-3wasc
+Brunei,3,0,3,2,2,3,1,asia-america-gateway-aag-cable-system; labuan-brunei-submarine-cable; southeast-asia-japan-cable-sjc
+Costa Rica,3,0,3,1,1,2,1,america-movil-submarine-cable-system-1-amx-1; arcos; pan-american-crossing-pac
+French Guiana,3,0,3,0,0,2,1,deep-blue-one; ellalink; kanawa
+Grenada,3,0,3,0,0,3,0,caribbean-regional-communications-infrastructure-program-carcip; eastern-caribbean-fiber-system-ecfs; southern-caribbean-fiber
+Guyana,3,0,3,0,0,1,1,deep-blue-one; suriname-guyana-submarine-cable-system-sg-scs; x-link-submarine-cable
+Iraq,3,0,3,1,1,1,1,2africa; falcon; gulf-bridge-international-cable-systemmiddle-east-north-africa-cable-system-gbicsmena
+Jersey,3,0,3,0,0,3,0,guernsey-jersey-4; ingrid; uk-channel-islands-8
+Latvia,3,0,3,0,0,2,1,bcs-east; latvia-sweden-1-lv-se-1; sweden-latvia
+Lebanon,3,0,3,1,1,4,1,berytar; cadmos; imewe
+Lithuania,3,0,3,0,0,2,1,bcs-east; bcs-east-west-interlink; nordbalt
+Mayotte,3,0,3,0,0,2,0,avassa; fly-lion3; lower-indian-ocean-network-2-lion2
+Myanmar,3,0,3,0,0,2,1,asia-africa-europe-1-aae-1; seamewe-5; umo
+Northern Mariana Islands,3,0,3,3,3,6,0,atisa; mariana-guam-cable; tpu
+Réunion,3,0,3,1,1,3,0,lower-indian-ocean-network-lion; meltingpot-indianoceanic-submarine-system-metiss; safe
+Saint Barthélemy,3,0,3,1,1,2,0,global-caribbean-network-gcn; saba-statia-cable-system-sscs; southern-caribbean-fiber
+Saint Martin,3,0,3,0,0,3,1,global-caribbean-network-gcn; sint-maarten-puerto-rico-network-one-smpr-1; southern-caribbean-fiber
+Saint Vincent and the Grenadines,3,0,3,0,0,7,0,caribbean-regional-communications-infrastructure-program-carcip; eastern-caribbean-fiber-system-ecfs; southern-caribbean-fiber
+Samoa,3,0,3,0,0,2,0,manatua; samoa-american-samoa-sas; tui-samoa
+Seychelles,3,0,3,0,0,2,0,2africa; peace-cable; seychelles-to-east-africa-system-seas
+Sint Maarten,3,0,3,0,0,3,1,eastern-caribbean-fiber-system-ecfs; saba-statia-cable-system-sscs; sint-maarten-puerto-rico-network-one-smpr-1
+Suriname,3,0,3,0,0,2,1,deep-blue-one; ellalink; suriname-guyana-submarine-cable-system-sg-scs
+Togo,3,0,3,0,0,1,1,equiano; maroc-telecom-west-africa; west-africa-cable-system-wacs
+French Polynesia,2,3,5,3,3,23,0,honotua; manatua
+Papua New Guinea,2,2,4,1,1,15,1,coral-sea-cable-system-cs; pipe-pacific-cable-1-ppc-1
+New Caledonia,2,1,3,1,1,9,0,gondwana-1; gondwana-2picot-2
+Tonga,2,1,3,0,0,3,0,hawaiki; tonga-cable
+American Samoa,2,0,2,1,0,2,0,hawaiki; samoa-american-samoa-sas
+Aruba,2,0,2,1,1,2,0,alonso-de-ojeda; pacific-caribbean-cable-system-pccs
+Bangladesh,2,0,2,2,1,2,1,seamewe-5; seamewe-4
+"Bonaire, Sint Eustatius and Saba",2,0,2,1,1,4,0,jerry-newton; saba-statia-cable-system-sscs
+Bulgaria,2,0,2,1,1,3,1,caucasus-cable-system; kafos
+Cambodia,2,0,2,1,1,1,1,asia-africa-europe-1-aae-1; malaysia-cambodia-thailand-mct-cable
+Cayman Islands,2,0,2,0,0,2,0,cayman-jamaica-fiber-system-cjfs; maya-1-2
+"Congo, Rep.",2,0,2,0,0,1,1,2africa; west-africa-cable-system-wacs
+Croatia,2,0,2,0,0,2,1,adria-1; italy-croatia
+Dominica,2,0,2,0,0,2,0,eastern-caribbean-fiber-system-ecfs; southern-caribbean-fiber
+Faroe Islands,2,0,2,0,0,2,0,farice-1; shefa-2
+Georgia,2,0,2,1,1,1,1,caucasus-cable-system; georgia-russia
+Haiti,2,0,2,0,0,2,1,bahamas-domestic-submarine-network-bdsni; fibralink
+Honduras,2,0,2,1,1,3,1,arcos; maya-1-2
+Kiribati,2,0,2,0,0,2,0,east-micronesia-cable-system-emcs; southern-cross-next
+Mauritania,2,0,2,0,0,2,1,africa-coast-to-europe-ace; ellalink
+Monaco,2,0,2,0,0,2,1,europe-india-gateway-eig; italy-monaco
+Namibia,2,0,2,0,0,1,1,equiano; west-africa-cable-system-wacs
+Palau,2,0,2,0,0,1,0,echo; sea-us
+Saint Lucia,2,0,2,0,0,2,0,eastern-caribbean-fiber-system-ecfs; southern-caribbean-fiber
+Sao Tome and Principe,2,0,2,0,0,1,0,africa-coast-to-europe-ace; ultramar-ge
+Uganda,2,0,2,0,0,2,1,lake-albert-1; lake-albert-2
+Ukraine,2,0,2,1,1,3,1,energy-bridge-cable; kerch-strait-cable
+Belize,1,1,2,0,0,3,1,arcos
+Greenland,1,1,2,0,0,5,0,greenland-connect
+Tokelau,1,1,2,0,0,3,0,southern-cross-next
+Anguilla,1,0,1,0,0,1,0,eastern-caribbean-fiber-system-ecfs
+Azerbaijan,1,0,1,0,0,1,1,trans-caspian-fiber-optic-cable
+British Indian Ocean Territory,1,0,1,0,0,1,0,oman-australia-cable-oac
+Christmas Island,1,0,1,3,3,1,0,australia-singapore-cable-asc
+Cocos (Keeling) Islands,1,0,1,0,0,1,0,oman-australia-cable-oac
+Cook Islands,1,0,1,0,0,2,0,manatua
+Gambia,1,0,1,0,0,1,1,africa-coast-to-europe-ace
+Gibraltar,1,0,1,0,0,1,1,europe-india-gateway-eig
+Guinea,1,0,1,0,0,1,1,africa-coast-to-europe-ace
+Guinea-Bissau,1,0,1,0,0,1,1,africa-coast-to-europe-ace
+Kazakhstan,1,0,1,0,0,1,1,trans-caspian-fiber-optic-cable
+Liberia,1,0,1,0,0,1,1,africa-coast-to-europe-ace
+Marshall Islands,1,0,1,1,0,2,0,hantru1-cable-system
+Montserrat,1,0,1,0,0,1,0,southern-caribbean-fiber
+Nauru,1,0,1,0,0,1,0,east-micronesia-cable-system-emcs
+Nicaragua,1,0,1,0,0,2,1,arcos
+Niue,1,0,1,0,0,1,0,manatua
+Poland,1,0,1,0,0,1,1,baltica
+Romania,1,0,1,0,0,1,1,kafos
+"Saint Helena, Ascension and Tristan da Cunha",1,0,1,0,0,1,0,equiano
+Saint Pierre and Miquelon,1,0,1,0,0,2,0,st-pierre-and-miquelon-cable
+Sierra Leone,1,0,1,0,0,1,1,africa-coast-to-europe-ace
+Solomon Islands,1,0,1,2,1,4,0,coral-sea-cable-system-cs
+Turks and Caicos Islands,1,0,1,0,0,1,0,arcos
+Vanuatu,1,0,1,1,1,4,0,interchange-cable-network-1-icn1
+Wallis and Futuna,1,0,1,0,0,2,0,tui-samoa
+Timor-Leste,0,1,1,2,2,1,1,
+Tuvalu,0,0,0,1,0,1,0,

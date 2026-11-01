@@ -1,0 +1,132 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella}
+\newfontfamily\headfont{Inter}[UprightFont=*-ExtraBold,BoldFont=*-ExtraBold,Extension=.otf,Path=/usr/share/fonts/opentype/inter/]
+\usepackage[a4paper,margin=2.3cm]{geometry}
+\usepackage{graphicx,booktabs,float,caption,array,xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage[round]{natbib}
+\usepackage{setspace}
+\setstretch{1.05}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.75}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\titleformat{\section}{\headfont\Large}{\thesection}{0.8em}{}
+\titleformat{\subsection}{\headfont\large}{\thesubsection}{0.8em}{}
+\captionsetup{font=small,labelfont=bf}
+\urlstyle{same}
+\hypersetup{pdftitle={The Internet's Seabed: Submarine Cables, When They Were Laid, Who Owns Them and Where They Crowd Together},pdfauthor={Tristan Hotham}}
+
+\begin{document}
+\begin{center}
+{\Large\bfseries The Internet's Seabed\par}
+\vspace{0.4em}
+{\large Submarine cables, when they were laid, who owns them\\and where they crowd together\par}
+\vspace{1.2em}
+{\large Tristan Hotham\par}
+\vspace{0.3em}
+{\small Independent researcher\\
+ORCID: 0000-0003-4931-9349\\
+DOI: \detokenize{10.5281/zenodo.23856607}\par}
+\vspace{0.8em}
+2026
+\end{center}
+
+\begin{quote}
+\small
+\begin{center}\textbf{Abstract}\end{center}
+Almost all intercontinental internet traffic travels through fibre-optic cables on the sea floor. I describe the network as recorded in TeleGeography's Submarine Cable Map, the most widely used open record of it, in its 2026 version: {{n_active|int}} cables in service with a combined length of {{km_active|int}} km and {{n_planned|int}} planned cables with {{km_planned|int}} km more, landing at {{n_landing_points|int}} points in {{n_countries|int}} countries and territories. I ask three questions. When was each cable laid? The ready-for-service years show two booms: the dot-com bubble, when {{dotcom_n|int}} of today's cables came into service in 1999 to 2001, and the present, with a record {{peak_n|int}} new cables in {{peak_year|raw}} and {{n_2027|int}} planned for 2027. Who owns the new cables? Matching owner names shows that Google, Meta, Amazon and Microsoft part-own none of the length ready before 2010, {{hyper.share_km_1519|pct}} of the length ready in 2015 to 2019, {{hyper.share_km_2020s|pct}} in 2020 to 2026 and {{hyper.share_planned_km|pct}} of the planned length. Where does the network squeeze through? Counting cables whose routes cross bands drawn across straits and enter hub areas, {{zone.sicily.n_active|int}} cables in service cross the Strait of Sicily, {{zone.bab.n_active|int}} pass the Bab el-Mandeb with a combined length of {{zone.bab.km_active|int}} km, and {{zone.singapore.n_active|int}} reach the sea within 35 km of Singapore. At the other end, {{n_single_island|int}} islands with no land border depend on a single international cable. The record has no capacities and omits retired cables, so it describes the geography of the network, not its traffic.
+
+\textbf{Keywords:} submarine cables; internet infrastructure; choke points; resilience; hyperscalers; TeleGeography; mapping
+\end{quote}
+
+\section{Introduction}
+The internet is often imagined as wireless, or as something in the sky, but its long-distance links are mostly cables on the sea floor. A modern submarine cable is a few centimetres across in deep water, carries light through a handful of fibre pairs, and runs for thousands of kilometres between landing stations on beaches \citep{carter2009,starosielski2015}. These cables are laid and repaired by a small fleet of specialised ships, owned by telecommunications companies and, increasingly, by the large cloud and content companies, and governed by a patchwork of national and international law \citep{burnett2014}.
+
+The network is both robust and fragile. Robust, because there are hundreds of cables and traffic can be rerouted; fragile, because geography funnels cables through a few narrow straits and onto a few landing beaches, where one accident can cut several at once. Fishing gear and ships' anchors cause most faults, and earthquakes and submarine landslides cause the largest multiple breaks \citep{carter2009}. Well-documented examples include the earthquake off southern Taiwan in 2006, which broke several cables in the Luzon Strait; the eruption of the Hunga Tonga volcano in 2022, which cut Tonga's only international cable at the time; and the damage to several Red Sea cables in 2024, reportedly by the dragging anchor of a ship that had been attacked and abandoned.
+
+This paper uses the open data behind TeleGeography's Submarine Cable Map \citep{telegeography} to describe the network's history, ownership and geography with simple, reproducible counts. It is descriptive and deliberately modest: the data record where cables run and who owns them, not how much they carry. An interactive version (\url{https://maps.tristanhotham.com/submarine-cables/}) shows every cable with a time slider and the choke points used below.
+
+\section{Data}
+TeleGeography publishes the data of its Submarine Cable Map through a public API under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 licence. I used its third version, retrieved in 2026: a file of cable routes ({{n|int}} cables, drawn as GeoJSON lines), a file of {{n_landing_points|int}} landing points, and a record for each cable with its name, length, ready-for-service date and year, whether it is planned, its owners and suppliers (as comma-separated lists), its landing points with their countries, and a web address. Countries are TeleGeography's countries and territories: Hong Kong is listed under China, and overseas territories such as Guam, Réunion or the Cayman Islands are listed on their own.
+
+Three features of the data shape everything that follows. First, the map shows cables that are in service or planned; retired cables are removed. The history below is therefore a history of today's cables, not of every cable ever laid. Second, routes are drawn schematically by TeleGeography: they show which seas a cable crosses, not its exact position on the sea floor. Third, there is no information on capacity, traffic or fibre pairs, so every cable counts the same.
+
+Land, country outlines and islands come from Natural Earth \citep{naturalearth}.
+
+\begin{table}[tbp]\centering\small\caption{Sources and licences.}\label{tab:sources}
+\begin{tabular}{>{\raggedright\arraybackslash}p{4cm}>{\raggedright\arraybackslash}p{7.2cm}>{\raggedright\arraybackslash}p{3.2cm}}\toprule Source & Used & Licence\\\midrule
+TeleGeography Submarine Cable Map, API v3 & Routes, landing points, years, lengths, owners, suppliers & CC BY-NC-SA 3.0\\
+Natural Earth & Land and coastlines; land borders (islands); coastal countries & Public domain\\
+\bottomrule\end{tabular}\end{table}
+
+\section{Methods}
+\subsection{Years, eras and lengths}
+A cable is in service unless TeleGeography marks it as planned. Its year is the ready-for-service year: for cables in service the year it started carrying traffic, for planned cables the expected year ({{n_planned_noyear|int}} planned cables have none). I group cables into eras by decade (1989 to 1999, 2000 to 2009, 2010 to 2019, 2020 to 2026) and treat planned cables as a fifth group. Length is TeleGeography's stated length. For the {{n_no_length|int}} cables without one I measured the drawn route along the WGS84 ellipsoid; these make up {{km_route_share|pct1}} of the total length. For cables with both, the drawn route has a median of {{route_vs_stated_median|pct}} of the stated length, as expected for schematic lines that cut corners.
+
+\subsection{Owners}
+A cable counts as part-owned by Google, Meta, Amazon or Microsoft if one of the names Google, Meta, Amazon Web Services or Microsoft appears as a whole entry in its owners list. I checked the full list of {{n_owners_distinct|int}} distinct owner names for other spellings (Facebook, Alphabet, AWS, Amazon, subsidiaries) and found none; a different company, Metacore Subcom, is excluded. Shares are of kilometres of cable ready in each period. The owners field records equity in a cable, not capacity bought on it, so these shares understate the companies' use of the network.
+
+\subsection{Choke points}
+I used three measures. (1) \emph{Straits and corridors}: for each of {{n_straits|int}} straits I drew a band (a box or quadrilateral) that spans the passage from shore to shore, and counted cables whose drawn routes intersect it. Egypt is a special case: a cable crosses Egypt if its route runs more than about 10 km inside Egyptian land or it lands on both the Mediterranean coast and the Red Sea or Gulf of Suez coast. (2) \emph{Hubs}: for {{n_hubs|int}} hub areas (a circle round a city or a box round an island group or coast) I counted cables whose routes enter the area. (3) \emph{A grid}: I densified every route and counted the distinct cables in service crossing each half-degree cell (about 55 km at the equator). The busiest cells at least three degrees apart are the data's own list of crowded places. For each straits and hub I also report the combined length of the cables that pass, as a rough measure of how much of the network is exposed there; a long cable that passes several choke points counts in each.
+
+\subsection{Countries and islands}
+A cable is international if its landing points lie in more than one country or territory. For each country I count the international cables in service that land there. A country or territory counts as an island if its Natural Earth outline touches no other country (French overseas departments, Bonaire, Sint Eustatius and Saba, and Tokelau, which Natural Earth folds into larger units, are set by hand). Coastal countries with no cable at all are Natural Earth sovereign states with at least 100,000 people whose outline is partly not shared with a neighbour and that do not appear in the data.
+
+\section{Results}
+\subsection{The network}
+The record holds {{n_active|int}} cables in service with {{km_active|int}} km of cable, {{times_round_earth|f1}} times the Earth's circumference, and {{n_planned|int}} planned cables with {{km_planned|int}} km. Of the cables in service, {{n_intl_active|int}} are international and {{n_dom_active|int}} domestic; the median cable is {{median_km_active|int}} km long, and {{n_short_active|int}} are shorter than 500 km. The longest in service is {{longest_active.0.name|raw}} ({{longest_active.0.km|int}} km, landing in {{longest_active.0.n_countries|int}} countries); the longest in the record is the planned {{longest.0.name|raw}} ({{longest.0.km|int}} km). Figure~\ref{fig:world} shows every cable by era.
+
+\begin{figure}[tbp]\centering\includegraphics[width=\textwidth]{fig_world.png}\caption{Every cable in TeleGeography's map, coloured by the decade it was ready for service; planned cables dashed.}\label{fig:world}\end{figure}
+
+\subsection{When each cable was laid}
+The oldest cables still in service date from {{first_year|raw}}, and {{n_1990s_active|int}} cables from the 1990s are still in use (Figure~\ref{fig:timeline}). The dot-com boom stands out: {{dotcom_n|int}} of today's cables came into service in 1999 to 2001, with {{dotcom_km|int}} km between them, {{km_dotcom_share|pct}} of all the length in service. {{km_peak_year|raw}} remains the year with the most kilometres ({{km_peak|int}} km). The bust that followed left only {{bust_n|int}} cables ready in 2002 to 2004. The count recovered through the 2010s and peaked in {{peak_year|raw}} with {{peak_n|int}} new cables; {{n_2027|int}} are planned for 2027, the largest number for any year in the record. Cables have grown longer: the median length is {{median_km_by_era.1990s|int}} km for 1990s cables still in service, {{median_km_by_era.2010s|int}} km for the 2010s, {{median_km_by_era.2020s|int}} km for the 2020s and {{median_km_by_era.planned|int}} km for planned cables. Cables ready since 2016 account for {{km_since_2016_share|pct}} of the length in service.
+
+\begin{figure}[tbp]\centering\includegraphics[width=\textwidth]{fig_timeline.png}\caption{New cables and kilometres by ready-for-service year. Coral: planned cables by expected year. The 1990s bars count only cables still in service.}\label{fig:timeline}\end{figure}
+
+\subsection{Who owns the new cables}
+Early cables were owned by consortia of telecommunications companies; the record's largest club, {{consortia.max_owner_cable|raw}}, has {{consortia.max_owners|int}} owners. The four cloud and content companies first appear as owners in {{hyper.first_year|raw}} ({{hyper.first|raw}}). Their share of new length rose from zero before 2010 to {{hyper.share_km_1015|pct}} in 2010 to 2014, {{hyper.share_km_1519|pct}} in 2015 to 2019 and {{hyper.share_km_2020s|pct}} in 2020 to 2026; they part-own {{hyper.n_planned|int}} of the {{n_planned|int}} planned cables and {{hyper.share_planned_km|pct}} of the planned length (Figure~\ref{fig:hyper}). Of the {{hyper.n|int}} cables with one of them as an owner, {{hyper.sole|int}} have no other owner, {{hyper.sole_planned|int}} of them planned. Google appears in {{hyper.Google.n|int}} cables ({{hyper.Google.sole|int}} alone), Meta in {{hyper.Meta.n|int}}, Microsoft in {{hyper.Microsoft.n|int}} and Amazon in {{hyper.Amazon.n|int}}.
+
+\begin{figure}[tbp]\centering\includegraphics[width=\textwidth]{fig_hyperscalers.png}\caption{Left: share of new cable length part-owned by Google, Meta, Amazon or Microsoft by period. Right: cables each company part-owns.}\label{fig:hyper}\end{figure}
+
+\subsection{Choke points}
+Table~\ref{tab:choke} and Figure~\ref{fig:choke} give the counts. Among straits, the Strait of Sicily is the busiest ({{zone.sicily.n_active|int}} cables in service), followed by the Red Sea at 20° N ({{zone.redsea.n_active|int}}), the Bab el-Mandeb ({{zone.bab.n_active|int}}), the Luzon Strait ({{zone.luzon.n_active|int}}) and the Strait of Malacca ({{zone.malacca.n_active|int}}). The {{zone.bab.n_active|int}} cables through the Bab el-Mandeb have a combined length of {{zone.bab.km_active|int}} km, {{bab_share_km|pct}} of all cable length in service, and {{zone.bab.n_planned|int}} more are planned: the Red Sea corridor remains the main route between Europe and Asia, and {{zone.egypt.n_active|int}} cables cross Egypt overland to reach the Mediterranean (Figure~\ref{fig:redsea}). The Strait of Gibraltar ({{zone.gibraltar.n_active|int}}) and the western English Channel ({{zone.channel.n_active|int}}) are not choke points in this sense: transatlantic cables land on the Atlantic coasts of Europe, and most cables from Asia come ashore within the Mediterranean, at Marseille ({{zone.marseille.n_active|int}} cables), in Italy and elsewhere.
+
+Among hubs, Singapore has {{zone.singapore.n_active|int}} cables in service within 35 km, with {{zone.singapore.n_planned|int}} planned; then the Boso peninsula south of Tokyo ({{zone.boso.n_active|int}}), Fujairah ({{zone.fujairah.n_active|int}}), Guam ({{zone.guam.n_active|int}}), Hong Kong ({{zone.hongkong.n_active|int}}) and Cornwall ({{zone.cornwall.n_active|int}}). The grid (Figure~\ref{fig:density}) confirms these: its busiest cell, off {{top_cells.0.near|raw}}, is crossed by {{top_cells.0.n|int}} cables, then cells off {{top_cells.1.near|raw}} ({{top_cells.1.n|int}}) and {{top_cells.2.near|raw}} ({{top_cells.2.n|int}}).
+
+{{TABLE_CHOKE}}
+
+\begin{figure}[tbp]\centering\includegraphics[width=\textwidth]{fig_chokepoints.png}\caption{Cables in service and planned through each strait or corridor and reaching each hub area.}\label{fig:choke}\end{figure}
+
+\begin{figure}[tbp]\centering\includegraphics[width=\textwidth]{fig_redsea.png}\caption{The Red Sea corridor. Coloured: cables that pass the Bab el-Mandeb or cross Egypt; grey: all other cables; coral outlines: counting bands and areas.}\label{fig:redsea}\end{figure}
+
+\begin{figure}[tbp]\centering\includegraphics[width=\textwidth]{fig_density.png}\caption{Distinct cables in service crossing each half-degree cell (cells with three or more).}\label{fig:density}\end{figure}
+
+\subsection{Most and least connected}
+The United States has the most international cables in service ({{top_countries.0.n|int}}), then the United Kingdom ({{top_countries.1.n|int}}) and Singapore ({{top_countries.2.n|int}}); {{n_10plus|int}} countries and territories have ten or more (Figure~\ref{fig:connected}). {{n_single|int}} have exactly one. {{n_single_land|int}} of these have land borders and can also be reached overland; the other {{n_single_island|int}} are islands with no land border, mostly small territories in the Pacific, Atlantic, Indian Ocean and Caribbean, plus Greenland. {{n_single_island_planned|int}} of them have a further cable planned. Tuvalu appears only on a planned cable, and Timor-Leste only on a domestic one. Among coastal sovereign states, {{coastal_none_list|raw}} do not appear in the data at all. Tonga's experience in 2022 shows what one cable means: when its only international cable was cut, the islands were largely cut off for weeks. In the 2026 record Tonga also lands on Hawaiki, whose ready-for-service year ({{tonga_hawaiki_year|raw}}) is that of the main system; the record does not date branches separately.
+
+At the scale of landing stations, {{n_lp_single|int}} of the {{n_lp_active|int}} landing points in service ({{lp_single_share|pct}}) serve a single cable, and {{n_lp_10plus|int}} serve ten or more; the busiest are {{top_lps.0.name|raw}} and {{top_lps.1.name|raw}} ({{top_lps.0.n|int}} each).
+
+\begin{figure}[tbp]\centering\includegraphics[width=\textwidth]{fig_connected.png}\caption{Left: countries and territories with the most international cables. Right: islands with a single international cable.}\label{fig:connected}\end{figure}
+
+\section{Limitations}
+The record omits retired cables, so the early years undercount what was laid. It has no capacities: a 1990s cable with a few gigabits per second counts the same as a new cable with hundreds of terabits. Routes are schematic, so counts near the edge of a band or area can be off by one or two, and the choice of bands and areas is mine; the grid offers a check that does not depend on it. Owners are as TeleGeography lists them, and capacity agreements are invisible. The island classification uses land borders as drawn by Natural Earth and ignores land cables, causeways and satellite links. Nothing here assesses the security of any particular cable, and counts of cables through a strait are not a measure of risk on their own: depth, seabed, shipping and repair capacity all matter \citep{carter2009}.
+
+\section*{Data availability}
+Derived data (cables, landing points, countries, choke points, grid, timeline and the full results) and all code are at \url{https://github.com/Tristan-Hotham/submarine-cables} and archived with this paper. Derived data, figures and text are shared under CC BY-NC-SA 4.0, a later version of the licence of TeleGeography's data (CC BY-NC-SA 3.0), which the 3.0 licence permits for adaptations; the code is MIT licensed.
+
+\section*{AI statement}
+I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.
+
+\begin{thebibliography}{99}
+\bibitem[Burnett et al.(2014)]{burnett2014} Burnett, D.R., Beckman, R.C. and Davenport, T.M. (eds.) (2014) \emph{Submarine Cables: The Handbook of Law and Policy}. Leiden: Martinus Nijhoff.
+\bibitem[Carter et al.(2009)]{carter2009} Carter, L., Burnett, D., Drew, S., Marle, G., Hagadorn, L., Bartlett-McNeil, D. and Irvine, N. (2009) \emph{Submarine Cables and the Oceans: Connecting the World}. UNEP-WCMC Biodiversity Series 31. ICPC and UNEP-WCMC.
+\bibitem[Natural Earth(2026)]{naturalearth} Natural Earth (2026) 1:10m and 1:50m cultural and physical vectors. Public domain. \url{https://www.naturalearthdata.com/}
+\bibitem[Starosielski(2015)]{starosielski2015} Starosielski, N. (2015) \emph{The Undersea Network}. Durham, NC: Duke University Press.
+\bibitem[TeleGeography(2026)]{telegeography} TeleGeography (2026) Submarine Cable Map, API version 3. CC BY-NC-SA 3.0. \url{https://www.submarinecablemap.com/}
+\end{thebibliography}
+\end{document}
